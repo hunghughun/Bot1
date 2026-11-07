@@ -1,0 +1,1116 @@
+{
+  "timestamp_utc": "2026-11-06T19:16:12.082555+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "scope": "Bot 1 implementation, synthetic inputs only; no document checker tests",
+  "offline_network_guard": true,
+  "subprocess_guard": "BOT1_TEST_OFFLINE plus src/sitecustomize.py via PYTHONPATH",
+  "executed": 221,
+  "cases": [
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_account_asset_and_margin_flag_must_match_schema",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_context_does_not_bypass_full_verification_gate",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_duplicate_asset_rows_fail_whole_batch",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_length_scale_exponent_magnitude_overflow_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_missing_required_fields_fail",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_money_numbers_bool_and_null_are_not_coerced",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_non_array_empty_and_pagination_wrappers_fail",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_nonfinite_strings_rejected_in_every_money_field",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_timestamps_require_integer_ms_and_valid_past_date",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_unknown_fields_fail_closed",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_ws_channel_and_other_contracts_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_all_retained_evidence_hashes_match",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_golden_provenance_and_source_literal",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_local_observation_identity_is_stable_and_amount_independent",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_negative_zero_and_tiny_signed_money",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_new_poll_and_metrics_have_distinct_observation_ids",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_no_derivation_of_margin_or_total_unrealized",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_optional_fields_can_be_absent_without_zero_fill",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_precision_is_independent_of_ambient_context",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_profile_matches_sdk_array_inheritance_and_field_types",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_sdk_golden_values_and_internal_schema",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_synthetic_multi_asset_rows_remain_separate",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_account_binding_cannot_be_swapped_between_polls",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_core_database_rejected_without_schema_changes",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_duplicate_delivery_and_restart_preserve_first_record",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_internal_schema_core_integration_adds_zero_cashflow",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_later_poll_is_observation_not_cashflow_or_history_coverage",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_malformed_batch_has_zero_partial_observations",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_poll_conflict_quarantined_without_overwrite",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_precommit_rollback_and_replay",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_process_death_after_commit_then_recovery",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_process_death_before_commit_then_recovery",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_quarantine_does_not_retain_unknown_payload",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_realized_fee_funding_and_unknown_income_remain_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_rest_ws_overlap_cannot_double_post",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_source_alias_and_update_time_retained_without_numeric_coercion",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_trial_plan_is_inert_and_active_allowlist_empty",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_two_local_accounts_cannot_claim_same_sdk_alias",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_unsupported_database_version_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_cli_invalid_paths_context_and_flag_values_are_redacted",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_cli_unknown_args_do_not_echo_secret",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_live_with_confirmation_still_fails_official_review",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_live_without_confirmation_stops",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_no_credential_provider_or_environment_lookup_on_live_attempt",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_offline_fixture_positive_and_safe_summary",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_plan_is_inert",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_all_fields_inspected_but_no_financial_payload_returned",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_all_five_money_fields_preserve_extreme_precision",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_all_five_money_fields_reject_json_numbers",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_all_five_money_fields_reject_nonfinite_and_out_of_bounds",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_duplicate_keys_rows_unknown_fields_and_malformed_json",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_flag_asset_and_timestamp_types",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_oversize_body_fail_closed",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_stateless_fixture_replay_has_no_persistent_writes",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_strict_smoke_requires_all_fields_without_altering_mapper_profile",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_candidate_has_one_immutable_endpoint",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_exchange_failure_redacted_and_consumes_attempt",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_hmac_matches_independent_openssl_oracle",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_http_auth_rate_server_redirect_errors_stop_without_retry",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_invalid_inputs_and_route_rejected_before_exchange",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_invalid_key_secret_and_header_injection_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_operator_confirmation_cannot_override_doc_gate",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_query_cannot_carry_other_endpoint_parameters",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_repr_never_contains_key_secret_signature_or_body",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_single_attempt_and_timeout_size_propagation",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_timeout_config_and_synthetic_elapsed_time",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_timestamp_and_local_recv_window_bounds",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_unsupported_key_types_have_no_fallback",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.PaginationTests.test_duplicate_conflicting_pages_and_replay",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.PaginationTests.test_missing_page_cannot_complete_then_recover",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.PaginationTests.test_retention_gap_stays_incomplete",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.ParserTests.test_bool_float_python_int_not_promoted_to_money",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.ParserTests.test_complexity_limits",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.ParserTests.test_financial_bounds_after_decode",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.ParserTests.test_json_number_lexeme_exact_from_initial_decode",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.ParserTests.test_malformed_missing_container_and_utf8",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.ParserTests.test_nonfinite_and_duplicate_key_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.ParserTests.test_number_zero_and_scientific_representation",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.ParserTests.test_rest_and_ws_syntax_decoders_keep_same_number",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.ParserTests.test_string_money_and_json_numbers_are_distinct",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.ParserTests.test_synthetic_fixture_provenance_and_independent_values",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.PolicyTests.test_clock_offset_and_uncertainty",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.PolicyTests.test_http_rate_retry_auth_and_unknown",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.PolicyTests.test_retry_backoff_jitter_and_server_wait",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.PolicyTests.test_stale_snapshot_is_not_dead_transport",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.PolicyTests.test_weight_budget_and_clock_regression",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_all_reviewed_inventory_entries_remain_unsupported",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_core_recovery_rejects_unverified_source_without_mutation",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_fake_verified_flag_cannot_enable_mapping",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_modes_allowlist_transport_and_signer_default_deny",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_network_guard_parent_and_children",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_quarantine_never_stores_secret_payload_or_unknown_contract",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_quarantine_persists_on_replay_without_financial_events",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_quarantine_refuses_core_database",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_rest_ws_link_requires_verified_rules",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_test_runner_cannot_reuse_stale_passing_output",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_unknown_missing_pending_failed_payloads_do_not_create_events",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_ambiguous_delivery_not_automatically_resent",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_backup_restore_replay",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_baseline_already_contains_old_history",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_correction_reversal_audit",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_cross_source_verified_correlation",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_db_lock_is_retryable_not_quarantine",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_disconnect_resume_and_gap_completion",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_economic_conflict_is_not_ignored",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_equal_opposite_missing_events_still_detected",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_failed_cancelled_are_not_cashflow",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_fake_notifier_success_and_logic_dedup",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_fault_after_commit",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_fault_after_event_insert",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_fault_after_inbox_commit",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_fault_after_ledger",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_fault_after_outbox",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_fault_before_commit",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_full_scenario_and_no_network",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_health_and_processing_lag",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_invalid_between_valid_checkpoint_and_replacement",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_invalid_types_quarantine_without_zero",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_manifest_detects_substituted_id",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_margin_unrealized_snapshot_do_not_post",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_missing_offset_even_net_zero_is_gap",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_new_reconciliation_gap_invalidates_completion",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_no_trustworthy_id_is_not_timestamp_deduped",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_normalized_symbol_qualified_source_ids",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_notification_crash_after_send_is_ambiguous",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_notification_retry_cap",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_notifier_retry_and_rate_limit",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_notifier_transient_retry_then_success",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_opening_cannot_hide_existing_ledger",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_out_of_order_history",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_pending_completed_duplicate_stale",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_permanent_notification_error_dead_letter",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_real_process_exit_before_commit_and_recovery",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_realized_pnl_commission_funding_exact_balance",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_replay_and_restart_persistence",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_same_identity_changed_economic_id_conflicts",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_same_identity_financial_conflict",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_same_time_amount_different_ids_are_distinct",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_schema_version_and_money_text",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_second_ingest_worker_has_idempotent_financial_effect",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_secondary_source_unverified_is_gap",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_sensitive_unknown_fields_redacted",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_signed_funding_and_non_usdt_fee",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_snapshot_asof_late_event_reconciles_without_adjustment",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_snapshot_duplicate_time_conflict",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_source_offset_conflict_preserves_committed_event",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_terminal_change_requires_correction",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_transfer_reversal_both_legs",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_transfer_two_legs_rollback_and_funding",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_two_workers_cannot_claim_same_lease",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_unknown_schema_version_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_wallet_asset_account_namespaces",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_core.CoreTests.test_withdrawal_and_separate_fee",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_recovery_edges.RecoveryEdgeTests.test_explicit_manifest_revision_after_quarantine_fix",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_recovery_edges.RecoveryEdgeTests.test_late_snapshot_does_not_replace_latest_metric",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_recovery_edges.RecoveryEdgeTests.test_no_financial_reconciliation_without_opening",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_recovery_edges.RecoveryEdgeTests.test_pending_before_watermark_completed_after_restart",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_safety_cli.SafetyTests.test_cli_end_to_end_and_recovery",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_safety_cli.SafetyTests.test_fake_source_pacing_and_disconnect",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_safety_cli.SafetyTests.test_financial_action_cli_commands_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_safety_cli.SafetyTests.test_json_logger_redacts_unknown_message_and_exception",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_safety_cli.SafetyTests.test_no_network_or_credentials_dependencies_in_source",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_safety_cli.SafetyTests.test_sqlite_error_rolls_back_and_can_replay",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_safety_cli.SafetyTests.test_two_actual_writers",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.integration.test_safety_cli.SafetyTests.test_utc_gmt7_day_boundary",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.DomainNumberTests.test_bad_aggregate_storage",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.DomainNumberTests.test_negative_zero_and_domains",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_aggregate_limit_and_round_trip",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_ambient_context_isolation",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_context_config",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_difference_retains_leaf_count_and_budget",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_display_does_not_mutate_ledger",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_exact_division_and_zero",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_overflow_underflow_rounded_float_traps",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_precision_regression",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_product_96_digits",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_ratio_independent_rational_oracle",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_ratio_ties_and_metadata",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_01",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_02",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_03",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_04",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_05",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_06",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_07",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_08",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_09",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_10",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_11",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_12",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_13",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_14",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_15",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_16",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_17",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_18",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_19",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_20",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_21",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_22",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_23",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_24",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_25",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_26",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_27",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_28",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_29",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_30",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_31",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_32",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_33",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_reject_34",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_tiny_sum",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_01",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_02",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_03",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_04",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_05",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_06",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_07",
+      "status": "PASS"
+    },
+    {
+      "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_08",
+      "status": "PASS"
+    }
+  ],
+  "pass": 221,
+  "fail": 0,
+  "not_tested": 0,
+  "core_regression": {
+    "executed": 124,
+    "pass": 124
+  },
+  "adapter_foundations": {
+    "executed": 29,
+    "pass": 29,
+    "fail": 0,
+    "test_ids": [
+      "tests.adapter_offline.test_foundations.PaginationTests.test_duplicate_conflicting_pages_and_replay",
+      "tests.adapter_offline.test_foundations.PaginationTests.test_missing_page_cannot_complete_then_recover",
+      "tests.adapter_offline.test_foundations.PaginationTests.test_retention_gap_stays_incomplete",
+      "tests.adapter_offline.test_foundations.ParserTests.test_bool_float_python_int_not_promoted_to_money",
+      "tests.adapter_offline.test_foundations.ParserTests.test_complexity_limits",
+      "tests.adapter_offline.test_foundations.ParserTests.test_financial_bounds_after_decode",
+      "tests.adapter_offline.test_foundations.ParserTests.test_json_number_lexeme_exact_from_initial_decode",
+      "tests.adapter_offline.test_foundations.ParserTests.test_malformed_missing_container_and_utf8",
+      "tests.adapter_offline.test_foundations.ParserTests.test_nonfinite_and_duplicate_key_rejected",
+      "tests.adapter_offline.test_foundations.ParserTests.test_number_zero_and_scientific_representation",
+      "tests.adapter_offline.test_foundations.ParserTests.test_rest_and_ws_syntax_decoders_keep_same_number",
+      "tests.adapter_offline.test_foundations.ParserTests.test_string_money_and_json_numbers_are_distinct",
+      "tests.adapter_offline.test_foundations.ParserTests.test_synthetic_fixture_provenance_and_independent_values",
+      "tests.adapter_offline.test_foundations.PolicyTests.test_clock_offset_and_uncertainty",
+      "tests.adapter_offline.test_foundations.PolicyTests.test_http_rate_retry_auth_and_unknown",
+      "tests.adapter_offline.test_foundations.PolicyTests.test_retry_backoff_jitter_and_server_wait",
+      "tests.adapter_offline.test_foundations.PolicyTests.test_stale_snapshot_is_not_dead_transport",
+      "tests.adapter_offline.test_foundations.PolicyTests.test_weight_budget_and_clock_regression",
+      "tests.adapter_offline.test_foundations.VerificationGateTests.test_all_reviewed_inventory_entries_remain_unsupported",
+      "tests.adapter_offline.test_foundations.VerificationGateTests.test_core_recovery_rejects_unverified_source_without_mutation",
+      "tests.adapter_offline.test_foundations.VerificationGateTests.test_fake_verified_flag_cannot_enable_mapping",
+      "tests.adapter_offline.test_foundations.VerificationGateTests.test_modes_allowlist_transport_and_signer_default_deny",
+      "tests.adapter_offline.test_foundations.VerificationGateTests.test_network_guard_parent_and_children",
+      "tests.adapter_offline.test_foundations.VerificationGateTests.test_quarantine_never_stores_secret_payload_or_unknown_contract",
+      "tests.adapter_offline.test_foundations.VerificationGateTests.test_quarantine_persists_on_replay_without_financial_events",
+      "tests.adapter_offline.test_foundations.VerificationGateTests.test_quarantine_refuses_core_database",
+      "tests.adapter_offline.test_foundations.VerificationGateTests.test_rest_ws_link_requires_verified_rules",
+      "tests.adapter_offline.test_foundations.VerificationGateTests.test_test_runner_cannot_reuse_stale_passing_output",
+      "tests.adapter_offline.test_foundations.VerificationGateTests.test_unknown_missing_pending_failed_payloads_do_not_create_events"
+    ]
+  },
+  "sdk_balance_contract_and_reliability": {
+    "executed": 39,
+    "pass": 39,
+    "fail": 0,
+    "test_ids": [
+      "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_account_asset_and_margin_flag_must_match_schema",
+      "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_context_does_not_bypass_full_verification_gate",
+      "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_duplicate_asset_rows_fail_whole_batch",
+      "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_length_scale_exponent_magnitude_overflow_rejected",
+      "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_missing_required_fields_fail",
+      "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_money_numbers_bool_and_null_are_not_coerced",
+      "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_non_array_empty_and_pagination_wrappers_fail",
+      "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_nonfinite_strings_rejected_in_every_money_field",
+      "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_timestamps_require_integer_ms_and_valid_past_date",
+      "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_unknown_fields_fail_closed",
+      "tests.adapter_offline.test_balance_contract.BalanceNegativeContractTests.test_ws_channel_and_other_contracts_rejected",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_all_retained_evidence_hashes_match",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_golden_provenance_and_source_literal",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_local_observation_identity_is_stable_and_amount_independent",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_negative_zero_and_tiny_signed_money",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_new_poll_and_metrics_have_distinct_observation_ids",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_no_derivation_of_margin_or_total_unrealized",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_optional_fields_can_be_absent_without_zero_fill",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_precision_is_independent_of_ambient_context",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_profile_matches_sdk_array_inheritance_and_field_types",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_sdk_golden_values_and_internal_schema",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_synthetic_multi_asset_rows_remain_separate",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_account_binding_cannot_be_swapped_between_polls",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_core_database_rejected_without_schema_changes",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_duplicate_delivery_and_restart_preserve_first_record",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_internal_schema_core_integration_adds_zero_cashflow",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_later_poll_is_observation_not_cashflow_or_history_coverage",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_malformed_batch_has_zero_partial_observations",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_poll_conflict_quarantined_without_overwrite",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_precommit_rollback_and_replay",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_process_death_after_commit_then_recovery",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_process_death_before_commit_then_recovery",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_quarantine_does_not_retain_unknown_payload",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_realized_fee_funding_and_unknown_income_remain_blocked",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_rest_ws_overlap_cannot_double_post",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_source_alias_and_update_time_retained_without_numeric_coercion",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_trial_plan_is_inert_and_active_allowlist_empty",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_two_local_accounts_cannot_claim_same_sdk_alias",
+      "tests.adapter_offline.test_balance_contract.SnapshotReliabilityTests.test_unsupported_database_version_rejected"
+    ]
+  },
+  "balance_smoke_offline_preparation": {
+    "executed": 29,
+    "pass": 29,
+    "fail": 0,
+    "test_ids": [
+      "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_cli_invalid_paths_context_and_flag_values_are_redacted",
+      "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_cli_unknown_args_do_not_echo_secret",
+      "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_live_with_confirmation_still_fails_official_review",
+      "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_live_without_confirmation_stops",
+      "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_no_credential_provider_or_environment_lookup_on_live_attempt",
+      "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_offline_fixture_positive_and_safe_summary",
+      "tests.adapter_offline.test_balance_smoke.SmokeCliTests.test_plan_is_inert",
+      "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_all_fields_inspected_but_no_financial_payload_returned",
+      "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_all_five_money_fields_preserve_extreme_precision",
+      "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_all_five_money_fields_reject_json_numbers",
+      "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_all_five_money_fields_reject_nonfinite_and_out_of_bounds",
+      "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_duplicate_keys_rows_unknown_fields_and_malformed_json",
+      "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_flag_asset_and_timestamp_types",
+      "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_oversize_body_fail_closed",
+      "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_stateless_fixture_replay_has_no_persistent_writes",
+      "tests.adapter_offline.test_balance_smoke.SmokeFinancialProfileTests.test_strict_smoke_requires_all_fields_without_altering_mapper_profile",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_candidate_has_one_immutable_endpoint",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_exchange_failure_redacted_and_consumes_attempt",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_hmac_matches_independent_openssl_oracle",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_http_auth_rate_server_redirect_errors_stop_without_retry",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_invalid_inputs_and_route_rejected_before_exchange",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_invalid_key_secret_and_header_injection_rejected",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_operator_confirmation_cannot_override_doc_gate",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_query_cannot_carry_other_endpoint_parameters",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_repr_never_contains_key_secret_signature_or_body",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_single_attempt_and_timeout_size_propagation",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_timeout_config_and_synthetic_elapsed_time",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_timestamp_and_local_recv_window_bounds",
+      "tests.adapter_offline.test_balance_smoke.SmokeSdkPreparationTests.test_unsupported_key_types_have_no_fallback"
+    ],
+    "scope": "Offline SDK candidate, fake exchange and blocked live CLI; NOT a live timeout/auth/permission test",
+    "official_api_docs_verified": false,
+    "official_api_golden_fixtures": [],
+    "live_query_executed": false,
+    "windows_python314_verified": false,
+    "live_status": "NOT VERIFIED"
+  },
+  "binance_positive_contract_tests": {
+    "executed": 11,
+    "pass": 11,
+    "fail": 0,
+    "test_ids": [
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_all_retained_evidence_hashes_match",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_golden_provenance_and_source_literal",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_local_observation_identity_is_stable_and_amount_independent",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_negative_zero_and_tiny_signed_money",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_new_poll_and_metrics_have_distinct_observation_ids",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_no_derivation_of_margin_or_total_unrealized",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_optional_fields_can_be_absent_without_zero_fill",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_precision_is_independent_of_ambient_context",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_profile_matches_sdk_array_inheritance_and_field_types",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_sdk_golden_values_and_internal_schema",
+      "tests.adapter_offline.test_balance_contract.BalancePositiveContractTests.test_synthetic_multi_asset_rows_remain_separate"
+    ],
+    "scope": "Pinned SDK offline profile, includes provenance and synthetic schema mutations; no live API tests",
+    "official_verified_fixtures": [],
+    "sdk_mock_fixtures": [
+      "tests/fixtures/binance_sdk/balance_v3_response.json"
+    ],
+    "capabilities": [
+      {
+        "contract": "futures_balance_v3",
+        "offline_sdk_mapping_status": "PASS",
+        "full_api_verification": "NOT VERIFIED",
+        "sdk_commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+        "reason": "Snapshot wallet/available only"
+      },
+      {
+        "contract": "futures_income",
+        "offline_sdk_mapping_status": "NOT TESTED",
+        "full_api_verification": "NOT VERIFIED",
+        "sdk_commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+        "reason": "SDK evidence retained; financial mapping/correlation incomplete"
+      },
+      {
+        "contract": "futures_account",
+        "offline_sdk_mapping_status": "NOT TESTED",
+        "full_api_verification": "NOT VERIFIED",
+        "sdk_commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+        "reason": "SDK evidence retained; financial mapping/correlation incomplete"
+      },
+      {
+        "contract": "futures_positions",
+        "offline_sdk_mapping_status": "NOT TESTED",
+        "full_api_verification": "NOT VERIFIED",
+        "sdk_commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+        "reason": "SDK evidence retained; financial mapping/correlation incomplete"
+      },
+      {
+        "contract": "deposit_history",
+        "offline_sdk_mapping_status": "NOT TESTED",
+        "full_api_verification": "NOT VERIFIED",
+        "sdk_commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+        "reason": "SDK evidence retained; financial mapping/correlation incomplete"
+      },
+      {
+        "contract": "withdraw_history",
+        "offline_sdk_mapping_status": "NOT TESTED",
+        "full_api_verification": "NOT VERIFIED",
+        "sdk_commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+        "reason": "SDK evidence retained; financial mapping/correlation incomplete"
+      },
+      {
+        "contract": "universal_transfer_history",
+        "offline_sdk_mapping_status": "NOT TESTED",
+        "full_api_verification": "NOT VERIFIED",
+        "sdk_commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+        "reason": "SDK evidence retained; financial mapping/correlation incomplete"
+      },
+      {
+        "contract": "spot_funding_balances",
+        "offline_sdk_mapping_status": "NOT TESTED",
+        "full_api_verification": "NOT VERIFIED",
+        "sdk_commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+        "reason": "SDK evidence retained; financial mapping/correlation incomplete"
+      },
+      {
+        "contract": "futures_user_stream",
+        "offline_sdk_mapping_status": "NOT TESTED",
+        "full_api_verification": "NOT VERIFIED",
+        "sdk_commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+        "reason": "SDK evidence retained; financial mapping/correlation incomplete"
+      }
+    ]
+  },
+  "live_readonly_enabled": false,
+  "status": "PASS"
+}

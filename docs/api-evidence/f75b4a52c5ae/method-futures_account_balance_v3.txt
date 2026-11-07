@@ -1,0 +1,41 @@
+def futures_account_balance_v3(
+    self,
+    recv_window: Optional[int] = None,
+) -> ApiResponse[FuturesAccountBalanceV3Response]:
+    """
+            Futures Account Balance V3 (USER_DATA)
+            GET /fapi/v3/balance
+            https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/account#futures-account-balance-v3
+
+            Query account balance information.
+
+    Weight(IP): 5
+
+    Security Type: USER_DATA
+
+            Args:
+                recv_window (Optional[int] = None):
+
+            Returns:
+                ApiResponse[FuturesAccountBalanceV3Response]
+
+            Raises:
+                RequiredError: If a required parameter is missing.
+
+    """
+
+    request_body = {}
+    payload = {"recv_window": recv_window}
+
+    return send_request(
+        self._session,
+        self._configuration,
+        method="GET",
+        path="/fapi/v3/balance",
+        payload=payload,
+        body=request_body,
+        time_unit=self._configuration.time_unit,
+        response_model=FuturesAccountBalanceV3Response,
+        is_signed=True,
+        signer=self._signer,
+    )

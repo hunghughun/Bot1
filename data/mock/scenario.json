@@ -1,0 +1,297 @@
+{
+  "schema": "synthetic-history-v1",
+  "stream": "demo-history",
+  "expected_end": 13,
+  "manifest": {
+    "1": "e2de969b3016e003677dbf2f432e46cb043af67eb6f64b536e59fd8f03518086",
+    "2": "c0bf97ce19ee2b8a15df8617dc856bdc53bf487b807074e40fbbe2032e469669",
+    "3": "977d124b0dfed70ff56fa28e445d49b0f4d0b63a603966b57b3552dc13d6747f",
+    "4": "1a8ee98c45a5dc7d1645361e99ebbe1826a9263e3ef4cbc723fcdb70f622a94b",
+    "5": "b6e0e4063bc0a846b3a54edcaf40456bf8027787c49c165bca40d98e9730946e",
+    "6": "ca80c7dbc5642aac6795dd1751737df73848e365ff8afba7634b3e52bbd56872",
+    "7": "167e5271635591e5ae8d944a3d96e513b3cf49cd934553c07ad11ccf7bf9ee48",
+    "8": "88176b705e6e5d5023fd19f61326e3034157ecfbf42f7e962914f1dafee9f28e",
+    "9": "0acbf16e2a3705b286c697997fc1a1213a14e0a6105b186e6ef9b8ed302e3224",
+    "10": "31e2b50648414eb89e4ca2ab2da9f4fe1c2844c4a708f5dbf69897da2f1f6740",
+    "11": "a7925523ed95eb4f9352fdea4bc94faf5b891ee4cc4f111d9b1d4526b8d8150e",
+    "12": "cacca6c7fa51f15508b46bed2500dfaa8db07b504a9294de11859a6e11ddc434",
+    "13": "001f41997204bf27a5c41c8224c13ee0e67875ca2e2a09b04c41d0656aa66561"
+  },
+  "records": [
+    {
+      "offset": 1,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-1",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "SPOT",
+        "asset": "USDT",
+        "amount": "0",
+        "event_type": "BALANCE_SNAPSHOT",
+        "event_time": "2026-01-01T00:00:01+00:00",
+        "received_time": "2026-01-01T00:00:01+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {
+          "opening": true
+        },
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    },
+    {
+      "offset": 2,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-2",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "FUTURES",
+        "asset": "USDT",
+        "amount": "0",
+        "event_type": "BALANCE_SNAPSHOT",
+        "event_time": "2026-01-01T00:00:02+00:00",
+        "received_time": "2026-01-01T00:00:02+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {
+          "opening": true
+        },
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    },
+    {
+      "offset": 3,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-3",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "SPOT",
+        "asset": "USDT",
+        "amount": "100",
+        "event_type": "DEPOSIT",
+        "event_time": "2026-01-01T00:00:03+00:00",
+        "received_time": "2026-01-01T00:00:03+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {},
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    },
+    {
+      "offset": 4,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-4",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "SPOT",
+        "asset": "USDT",
+        "amount": "100",
+        "event_type": "INTERNAL_TRANSFER",
+        "event_time": "2026-01-01T00:00:04+00:00",
+        "received_time": "2026-01-01T00:00:04+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {
+          "to_wallet": "FUTURES"
+        },
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    },
+    {
+      "offset": 5,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-5",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "FUTURES",
+        "asset": "USDT",
+        "amount": "8",
+        "event_type": "REALIZED_PNL",
+        "event_time": "2026-01-01T00:00:05+00:00",
+        "received_time": "2026-01-01T00:00:05+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {},
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    },
+    {
+      "offset": 6,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-6",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "FUTURES",
+        "asset": "USDT",
+        "amount": "-1",
+        "event_type": "TRADING_FEE",
+        "event_time": "2026-01-01T00:00:06+00:00",
+        "received_time": "2026-01-01T00:00:06+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {},
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    },
+    {
+      "offset": 7,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-7",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "FUTURES",
+        "asset": "USDT",
+        "amount": "-0.5",
+        "event_type": "FUNDING_FEE",
+        "event_time": "2026-01-01T00:00:07+00:00",
+        "received_time": "2026-01-01T00:00:07+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {},
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    },
+    {
+      "offset": 8,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-8",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "FUTURES",
+        "asset": "USDT",
+        "amount": "4",
+        "event_type": "UNREALIZED_PNL_SNAPSHOT",
+        "event_time": "2026-01-01T00:00:08+00:00",
+        "received_time": "2026-01-01T00:00:08+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {},
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    },
+    {
+      "offset": 9,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-9",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "FUTURES",
+        "asset": "USDT",
+        "amount": "30",
+        "event_type": "INTERNAL_TRANSFER",
+        "event_time": "2026-01-01T00:00:09+00:00",
+        "received_time": "2026-01-01T00:00:09+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {
+          "to_wallet": "SPOT"
+        },
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    },
+    {
+      "offset": 10,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-10",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "SPOT",
+        "asset": "USDT",
+        "amount": "20",
+        "event_type": "WITHDRAWAL",
+        "event_time": "2026-01-01T00:00:10+00:00",
+        "received_time": "2026-01-01T00:00:10+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {},
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    },
+    {
+      "offset": 11,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-11",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "SPOT",
+        "asset": "USDT",
+        "amount": "-1",
+        "event_type": "WITHDRAWAL_FEE",
+        "event_time": "2026-01-01T00:00:11+00:00",
+        "received_time": "2026-01-01T00:00:11+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {},
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    },
+    {
+      "offset": 12,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-12",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "SPOT",
+        "asset": "USDT",
+        "amount": "9",
+        "event_type": "BALANCE_SNAPSHOT",
+        "event_time": "2026-01-01T00:00:12+00:00",
+        "received_time": "2026-01-01T00:00:12+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {},
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    },
+    {
+      "offset": 13,
+      "event": {
+        "source": "fake",
+        "source_event_id": "synthetic-13",
+        "id_trusted": true,
+        "account": "demo",
+        "wallet": "FUTURES",
+        "asset": "USDT",
+        "amount": "76.5",
+        "event_type": "BALANCE_SNAPSHOT",
+        "event_time": "2026-01-01T00:00:13+00:00",
+        "received_time": "2026-01-01T00:00:13+00:00",
+        "status": "completed",
+        "version": 1,
+        "schema_version": 1,
+        "metadata": {},
+        "evidence": "synthetic-fixture-not-binance"
+      }
+    }
+  ],
+  "expected": {
+    "SPOT.USDT": "9",
+    "FUTURES.USDT": "76.5",
+    "external_deposit": "100",
+    "external_withdrawal": "20",
+    "net_trade_pnl_futures": "6.5"
+  }
+}

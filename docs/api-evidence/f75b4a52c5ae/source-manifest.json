@@ -1,0 +1,636 @@
+{
+  "repository": "https://github.com/binance/binance-connector-python",
+  "commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+  "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+  "api_docs_crosschecked": false,
+  "developers_host_retried": false,
+  "versions": {
+    "clients/derivatives_trading_usds_futures": "18.3.0",
+    "clients/wallet": "13.10.0",
+    "clients/spot": "13.5.0"
+  },
+  "sdk_executed_or_installed": false,
+  "files": [
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/account_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/account_api.py#L182",
+      "full_source_sha256": "b666de8063bdbde0c4d6e511bd03cfb8d33b8d4afb87eb24ff1d54ecfdb7da39",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-futures_account_balance_v3.txt",
+      "retained_sha256": "bc229dd658c2b2de5b76f856b9f279dc646e676073f5093fed946b0759545b8e",
+      "start_line": 182,
+      "end_line": 222
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/account_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/account_api.py#L98",
+      "full_source_sha256": "b666de8063bdbde0c4d6e511bd03cfb8d33b8d4afb87eb24ff1d54ecfdb7da39",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-account_information_v3.txt",
+      "retained_sha256": "e0cdd3be7df16658208e7af53ee9b8b52993ffd55b33ceccaa77e596b4f5c990",
+      "start_line": 98,
+      "end_line": 138
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/account_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/account_api.py#L788",
+      "full_source_sha256": "b666de8063bdbde0c4d6e511bd03cfb8d33b8d4afb87eb24ff1d54ecfdb7da39",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-get_income_history.txt",
+      "retained_sha256": "ec7272066472b0a5f28f6cf2627af97d710a64f75ebcf55c87e50200721d905e",
+      "start_line": 788,
+      "end_line": 851
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/trade_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/trade_api.py#L1757",
+      "full_source_sha256": "0f482140acd6561cc02571110767e5c9dd363a671be0542a859536f014b1c603",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-position_information_v3.txt",
+      "retained_sha256": "978b65aa5a7ed8727c57a88bacc4b6560a0fea3d1baf168a899b4ffcad13e66d",
+      "start_line": 1757,
+      "end_line": 1803
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/api/capital_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/api/capital_api.py#L149",
+      "full_source_sha256": "e4154c35bf91c8dd7e4b4cfed5aabbd94a1cd508245dab1a8aedcbd7c0ab8a5b",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-deposit_history.txt",
+      "retained_sha256": "960caf94875b14a462294e0ac074c8f6597098a46e65d6193884b8fc91b92e0a",
+      "start_line": 149,
+      "end_line": 219
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/api/capital_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/api/capital_api.py#L496",
+      "full_source_sha256": "e4154c35bf91c8dd7e4b4cfed5aabbd94a1cd508245dab1a8aedcbd7c0ab8a5b",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-withdraw_history.txt",
+      "retained_sha256": "7a721d9d7ce2d4ffb2b79254364f4b4af0d2dd68bcdaa85c18d1851d5c191f88",
+      "start_line": 496,
+      "end_line": 571
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/api/asset_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/api/asset_api.py#L735",
+      "full_source_sha256": "2da98b82ac9dae2806438649b3edee6e4869e30ef246f5d797a2abe56b8f6e3a",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-query_user_universal_transfer_history.txt",
+      "retained_sha256": "b792ad74e124e491da3d315e27aeeff984b7bbac4088b6c612f18d859f45ad5d",
+      "start_line": 735,
+      "end_line": 809
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/api/asset_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/api/asset_api.py#L811",
+      "full_source_sha256": "2da98b82ac9dae2806438649b3edee6e4869e30ef246f5d797a2abe56b8f6e3a",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-query_user_wallet_balance.txt",
+      "retained_sha256": "f9194b16ea8183ec070e173e0f57d55e4075d1a073d696639896e72c182bcb8d",
+      "start_line": 811,
+      "end_line": 860
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/api/asset_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/api/asset_api.py#L402",
+      "full_source_sha256": "2da98b82ac9dae2806438649b3edee6e4869e30ef246f5d797a2abe56b8f6e3a",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-funding_wallet.txt",
+      "retained_sha256": "46fbbaae99b0ed8af39d42c754aa44326f461ca20dad43d2b23003fab3e848d3",
+      "start_line": 402,
+      "end_line": 453
+    },
+    {
+      "path": "clients/spot/src/binance_sdk_spot/rest_api/api/account_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/spot/src/binance_sdk_spot/rest_api/api/account_api.py#L235",
+      "full_source_sha256": "d77af5202cefc28dc2c1ab80bace66bf9f5d4308eb28d11d0516eb2a78e377a7",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-get_account.txt",
+      "retained_sha256": "c2530c0908fd8b01ee044779c55e186890c401cccc10e20f1c80c2581e088476",
+      "start_line": 235,
+      "end_line": 280
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/user_data_streams_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/user_data_streams_api.py#L110",
+      "full_source_sha256": "6d75e69c8b894f2a84a92cfaab49089d7a9bdb6a03cc4ad0aa900c6ef6053646",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-start_user_data_stream.txt",
+      "retained_sha256": "43c32878941ae6f9590a5a84e81002dc93152e9655b602a99470bc0c533eb3c0",
+      "start_line": 110,
+      "end_line": 149
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/user_data_streams_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/user_data_streams_api.py#L70",
+      "full_source_sha256": "6d75e69c8b894f2a84a92cfaab49089d7a9bdb6a03cc4ad0aa900c6ef6053646",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-keepalive_user_data_stream.txt",
+      "retained_sha256": "4b8eb396165ee6ea312f1d5ec4757d0b080a8a6ad3478db5f3c9c34d703a97e3",
+      "start_line": 70,
+      "end_line": 108
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/user_data_streams_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/user_data_streams_api.py#L33",
+      "full_source_sha256": "6d75e69c8b894f2a84a92cfaab49089d7a9bdb6a03cc4ad0aa900c6ef6053646",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/method-close_user_data_stream.txt",
+      "retained_sha256": "0673a6bb68067d330f88d5a4178177c5417267550b772fc91de9cf806864080b",
+      "start_line": 33,
+      "end_line": 68
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/futures_account_balance_v3_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/futures_account_balance_v3_response.py#L1",
+      "full_source_sha256": "ab92152d96fbcc99cdb4e227d8375fcf48f102d8c4f701d64b4c9e8603b3efc8",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v3_response.txt",
+      "retained_sha256": "ab92152d96fbcc99cdb4e227d8375fcf48f102d8c4f701d64b4c9e8603b3efc8",
+      "start_line": 1,
+      "end_line": 80
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/futures_account_balance_v2_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/futures_account_balance_v2_response_inner.py#L1",
+      "full_source_sha256": "dc0fe878edc86d767e7da8672de703778cbb25e41db6dbd5bbe7300e46feb60b",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v2_response_inner.txt",
+      "retained_sha256": "dc0fe878edc86d767e7da8672de703778cbb25e41db6dbd5bbe7300e46feb60b",
+      "start_line": 1,
+      "end_line": 153
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response.py#L1",
+      "full_source_sha256": "6fd0db70ec6411c327b43f0e1b841484e0485f8bf0408cb7abfe2e8c7be75b49",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_information_v3_response.txt",
+      "retained_sha256": "6fd0db70ec6411c327b43f0e1b841484e0485f8bf0408cb7abfe2e8c7be75b49",
+      "start_line": 1,
+      "end_line": 225
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response_assets_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response_assets_inner.py#L1",
+      "full_source_sha256": "af03494e481ca64cb3f0014e0d853347862bd6d714dcea8705767d46ced7efac",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_information_v3_response_assets_inner.txt",
+      "retained_sha256": "af03494e481ca64cb3f0014e0d853347862bd6d714dcea8705767d46ced7efac",
+      "start_line": 1,
+      "end_line": 179
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response_positions_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response_positions_inner.py#L1",
+      "full_source_sha256": "5152e6ccdbb1da9334518c610b2103239a30703c1d9ad48c064d2efd8a1dabb2",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_information_v3_response_positions_inner.txt",
+      "retained_sha256": "5152e6ccdbb1da9334518c610b2103239a30703c1d9ad48c064d2efd8a1dabb2",
+      "start_line": 1,
+      "end_line": 154
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/get_income_history_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/get_income_history_response.py#L1",
+      "full_source_sha256": "2550746d81cc6f07d0e99ac402402834deb98dda767d55f5c13b7e7c78d47708",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-get_income_history_response.txt",
+      "retained_sha256": "2550746d81cc6f07d0e99ac402402834deb98dda767d55f5c13b7e7c78d47708",
+      "start_line": 1,
+      "end_line": 80
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/get_income_history_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/get_income_history_response_inner.py#L1",
+      "full_source_sha256": "9ea5afea57119b0045ed951de538c431b427f12379d45f07c520db1e307c8431",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-get_income_history_response_inner.txt",
+      "retained_sha256": "9ea5afea57119b0045ed951de538c431b427f12379d45f07c520db1e307c8431",
+      "start_line": 1,
+      "end_line": 136
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/position_information_v3_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/position_information_v3_response_inner.py#L1",
+      "full_source_sha256": "0e54bfa5c4dcaa61b7aa5c80dfc6b977bd2f4f82459d96cb0004202ebe9e3980",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-position_information_v3_response_inner.txt",
+      "retained_sha256": "0e54bfa5c4dcaa61b7aa5c80dfc6b977bd2f4f82459d96cb0004202ebe9e3980",
+      "start_line": 1,
+      "end_line": 212
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/deposit_history_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/deposit_history_response_inner.py#L1",
+      "full_source_sha256": "5a24229215e96025774fb5f777f2a59ae2144a6447554377087a2bfd81e70ba9",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-deposit_history_response_inner.txt",
+      "retained_sha256": "5a24229215e96025774fb5f777f2a59ae2144a6447554377087a2bfd81e70ba9",
+      "start_line": 1,
+      "end_line": 157
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/withdraw_history_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/withdraw_history_response_inner.py#L1",
+      "full_source_sha256": "d98c3503ff255ecc70d948c77853b99da0eb14b51a81ec81da2f7d1c185dc893",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-withdraw_history_response_inner.txt",
+      "retained_sha256": "d98c3503ff255ecc70d948c77853b99da0eb14b51a81ec81da2f7d1c185dc893",
+      "start_line": 1,
+      "end_line": 178
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_universal_transfer_history_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_universal_transfer_history_response.py#L1",
+      "full_source_sha256": "9dfd460d937ef320ce246974c2bd8634d49ca2fa69c5667b354657d3738ce08d",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-query_user_universal_transfer_history_response.txt",
+      "retained_sha256": "9dfd460d937ef320ce246974c2bd8634d49ca2fa69c5667b354657d3738ce08d",
+      "start_line": 1,
+      "end_line": 126
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_universal_transfer_history_response_rows_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_universal_transfer_history_response_rows_inner.py#L1",
+      "full_source_sha256": "7072d03977edb5b93c59c5b5e3f21da318dfe8c5f695a09b75e9f7c0fc8a3dc3",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-query_user_universal_transfer_history_response_rows_inner.txt",
+      "retained_sha256": "7072d03977edb5b93c59c5b5e3f21da318dfe8c5f695a09b75e9f7c0fc8a3dc3",
+      "start_line": 1,
+      "end_line": 124
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/funding_wallet_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/funding_wallet_response_inner.py#L1",
+      "full_source_sha256": "b844d6f3cc50bbcb3748d46a23bd3d67f909a74ba42632391d2384db7c909764",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-funding_wallet_response_inner.txt",
+      "retained_sha256": "b844d6f3cc50bbcb3748d46a23bd3d67f909a74ba42632391d2384db7c909764",
+      "start_line": 1,
+      "end_line": 122
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response_inner.py#L1",
+      "full_source_sha256": "562acbccad680645b7512402e2b42755a86f5f5f4c9e21e5b33a2c65aa732037",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-query_user_wallet_balance_response_inner.txt",
+      "retained_sha256": "562acbccad680645b7512402e2b42755a86f5f5f4c9e21e5b33a2c65aa732037",
+      "start_line": 1,
+      "end_line": 141
+    },
+    {
+      "path": "clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response.py#L1",
+      "full_source_sha256": "f4e40ab8e5177a106cbc2cb294692a1d599d1de3db84e4000880474aabdab676",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-get_account_response.txt",
+      "retained_sha256": "f4e40ab8e5177a106cbc2cb294692a1d599d1de3db84e4000880474aabdab676",
+      "start_line": 1,
+      "end_line": 185
+    },
+    {
+      "path": "clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response_balances_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response_balances_inner.py#L1",
+      "full_source_sha256": "b0f9c4db2d29f44cbcbcbb35de3c7dc5f2b8741de4cd388733ac0ab847ef3f19",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-get_account_response_balances_inner.txt",
+      "retained_sha256": "b0f9c4db2d29f44cbcbcbb35de3c7dc5f2b8741de4cd388733ac0ab847ef3f19",
+      "start_line": 1,
+      "end_line": 109
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/user_data_stream_events_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/user_data_stream_events_response.py#L1",
+      "full_source_sha256": "2eba510e32a32ff6169c48e631d07b23f20c05b0e403a44eeefbbbfaddae50ea",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-user_data_stream_events_response.txt",
+      "retained_sha256": "2eba510e32a32ff6169c48e631d07b23f20c05b0e403a44eeefbbbfaddae50ea",
+      "start_line": 1,
+      "end_line": 431
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update.py#L1",
+      "full_source_sha256": "5a7c7cd87f1a582d2daef0767b56b369731cfbf26c049eb6838b9b74044cab9a",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_update.txt",
+      "retained_sha256": "5a7c7cd87f1a582d2daef0767b56b369731cfbf26c049eb6838b9b74044cab9a",
+      "start_line": 1,
+      "end_line": 115
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_a.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_a.py#L1",
+      "full_source_sha256": "aa606e16bc4ccec54ea14486e0ff5fb3cf81f448d2df3e1dc07b0de0ce0421c7",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_update_a.txt",
+      "retained_sha256": "aa606e16bc4ccec54ea14486e0ff5fb3cf81f448d2df3e1dc07b0de0ce0421c7",
+      "start_line": 1,
+      "end_line": 139
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_ab_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_ab_inner.py#L1",
+      "full_source_sha256": "5364197d714687cbac0c36afbc6ecadd92e75f0d81944f983f478b404caeb8e1",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_update_ab_inner.txt",
+      "retained_sha256": "5364197d714687cbac0c36afbc6ecadd92e75f0d81944f983f478b404caeb8e1",
+      "start_line": 1,
+      "end_line": 109
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_ap_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_ap_inner.py#L1",
+      "full_source_sha256": "4a71b3392d7d5c51f38c6239fcf5aaf35e3f39ba75bcc6535af6c8b486636d6e",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_update_ap_inner.txt",
+      "retained_sha256": "4a71b3392d7d5c51f38c6239fcf5aaf35e3f39ba75bcc6535af6c8b486636d6e",
+      "start_line": 1,
+      "end_line": 131
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/order_trade_update.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/order_trade_update.py#L1",
+      "full_source_sha256": "bf881e86164a13672dc5148446c007e8fc2d98f21e408b95bba52dbf0ae4a8db",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-order_trade_update.txt",
+      "retained_sha256": "bf881e86164a13672dc5148446c007e8fc2d98f21e408b95bba52dbf0ae4a8db",
+      "start_line": 1,
+      "end_line": 117
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/order_trade_update_o.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/order_trade_update_o.py#L1",
+      "full_source_sha256": "d8894d5000d9ee6ac1cecbbc823fd25834c6b8ad02c52e2f6b0f36fc08f781d7",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-order_trade_update_o.txt",
+      "retained_sha256": "d8894d5000d9ee6ac1cecbbc823fd25834c6b8ad02c52e2f6b0f36fc08f781d7",
+      "start_line": 1,
+      "end_line": 250
+    },
+    {
+      "path": "common/src/binance_common/constants.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/common/src/binance_common/constants.py#L1",
+      "full_source_sha256": "bf30be97c657a9b2366ea13a923eefa8b6b5f9f7b971f4513a62f75772135248",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/common-constants.txt",
+      "retained_sha256": "bf30be97c657a9b2366ea13a923eefa8b6b5f9f7b971f4513a62f75772135248",
+      "start_line": 1,
+      "end_line": 162
+    },
+    {
+      "path": "common/src/binance_common/utils.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/common/src/binance_common/utils.py#L1",
+      "full_source_sha256": "75dfbaf3c6b7a407263ca39c80e0b08f64c4a0ee6fb31cb6863b94c1bc6c0667",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/common-utils.txt",
+      "retained_sha256": "75dfbaf3c6b7a407263ca39c80e0b08f64c4a0ee6fb31cb6863b94c1bc6c0667",
+      "start_line": 1,
+      "end_line": 1310
+    },
+    {
+      "path": "common/src/binance_common/configuration.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/common/src/binance_common/configuration.py#L1",
+      "full_source_sha256": "bf913ff1a6175fb2ef6060e8d8688af50b16b0394005ee031bb91869f5ad95bf",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/common-configuration.txt",
+      "retained_sha256": "bf913ff1a6175fb2ef6060e8d8688af50b16b0394005ee031bb91869f5ad95bf",
+      "start_line": 1,
+      "end_line": 249
+    },
+    {
+      "path": "common/src/binance_common/errors.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/common/src/binance_common/errors.py#L1",
+      "full_source_sha256": "b445f8eec8a1630180401c5753a63892ced13ee58bd207566ce5b61c7d716983",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/common-errors.txt",
+      "retained_sha256": "b445f8eec8a1630180401c5753a63892ced13ee58bd207566ce5b61c7d716983",
+      "start_line": 1,
+      "end_line": 157
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/README.md",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/README.md#L1",
+      "full_source_sha256": "03aace07d2cd433d8f840744c5997b28c671287b4257b66bf8f9f26291c36afa",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/futures-README.txt",
+      "retained_sha256": "03aace07d2cd433d8f840744c5997b28c671287b4257b66bf8f9f26291c36afa",
+      "start_line": 1,
+      "end_line": 436
+    },
+    {
+      "path": "LICENSE.md",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/LICENSE.md#L1",
+      "full_source_sha256": "23a262df04920660c2c43ee95cb23a1feb0fcb385c2bd6a1752be6e9241f2832",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/LICENSE-MIT.txt",
+      "retained_sha256": "23a262df04920660c2c43ee95cb23a1feb0fcb385c2bd6a1752be6e9241f2832",
+      "start_line": 1,
+      "end_line": 21
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/tests/unit/rest_api/test_account_api.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/tests/unit/rest_api/test_account_api.py#L617",
+      "full_source_sha256": "a77664c80f77e7add943de6c76314d243fdba7f41b3fe23c9947ffba9f5a1949",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/sdk-test-balance-v3.txt",
+      "retained_sha256": "60457b094d830ab0ea00be657d20413686850cc73bba9e0cb6f67a12db6f8762",
+      "start_line": 617,
+      "end_line": 668
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/pyproject.toml",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/pyproject.toml#L1",
+      "full_source_sha256": "69e2159790609135539fc4165610b070eecb81a15fee6ca9d196f36ef13b2c19",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/derivatives_trading_usds_futures-pyproject.txt",
+      "retained_sha256": "69e2159790609135539fc4165610b070eecb81a15fee6ca9d196f36ef13b2c19",
+      "start_line": 1,
+      "end_line": 38
+    },
+    {
+      "path": "clients/wallet/pyproject.toml",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/pyproject.toml#L1",
+      "full_source_sha256": "44456153dfcd7f76b7f301f7cfd01e091dcc82bada811471f095d7718bb8b1d5",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/wallet-pyproject.txt",
+      "retained_sha256": "44456153dfcd7f76b7f301f7cfd01e091dcc82bada811471f095d7718bb8b1d5",
+      "start_line": 1,
+      "end_line": 38
+    },
+    {
+      "path": "clients/spot/pyproject.toml",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/spot/pyproject.toml#L1",
+      "full_source_sha256": "23cfeb40fdbae1adc37366cf310df280db833ac277bb2dd7623c7d66847ecd09",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/spot-pyproject.txt",
+      "retained_sha256": "23cfeb40fdbae1adc37366cf310df280db833ac277bb2dd7623c7d66847ecd09",
+      "start_line": 1,
+      "end_line": 38
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/examples/rest_api/Account/account_information_v3.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/examples/rest_api/Account/account_information_v3.py#L1",
+      "full_source_sha256": "d8d4c78e57c381dee6052ee872a8cb07496b4765a076fab96f3b3cf0965aacf7",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-account_information_v3.txt",
+      "retained_sha256": "d8d4c78e57c381dee6052ee872a8cb07496b4765a076fab96f3b3cf0965aacf7",
+      "start_line": 1,
+      "end_line": 40
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/examples/rest_api/Account/futures_account_balance_v3.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/examples/rest_api/Account/futures_account_balance_v3.py#L1",
+      "full_source_sha256": "5267a810f60bd2b034f78947dd9f1983f1dea1fae856ee9ef97dec8c14635b5a",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-futures_account_balance_v3.txt",
+      "retained_sha256": "5267a810f60bd2b034f78947dd9f1983f1dea1fae856ee9ef97dec8c14635b5a",
+      "start_line": 1,
+      "end_line": 40
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/examples/rest_api/Account/get_income_history.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/examples/rest_api/Account/get_income_history.py#L1",
+      "full_source_sha256": "b1cb29c750556198a30ec9366f9e87b72528076c94fc7516d29c4b7bdeacdb71",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-get_income_history.txt",
+      "retained_sha256": "b1cb29c750556198a30ec9366f9e87b72528076c94fc7516d29c4b7bdeacdb71",
+      "start_line": 1,
+      "end_line": 40
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/examples/rest_api/Trade/position_information_v3.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/examples/rest_api/Trade/position_information_v3.py#L1",
+      "full_source_sha256": "52c1532e7cb63f9b7bf316758a0116804cad5961c1c4425477ca6f8b36d038d7",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-position_information_v3.txt",
+      "retained_sha256": "52c1532e7cb63f9b7bf316758a0116804cad5961c1c4425477ca6f8b36d038d7",
+      "start_line": 1,
+      "end_line": 40
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/examples/rest_api/UserDataStreams/close_user_data_stream.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/examples/rest_api/UserDataStreams/close_user_data_stream.py#L1",
+      "full_source_sha256": "a3d039daac70d9f7f86f1237b7d451e9a53704f0b70297f8b34fd499b836cd3a",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-close_user_data_stream.txt",
+      "retained_sha256": "a3d039daac70d9f7f86f1237b7d451e9a53704f0b70297f8b34fd499b836cd3a",
+      "start_line": 1,
+      "end_line": 40
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/examples/rest_api/UserDataStreams/keepalive_user_data_stream.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/examples/rest_api/UserDataStreams/keepalive_user_data_stream.py#L1",
+      "full_source_sha256": "da2358070be928bffb516b59fbd47fc6966c6ecda847157a056d179c6801be31",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-keepalive_user_data_stream.txt",
+      "retained_sha256": "da2358070be928bffb516b59fbd47fc6966c6ecda847157a056d179c6801be31",
+      "start_line": 1,
+      "end_line": 40
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/examples/rest_api/UserDataStreams/start_user_data_stream.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/examples/rest_api/UserDataStreams/start_user_data_stream.py#L1",
+      "full_source_sha256": "139631669e205fe4a31b023a21e3cddf50462aadc7f5bc59800b666ff72b09ba",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-start_user_data_stream.txt",
+      "retained_sha256": "139631669e205fe4a31b023a21e3cddf50462aadc7f5bc59800b666ff72b09ba",
+      "start_line": 1,
+      "end_line": 40
+    },
+    {
+      "path": "clients/wallet/examples/rest_api/Asset/funding_wallet.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/examples/rest_api/Asset/funding_wallet.py#L1",
+      "full_source_sha256": "ac939c0b9598fcf0712ab2b717607e2f8d35c868bd02e3ccfd27c9be76ca2842",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-wallet-funding_wallet.txt",
+      "retained_sha256": "ac939c0b9598fcf0712ab2b717607e2f8d35c868bd02e3ccfd27c9be76ca2842",
+      "start_line": 1,
+      "end_line": 38
+    },
+    {
+      "path": "clients/wallet/examples/rest_api/Asset/query_user_universal_transfer_history.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/examples/rest_api/Asset/query_user_universal_transfer_history.py#L1",
+      "full_source_sha256": "3a12768dca2a69ef16bfeb370f096ba623e49381661258daf9ee54eef1b9c11a",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-wallet-query_user_universal_transfer_history.txt",
+      "retained_sha256": "3a12768dca2a69ef16bfeb370f096ba623e49381661258daf9ee54eef1b9c11a",
+      "start_line": 1,
+      "end_line": 42
+    },
+    {
+      "path": "clients/wallet/examples/rest_api/Asset/query_user_wallet_balance.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/examples/rest_api/Asset/query_user_wallet_balance.py#L1",
+      "full_source_sha256": "d5d77ca653a8c62f7c517b2637c891e00c8a7d630909ed1d8dc19ee536df78e3",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-wallet-query_user_wallet_balance.txt",
+      "retained_sha256": "d5d77ca653a8c62f7c517b2637c891e00c8a7d630909ed1d8dc19ee536df78e3",
+      "start_line": 1,
+      "end_line": 38
+    },
+    {
+      "path": "clients/wallet/examples/rest_api/Capital/deposit_history.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/examples/rest_api/Capital/deposit_history.py#L1",
+      "full_source_sha256": "7a8784b29ddfeb38c1de9f7ee25a19e6d3eaa7865eb521c41da30e6c46034d2f",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-wallet-deposit_history.txt",
+      "retained_sha256": "7a8784b29ddfeb38c1de9f7ee25a19e6d3eaa7865eb521c41da30e6c46034d2f",
+      "start_line": 1,
+      "end_line": 38
+    },
+    {
+      "path": "clients/wallet/examples/rest_api/Capital/withdraw_history.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/examples/rest_api/Capital/withdraw_history.py#L1",
+      "full_source_sha256": "c553f322c463a8cf46bd8b3e37b848eb0070e177adbc22c6084fb4a5891acdbb",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-wallet-withdraw_history.txt",
+      "retained_sha256": "c553f322c463a8cf46bd8b3e37b848eb0070e177adbc22c6084fb4a5891acdbb",
+      "start_line": 1,
+      "end_line": 38
+    },
+    {
+      "path": "clients/spot/examples/rest_api/Account/get_account.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/spot/examples/rest_api/Account/get_account.py#L1",
+      "full_source_sha256": "1a6a7aa4b902f1b9419b5093c17286dd98d49c513f3123c2e0ba243a3bc1e61e",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/example-spot-get_account.txt",
+      "retained_sha256": "1a6a7aa4b902f1b9419b5093c17286dd98d49c513f3123c2e0ba243a3bc1e61e",
+      "start_line": 1,
+      "end_line": 34
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/enums.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/enums.py#L14",
+      "full_source_sha256": "32bebab1550064e3ec2117f41d68d93194022e972c54a58554387b9a3d0ac660",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/enum-income-types.txt",
+      "retained_sha256": "ad344582aa0fa8cf89faf7e16aa9e8fec5d60afcf281b732404f19145402f255",
+      "start_line": 14,
+      "end_line": 37
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/position_information_v3_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/position_information_v3_response.py#L1",
+      "full_source_sha256": "d5327032dce3c1f26f77775ba57480282eaaf523c00e563c84a04cd7533e9a31",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-position_information_v3_response.txt",
+      "retained_sha256": "d5327032dce3c1f26f77775ba57480282eaaf523c00e563c84a04cd7533e9a31",
+      "start_line": 1,
+      "end_line": 80
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/start_user_data_stream_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/start_user_data_stream_response.py#L1",
+      "full_source_sha256": "8a055d7a2e9f3ddcdd8af995bcd4730cd8b9f0218d522b891e88c8df9d0521c5",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-start_user_data_stream_response.txt",
+      "retained_sha256": "8a055d7a2e9f3ddcdd8af995bcd4730cd8b9f0218d522b891e88c8df9d0521c5",
+      "start_line": 1,
+      "end_line": 101
+    },
+    {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/keepalive_user_data_stream_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/keepalive_user_data_stream_response.py#L1",
+      "full_source_sha256": "890c328383a9acebf5557ac0d7a2afc55d8b620585e2af0065ed353036abe000",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-keepalive_user_data_stream_response.txt",
+      "retained_sha256": "890c328383a9acebf5557ac0d7a2afc55d8b620585e2af0065ed353036abe000",
+      "start_line": 1,
+      "end_line": 101
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/deposit_history_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/deposit_history_response.py#L1",
+      "full_source_sha256": "b051d7bb02808b4250072f515af61d1b74d15dd6b94eda87fcfd36734aa9158d",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-deposit_history_response.txt",
+      "retained_sha256": "b051d7bb02808b4250072f515af61d1b74d15dd6b94eda87fcfd36734aa9158d",
+      "start_line": 1,
+      "end_line": 80
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/withdraw_history_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/withdraw_history_response.py#L1",
+      "full_source_sha256": "288ebbca7653b103211eaf8f2ede4edec4418a3af7741a27d23707fa81b7a903",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-withdraw_history_response.txt",
+      "retained_sha256": "288ebbca7653b103211eaf8f2ede4edec4418a3af7741a27d23707fa81b7a903",
+      "start_line": 1,
+      "end_line": 80
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/funding_wallet_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/funding_wallet_response.py#L1",
+      "full_source_sha256": "bb92c121174b622765217a72fb2ee8f01d4c7f409ffcf6664785893871effa8b",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-funding_wallet_response.txt",
+      "retained_sha256": "bb92c121174b622765217a72fb2ee8f01d4c7f409ffcf6664785893871effa8b",
+      "start_line": 1,
+      "end_line": 80
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response.py#L1",
+      "full_source_sha256": "4207db75e9fa434ab8c7c621ec1afe8c5f0869923a5cd72de0addb9cca14c1ab",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-query_user_wallet_balance_response.txt",
+      "retained_sha256": "4207db75e9fa434ab8c7c621ec1afe8c5f0869923a5cd72de0addb9cca14c1ab",
+      "start_line": 1,
+      "end_line": 80
+    },
+    {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response_inner_asset_balances_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response_inner_asset_balances_inner.py#L1",
+      "full_source_sha256": "b9cbe07e22294dc0b87c617d77812df76e3774781479d2d274463b35ccd7a795",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-query_user_wallet_balance_response_inner_asset_balances_inner.txt",
+      "retained_sha256": "b9cbe07e22294dc0b87c617d77812df76e3774781479d2d274463b35ccd7a795",
+      "start_line": 1,
+      "end_line": 125
+    },
+    {
+      "path": "clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response_commission_rates.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response_commission_rates.py#L1",
+      "full_source_sha256": "54847beff922d4334a324c0dbb2717ace0a9f470c315f5ca417b8bc9e59ca175",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-get_account_response_commission_rates.txt",
+      "retained_sha256": "54847beff922d4334a324c0dbb2717ace0a9f470c315f5ca417b8bc9e59ca175",
+      "start_line": 1,
+      "end_line": 111
+    }
+  ]
+}

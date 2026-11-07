@@ -1,0 +1,47 @@
+{
+  "prepared_at_utc": "2026-11-07T03:46:33.155363+00:00",
+  "date_local": "2026-11-07",
+  "timezone": "Asia/Bangkok",
+  "project": "Bot1",
+  "repository": "hunghughun/Bot1",
+  "archive_kind": "Source and Codex local handoff; not executable installer or full chat export",
+  "start_file": "START-HERE-PC.md",
+  "agent_instructions": "AGENTS.md",
+  "continuation_prompt": "CODEX-PC-PROMPT.md",
+  "skill": ".agents/skills/binance-account-monitor/SKILL.md",
+  "baseline": {
+    "runtime_pass": 221,
+    "runtime_fail": 0,
+    "system": "Linux",
+    "python": "3.12.14",
+    "windows_python314": "NOT TESTED",
+    "evidence": "docs/test-reports/adapter-offline-tests.json"
+  },
+  "api": {
+    "sdk_commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+    "official_api_docs": "NOT VERIFIED",
+    "official_api_golden_fixtures": 0,
+    "vendor_html_pdf_count": 0,
+    "sdk_fixture_kind": "official_sdk_mock_copy; not official API example"
+  },
+  "safety": {
+    "live_readonly_enabled": false,
+    "active_allowlist": [],
+    "binance_authenticated_connection": false,
+    "telegram_real_enabled": false,
+    "credentials_included": false,
+    "financial_runtime_database_included": false
+  },
+  "git": {
+    "git_directory_included": false,
+    "working_tree_files_included": true,
+    "changes_confirmed_committed_or_pushed": false
+  },
+  "cloud_settings_migrated": false,
+  "remaining_blockers": [
+    "Official API docs and document-based Balance golden fixtures/contract tests",
+    "Actual Windows CPython3.14 execution",
+    "Actual key type and verified read-only permissions",
+    "Reviewed live credential provider, transport, TLS/clock/timeout/rate controls"
+  ]
+}

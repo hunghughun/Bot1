@@ -1,0 +1,553 @@
+{
+  "recorded_at_utc": "2026-11-06T18:44:37.053167+00:00",
+  "manifest_excludes_itself": true,
+  "deleted_files": [],
+  "modified_existing_files": 9,
+  "added_files": 81,
+  "protected_original_files_checked": 52,
+  "protected_original_changes": [],
+  "skill_and_core_unchanged": true,
+  "previous_test_bodies_unchanged": true,
+  "changes": [
+    {
+      "path": "README.md",
+      "change": "modified",
+      "before_sha256": "499a390abcff9144b418242d934eaeeff522fdda1c6d72e46352ffea22792cfc",
+      "after_sha256": "6efa2412e949638cbc4e54979e2271b0a1bdfe5f167ea4cacf24259c8f898a06"
+    },
+    {
+      "path": "docs/API-CONTRACT-MATRIX.md",
+      "change": "modified",
+      "before_sha256": "9196e8b4583a2a7717ac35e29a8c7f23e2df19db1c3fff6dca95b39cc4120ca5",
+      "after_sha256": "e3d30867c042edd2d61b7b7dcaef37d496f5873f082774e58d69d4818dc36c25"
+    },
+    {
+      "path": "docs/BINANCE-ADAPTER-READINESS.md",
+      "change": "modified",
+      "before_sha256": "e7531f2c5cde11459124ede896b05dd2c30dce5b3503a51182f9ec854a97a0fb",
+      "after_sha256": "2350e8b1bf9d07aa7e377a777a7a0c0d6262161b36cee5db40de17aa303d3053"
+    },
+    {
+      "path": "docs/MISSING-API-SOURCES.md",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "0cd14eb01c5a2c1107613be611aa42fd20b2d5171f5c06af36cbedd89d0cdfa9"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/LICENSE-MIT.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "23a262df04920660c2c43ee95cb23a1feb0fcb385c2bd6a1752be6e9241f2832"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/common-configuration.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "bf913ff1a6175fb2ef6060e8d8688af50b16b0394005ee031bb91869f5ad95bf"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/common-constants.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "bf30be97c657a9b2366ea13a923eefa8b6b5f9f7b971f4513a62f75772135248"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/common-errors.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "b445f8eec8a1630180401c5753a63892ced13ee58bd207566ce5b61c7d716983"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/common-utils.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "75dfbaf3c6b7a407263ca39c80e0b08f64c4a0ee6fb31cb6863b94c1bc6c0667"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/derivatives_trading_usds_futures-pyproject.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "69e2159790609135539fc4165610b070eecb81a15fee6ca9d196f36ef13b2c19"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/enum-income-types.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "ad344582aa0fa8cf89faf7e16aa9e8fec5d60afcf281b732404f19145402f255"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-account_information_v3.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "d8d4c78e57c381dee6052ee872a8cb07496b4765a076fab96f3b3cf0965aacf7"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-close_user_data_stream.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "a3d039daac70d9f7f86f1237b7d451e9a53704f0b70297f8b34fd499b836cd3a"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-futures_account_balance_v3.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "5267a810f60bd2b034f78947dd9f1983f1dea1fae856ee9ef97dec8c14635b5a"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-get_income_history.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "b1cb29c750556198a30ec9366f9e87b72528076c94fc7516d29c4b7bdeacdb71"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-keepalive_user_data_stream.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "da2358070be928bffb516b59fbd47fc6966c6ecda847157a056d179c6801be31"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-position_information_v3.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "52c1532e7cb63f9b7bf316758a0116804cad5961c1c4425477ca6f8b36d038d7"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-start_user_data_stream.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "139631669e205fe4a31b023a21e3cddf50462aadc7f5bc59800b666ff72b09ba"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-spot-get_account.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "1a6a7aa4b902f1b9419b5093c17286dd98d49c513f3123c2e0ba243a3bc1e61e"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-wallet-deposit_history.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "7a8784b29ddfeb38c1de9f7ee25a19e6d3eaa7865eb521c41da30e6c46034d2f"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-wallet-funding_wallet.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "ac939c0b9598fcf0712ab2b717607e2f8d35c868bd02e3ccfd27c9be76ca2842"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-wallet-query_user_universal_transfer_history.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "3a12768dca2a69ef16bfeb370f096ba623e49381661258daf9ee54eef1b9c11a"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-wallet-query_user_wallet_balance.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "d5d77ca653a8c62f7c517b2637c891e00c8a7d630909ed1d8dc19ee536df78e3"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-wallet-withdraw_history.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "c553f322c463a8cf46bd8b3e37b848eb0070e177adbc22c6084fb4a5891acdbb"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/futures-README.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "03aace07d2cd433d8f840744c5997b28c671287b4257b66bf8f9f26291c36afa"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-account_information_v3.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "e0cdd3be7df16658208e7af53ee9b8b52993ffd55b33ceccaa77e596b4f5c990"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-close_user_data_stream.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "0673a6bb68067d330f88d5a4178177c5417267550b772fc91de9cf806864080b"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-deposit_history.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "960caf94875b14a462294e0ac074c8f6597098a46e65d6193884b8fc91b92e0a"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-funding_wallet.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "46fbbaae99b0ed8af39d42c754aa44326f461ca20dad43d2b23003fab3e848d3"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-futures_account_balance_v3.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "bc229dd658c2b2de5b76f856b9f279dc646e676073f5093fed946b0759545b8e"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-get_account.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "c2530c0908fd8b01ee044779c55e186890c401cccc10e20f1c80c2581e088476"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-get_income_history.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "ec7272066472b0a5f28f6cf2627af97d710a64f75ebcf55c87e50200721d905e"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-keepalive_user_data_stream.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "4b8eb396165ee6ea312f1d5ec4757d0b080a8a6ad3478db5f3c9c34d703a97e3"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-position_information_v3.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "978b65aa5a7ed8727c57a88bacc4b6560a0fea3d1baf168a899b4ffcad13e66d"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-query_user_universal_transfer_history.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "b792ad74e124e491da3d315e27aeeff984b7bbac4088b6c612f18d859f45ad5d"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-query_user_wallet_balance.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "f9194b16ea8183ec070e173e0f57d55e4075d1a073d696639896e72c182bcb8d"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-start_user_data_stream.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "43c32878941ae6f9590a5a84e81002dc93152e9655b602a99470bc0c533eb3c0"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-withdraw_history.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "7a721d9d7ce2d4ffb2b79254364f4b4af0d2dd68bcdaa85c18d1851d5c191f88"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/methods.json",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "6e73beb1f103935e7afd4ffe153d2f0fe61a1828df84a1bd45a43aeaf02c41d5"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_information_v3_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "6fd0db70ec6411c327b43f0e1b841484e0485f8bf0408cb7abfe2e8c7be75b49"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_information_v3_response_assets_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "af03494e481ca64cb3f0014e0d853347862bd6d714dcea8705767d46ced7efac"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_information_v3_response_positions_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "5152e6ccdbb1da9334518c610b2103239a30703c1d9ad48c064d2efd8a1dabb2"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_update.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "5a7c7cd87f1a582d2daef0767b56b369731cfbf26c049eb6838b9b74044cab9a"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_update_a.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "aa606e16bc4ccec54ea14486e0ff5fb3cf81f448d2df3e1dc07b0de0ce0421c7"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_update_ab_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "5364197d714687cbac0c36afbc6ecadd92e75f0d81944f983f478b404caeb8e1"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_update_ap_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "4a71b3392d7d5c51f38c6239fcf5aaf35e3f39ba75bcc6535af6c8b486636d6e"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-deposit_history_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "b051d7bb02808b4250072f515af61d1b74d15dd6b94eda87fcfd36734aa9158d"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-deposit_history_response_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "5a24229215e96025774fb5f777f2a59ae2144a6447554377087a2bfd81e70ba9"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-fields.json",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "b064f7ba12f7ae5d373b4e85111e7273ef91cf0aa26d6cb1a2ade13471aa79ed"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-funding_wallet_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "bb92c121174b622765217a72fb2ee8f01d4c7f409ffcf6664785893871effa8b"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-funding_wallet_response_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "b844d6f3cc50bbcb3748d46a23bd3d67f909a74ba42632391d2384db7c909764"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v2_response_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "dc0fe878edc86d767e7da8672de703778cbb25e41db6dbd5bbe7300e46feb60b"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v3_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "ab92152d96fbcc99cdb4e227d8375fcf48f102d8c4f701d64b4c9e8603b3efc8"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-get_account_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "f4e40ab8e5177a106cbc2cb294692a1d599d1de3db84e4000880474aabdab676"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-get_account_response_balances_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "b0f9c4db2d29f44cbcbcbb35de3c7dc5f2b8741de4cd388733ac0ab847ef3f19"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-get_account_response_commission_rates.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "54847beff922d4334a324c0dbb2717ace0a9f470c315f5ca417b8bc9e59ca175"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-get_income_history_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "2550746d81cc6f07d0e99ac402402834deb98dda767d55f5c13b7e7c78d47708"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-get_income_history_response_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "9ea5afea57119b0045ed951de538c431b427f12379d45f07c520db1e307c8431"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-keepalive_user_data_stream_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "890c328383a9acebf5557ac0d7a2afc55d8b620585e2af0065ed353036abe000"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-order_trade_update.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "bf881e86164a13672dc5148446c007e8fc2d98f21e408b95bba52dbf0ae4a8db"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-order_trade_update_o.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "d8894d5000d9ee6ac1cecbbc823fd25834c6b8ad02c52e2f6b0f36fc08f781d7"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-position_information_v3_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "d5327032dce3c1f26f77775ba57480282eaaf523c00e563c84a04cd7533e9a31"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-position_information_v3_response_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "0e54bfa5c4dcaa61b7aa5c80dfc6b977bd2f4f82459d96cb0004202ebe9e3980"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-query_user_universal_transfer_history_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "9dfd460d937ef320ce246974c2bd8634d49ca2fa69c5667b354657d3738ce08d"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-query_user_universal_transfer_history_response_rows_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "7072d03977edb5b93c59c5b5e3f21da318dfe8c5f695a09b75e9f7c0fc8a3dc3"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-query_user_wallet_balance_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "4207db75e9fa434ab8c7c621ec1afe8c5f0869923a5cd72de0addb9cca14c1ab"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-query_user_wallet_balance_response_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "562acbccad680645b7512402e2b42755a86f5f5f4c9e21e5b33a2c65aa732037"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-query_user_wallet_balance_response_inner_asset_balances_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "b9cbe07e22294dc0b87c617d77812df76e3774781479d2d274463b35ccd7a795"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-start_user_data_stream_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "8a055d7a2e9f3ddcdd8af995bcd4730cd8b9f0218d522b891e88c8df9d0521c5"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-user_data_stream_events_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "2eba510e32a32ff6169c48e631d07b23f20c05b0e403a44eeefbbbfaddae50ea"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-withdraw_history_response.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "288ebbca7653b103211eaf8f2ede4edec4418a3af7741a27d23707fa81b7a903"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-withdraw_history_response_inner.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "d98c3503ff255ecc70d948c77853b99da0eb14b51a81ec81da2f7d1c185dc893"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/sdk-test-balance-v3.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "60457b094d830ab0ea00be657d20413686850cc73bba9e0cb6f67a12db6f8762"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/source-manifest.json",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "f9503bdf384924e8d80d6a48277dd750943269ad9149c4d9cf38ce24bff13b71"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/spot-pyproject.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "23cfeb40fdbae1adc37366cf310df280db833ac277bb2dd7623c7d66847ecd09"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/wallet-pyproject.txt",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "44456153dfcd7f76b7f301f7cfd01e091dcc82bada811471f095d7718bb8b1d5"
+    },
+    {
+      "path": "docs/test-reports/adapter-offline-tests.json",
+      "change": "modified",
+      "before_sha256": "483bda8e997e2ebdf1707a650fcffd864ff16f4ed276b40d16b96b9b1dd05929",
+      "after_sha256": "8ca60d376a9a6edfcb86ee552e022e80de14f4bbcf2739da4399b8b26a80cac7"
+    },
+    {
+      "path": "docs/test-reports/adapter-offline-tests.log",
+      "change": "modified",
+      "before_sha256": "a3b483b3ab55c7d5a8a8d1108b7837c9733d6658ed40b5d0e2958dcfb80540a6",
+      "after_sha256": "b9a00259cc5df24b0b6cba0852175e861e068e8232bdb4adc9522145ca9766b4"
+    },
+    {
+      "path": "docs/test-reports/api-contract-matrix.json",
+      "change": "modified",
+      "before_sha256": "3d1093bc638fa3eb8d37c4841b1b1e62b427551362e051e734c5edca8b6a4b96",
+      "after_sha256": "e1dcfbb4c5948508634509dcf3291ba80e66316444e1bbdc73594102fff59cf4"
+    },
+    {
+      "path": "docs/test-reports/balance-test-development-notes.json",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "afbae55aa24285eff3f8be22e582b465633e807c17d5b4fc868678b2df99c479"
+    },
+    {
+      "path": "docs/test-reports/balance-trial-plan.json",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "639c9c414bc2b36433075fc94f7fa4ff34a33c2c6098782c7cf8706a949a1add"
+    },
+    {
+      "path": "scripts/run_adapter_tests.py",
+      "change": "modified",
+      "before_sha256": "ad6f7f9af3e86ffc0c713186c398b297c73a9bcbfca035d966c643deee9428eb",
+      "after_sha256": "c7e84f09d22fb6229a77c7cc25162c8acdfaca8dc1d5474acefbd75709b77b54"
+    },
+    {
+      "path": "src/bot1/adapters/binance/balance.py",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "0538dc193b7cc325c23c87a55e532b9147cdc71397f26c4d507f26b0ca8140aa"
+    },
+    {
+      "path": "src/bot1/adapters/binance/contracts.py",
+      "change": "modified",
+      "before_sha256": "eeb13b460cc475a4f691ae28ab14ff3b4b1e9cf5b0c85155856acc73eb6ffb91",
+      "after_sha256": "a75151237bb32f43c7f95a81d6ff9a323934b1ef62293a8b299de48c47cc997f"
+    },
+    {
+      "path": "src/bot1/adapters/binance/mapper.py",
+      "change": "modified",
+      "before_sha256": "8daeed6601aa66ac6d586ec25d4bd6342aebb0a3ecead689e8162c1f90cc213f",
+      "after_sha256": "703eaee256b250c667f92d80977749698655da3294b5ac0b0a64051b238e1615"
+    },
+    {
+      "path": "src/bot1/adapters/binance/snapshot_store.py",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "c62a0bec494fc10fa404978d16c87cdfc1a72c72737b60e89820b05fa4d12752"
+    },
+    {
+      "path": "src/bot1/adapters/binance/trial.py",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "bf0201ee088f5b846cbbd38716f626bee9f1bc5a97f8cdd3dfd0ec133977eef9"
+    },
+    {
+      "path": "tests/adapter_offline/test_balance_contract.py",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "6565a6ee1ccba5daa6c69d25d443564621849edde663d145087fcc4a1a477fee"
+    },
+    {
+      "path": "tests/fixtures/binance_sdk/balance_v3_metadata.json",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "0353e1913b0591f2a874e1a3dec5713e728833ea8b7dedaeff90e16b6cebba3e"
+    },
+    {
+      "path": "tests/fixtures/binance_sdk/balance_v3_response.json",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "8308340728d96036dd921af43a27acbaeef83df4b990109f762e29143bbe9b01"
+    }
+  ]
+}

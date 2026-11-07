@@ -1,0 +1,528 @@
+{
+  "scope": "Full planned cases retain NOT TESTED when only a subset is implemented; executed subsets are independently PASS in runtime-tests.json",
+  "runtime_suite": {
+    "pass": 124,
+    "fail": 0,
+    "not_tested": 0
+  },
+  "scenario_summary": {
+    "PASS": 11,
+    "NOT TESTED": 5
+  },
+  "plan_summary": {
+    "PASS": 23,
+    "NOT TESTED": 17
+  },
+  "scenarios": [
+    {
+      "id": "S01",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_pending_completed_duplicate_stale"
+      ],
+      "scope_note": "Internal deposit lifecycle, no repeated posting/outbox"
+    },
+    {
+      "id": "S02",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_withdrawal_and_separate_fee",
+        "tests.integration.test_core.CoreTests.test_failed_cancelled_are_not_cashflow"
+      ],
+      "scope_note": "Gross20 + separate fee1 gives79; failed/cancelled have no debit"
+    },
+    {
+      "id": "S03",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_full_scenario_and_no_network",
+        "tests.integration.test_core.CoreTests.test_baseline_already_contains_old_history"
+      ],
+      "scope_note": "Deposit100 not200; snapshots/baseline do not add money twice"
+    },
+    {
+      "id": "S04",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_transfer_two_legs_rollback_and_funding"
+      ],
+      "scope_note": "Known whole transfers pass; assembling raw delayed legs not implemented"
+    },
+    {
+      "id": "S05",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_margin_unrealized_snapshot_do_not_post"
+      ],
+      "scope_note": "Margin observations pass; order NEW/fill/position mapping absent"
+    },
+    {
+      "id": "S06",
+      "status": "NOT TESTED",
+      "executed_tests": [],
+      "scope_note": "No order/fill/position projection; not represented as passing Decimal arithmetic"
+    },
+    {
+      "id": "S07",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_realized_pnl_commission_funding_exact_balance",
+        "tests.integration.test_core.CoreTests.test_cross_source_verified_correlation"
+      ],
+      "scope_note": "100+8-1-0.5=106.5; canonical fee posted once, normalized fixtures only"
+    },
+    {
+      "id": "S08",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_cross_source_verified_correlation",
+        "tests.integration.test_core.CoreTests.test_wallet_asset_account_namespaces",
+        "tests.integration.test_core.CoreTests.test_normalized_symbol_qualified_source_ids",
+        "tests.integration.test_core.CoreTests.test_same_time_amount_different_ids_are_distinct"
+      ],
+      "scope_note": "Trusted internal IDs/correlation only, not proof of live API key scope"
+    },
+    {
+      "id": "S09",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_disconnect_resume_and_gap_completion",
+        "tests.integration.test_core.CoreTests.test_missing_offset_even_net_zero_is_gap"
+      ],
+      "scope_note": "Fake disconnect/replay works; no WebSocket lifecycle, REST pages or120s transport test"
+    },
+    {
+      "id": "S10",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_notifier_retry_and_rate_limit",
+        "tests.integration.test_core.CoreTests.test_ambiguous_delivery_not_automatically_resent"
+      ],
+      "scope_note": "Fake transport failure/retry/ambiguous only, no Telegram network"
+    },
+    {
+      "id": "S11",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_invalid_types_quarantine_without_zero",
+        "tests.integration.test_recovery_edges.RecoveryEdgeTests.test_late_snapshot_does_not_replace_latest_metric"
+      ],
+      "scope_note": "Invalid internal schema/time/amount quarantine; independent metrics preserved"
+    },
+    {
+      "id": "S12",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_safety_cli.SafetyTests.test_financial_action_cli_commands_are_rejected",
+        "tests.integration.test_safety_cli.SafetyTests.test_no_network_or_credentials_dependencies_in_source"
+      ],
+      "scope_note": "Offline capability/CLI guard; not model activation or Binance permission test"
+    },
+    {
+      "id": "S13",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_real_process_exit_before_commit_and_recovery",
+        "tests.integration.test_core.CoreTests.test_fault_after_commit",
+        "tests.integration.test_core.CoreTests.test_notification_crash_after_send_is_ambiguous"
+      ],
+      "scope_note": "Real child process exit plus transaction and fake delivery faults"
+    },
+    {
+      "id": "S14",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.unit.test_numeric.NumericTests.test_reject_01",
+        "tests.unit.test_numeric.NumericTests.test_reject_02",
+        "tests.unit.test_numeric.NumericTests.test_reject_03",
+        "tests.unit.test_numeric.NumericTests.test_reject_04",
+        "tests.unit.test_numeric.NumericTests.test_reject_05",
+        "tests.unit.test_numeric.NumericTests.test_reject_06",
+        "tests.unit.test_numeric.NumericTests.test_reject_07",
+        "tests.unit.test_numeric.NumericTests.test_reject_08",
+        "tests.unit.test_numeric.NumericTests.test_reject_09"
+      ],
+      "scope_note": "Product parse() rejects nonfinite tokens, no doc checker imported"
+    },
+    {
+      "id": "S15",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.unit.test_numeric.NumericTests.test_precision_regression",
+        "tests.unit.test_numeric.NumericTests.test_context_config",
+        "tests.unit.test_numeric.NumericTests.test_difference_retains_leaf_count_and_budget"
+      ],
+      "scope_note": "Exact128 context and actual aggregate limits"
+    },
+    {
+      "id": "S16",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_snapshot_asof_late_event_reconciles_without_adjustment"
+      ],
+      "scope_note": "UNKNOWN/reconciliation works; Bot4 receiver/auth/TTL absent"
+    }
+  ],
+  "planned_cases": [
+    {
+      "id": "B1-001",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_margin_unrealized_snapshot_do_not_post"
+      ],
+      "scope_note": "Available changes do not post withdrawal"
+    },
+    {
+      "id": "B1-002",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_margin_unrealized_snapshot_do_not_post"
+      ],
+      "scope_note": "Internal reported wallet100/margin104/unrealized4 preserved; no claim of deriving Binance account modes"
+    },
+    {
+      "id": "B1-003",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_full_scenario_and_no_network"
+      ],
+      "scope_note": "Deposit100 and transfers do not duplicate capital"
+    },
+    {
+      "id": "B1-004",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_transfer_two_legs_rollback_and_funding"
+      ],
+      "scope_note": "Whole normalized transfers tested; delayed raw leg correlation absent"
+    },
+    {
+      "id": "B1-005",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_withdrawal_and_separate_fee"
+      ],
+      "scope_note": "Withdrawal fee distinct from trading commission"
+    },
+    {
+      "id": "B1-006",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_failed_cancelled_are_not_cashflow"
+      ],
+      "scope_note": "No debit on failed/cancelled internal observations"
+    },
+    {
+      "id": "B1-007",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_realized_pnl_commission_funding_exact_balance"
+      ],
+      "scope_note": "Independent expected106.5"
+    },
+    {
+      "id": "B1-008",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_signed_funding_and_non_usdt_fee"
+      ],
+      "scope_note": "Funding credit/debit and separate BNB fee"
+    },
+    {
+      "id": "B1-009",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.unit.test_numeric.NumericTests.test_reject_01",
+        "tests.unit.test_numeric.NumericTests.test_reject_02",
+        "tests.unit.test_numeric.NumericTests.test_reject_03",
+        "tests.unit.test_numeric.NumericTests.test_reject_04",
+        "tests.unit.test_numeric.NumericTests.test_reject_05",
+        "tests.unit.test_numeric.NumericTests.test_reject_06",
+        "tests.unit.test_numeric.NumericTests.test_reject_07",
+        "tests.unit.test_numeric.NumericTests.test_reject_08",
+        "tests.unit.test_numeric.NumericTests.test_reject_09",
+        "tests.unit.test_numeric.NumericTests.test_reject_10",
+        "tests.unit.test_numeric.NumericTests.test_reject_11",
+        "tests.unit.test_numeric.NumericTests.test_reject_12",
+        "tests.unit.test_numeric.NumericTests.test_reject_13",
+        "tests.unit.test_numeric.NumericTests.test_reject_14",
+        "tests.unit.test_numeric.NumericTests.test_reject_15",
+        "tests.unit.test_numeric.NumericTests.test_reject_16",
+        "tests.unit.test_numeric.NumericTests.test_reject_17",
+        "tests.unit.test_numeric.NumericTests.test_reject_18",
+        "tests.unit.test_numeric.NumericTests.test_reject_19",
+        "tests.unit.test_numeric.NumericTests.test_reject_20",
+        "tests.unit.test_numeric.NumericTests.test_reject_21",
+        "tests.unit.test_numeric.NumericTests.test_reject_22",
+        "tests.unit.test_numeric.NumericTests.test_reject_23",
+        "tests.unit.test_numeric.NumericTests.test_reject_24",
+        "tests.unit.test_numeric.NumericTests.test_reject_25",
+        "tests.unit.test_numeric.NumericTests.test_reject_26",
+        "tests.unit.test_numeric.NumericTests.test_reject_27",
+        "tests.unit.test_numeric.NumericTests.test_reject_28",
+        "tests.unit.test_numeric.NumericTests.test_reject_29",
+        "tests.unit.test_numeric.NumericTests.test_reject_30",
+        "tests.unit.test_numeric.NumericTests.test_reject_31",
+        "tests.unit.test_numeric.NumericTests.test_reject_32",
+        "tests.unit.test_numeric.NumericTests.test_reject_33",
+        "tests.unit.test_numeric.NumericTests.test_reject_34",
+        "tests.integration.test_core.CoreTests.test_invalid_types_quarantine_without_zero"
+      ],
+      "scope_note": "Validation directly on product code"
+    },
+    {
+      "id": "B1-010",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.unit.test_numeric.NumericTests.test_aggregate_limit_and_round_trip",
+        "tests.unit.test_numeric.NumericTests.test_product_96_digits",
+        "tests.unit.test_numeric.NumericTests.test_precision_regression",
+        "tests.unit.test_numeric.NumericTests.test_difference_retains_leaf_count_and_budget"
+      ],
+      "scope_note": "Mathematical N boundary, not one billion events replayed"
+    },
+    {
+      "id": "B1-011",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.unit.test_numeric.NumericTests.test_tiny_sum",
+        "tests.unit.test_numeric.NumericTests.test_display_does_not_mutate_ledger"
+      ],
+      "scope_note": "Exact tiny amounts and display isolation"
+    },
+    {
+      "id": "B1-012",
+      "status": "NOT TESTED",
+      "executed_tests": [],
+      "scope_note": "Order projection absent"
+    },
+    {
+      "id": "B1-013",
+      "status": "NOT TESTED",
+      "executed_tests": [],
+      "scope_note": "Fill/cumulative projection absent"
+    },
+    {
+      "id": "B1-014",
+      "status": "NOT TESTED",
+      "executed_tests": [],
+      "scope_note": "Position close/reversal projection absent; ledger reversal is a different feature"
+    },
+    {
+      "id": "B1-015",
+      "status": "NOT TESTED",
+      "executed_tests": [],
+      "scope_note": "Hedge position projection absent"
+    },
+    {
+      "id": "B1-016",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_cross_source_verified_correlation"
+      ],
+      "scope_note": "Fake two-source correlation with attestation and matching fingerprint"
+    },
+    {
+      "id": "B1-017",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_wallet_asset_account_namespaces",
+        "tests.integration.test_core.CoreTests.test_same_time_amount_different_ids_are_distinct",
+        "tests.integration.test_core.CoreTests.test_normalized_symbol_qualified_source_ids"
+      ],
+      "scope_note": "No amount/time-only merge"
+    },
+    {
+      "id": "B1-018",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_pending_completed_duplicate_stale"
+      ],
+      "scope_note": "Versioned lifecycle and replay"
+    },
+    {
+      "id": "B1-019",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_missing_offset_even_net_zero_is_gap"
+      ],
+      "scope_note": "No paginated REST adapter; fake offset coverage only"
+    },
+    {
+      "id": "B1-020",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_recovery_edges.RecoveryEdgeTests.test_pending_before_watermark_completed_after_restart"
+      ],
+      "scope_note": "Old pending record receives later completion at new journal cursor"
+    },
+    {
+      "id": "B1-021",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_missing_offset_even_net_zero_is_gap",
+        "tests.integration.test_core.CoreTests.test_manifest_detects_substituted_id"
+      ],
+      "scope_note": "Missing offsets and IDs detected by fake manifest"
+    },
+    {
+      "id": "B1-022",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_equal_opposite_missing_events_still_detected"
+      ],
+      "scope_note": "Missing+5/-5 despite zero residual"
+    },
+    {
+      "id": "B1-023",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_disconnect_resume_and_gap_completion"
+      ],
+      "scope_note": "Fake reconnect path tested, real stream/lifecycle and120s outage not executed"
+    },
+    {
+      "id": "B1-024",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_baseline_already_contains_old_history",
+        "tests.integration.test_core.CoreTests.test_out_of_order_history",
+        "tests.integration.test_recovery_edges.RecoveryEdgeTests.test_late_snapshot_does_not_replace_latest_metric"
+      ],
+      "scope_note": "Baseline and late events tested; no concurrent live stream bootstrap protocol"
+    },
+    {
+      "id": "B1-025",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_missing_offset_even_net_zero_is_gap"
+      ],
+      "scope_note": "Cannot certify retention behavior without an API source"
+    },
+    {
+      "id": "B1-026",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_invalid_types_quarantine_without_zero"
+      ],
+      "scope_note": "Bad internal timestamp/schema/type quarantined"
+    },
+    {
+      "id": "B1-027",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_db_lock_is_retryable_not_quarantine"
+      ],
+      "scope_note": "No Binance auth/clock/rate-limit protocol implemented"
+    },
+    {
+      "id": "B1-028",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_real_process_exit_before_commit_and_recovery",
+        "tests.integration.test_core.CoreTests.test_fault_after_event_insert",
+        "tests.integration.test_core.CoreTests.test_fault_after_ledger",
+        "tests.integration.test_core.CoreTests.test_fault_after_outbox",
+        "tests.integration.test_core.CoreTests.test_fault_before_commit",
+        "tests.integration.test_core.CoreTests.test_fault_after_commit"
+      ],
+      "scope_note": "Crash injection and actual os._exit child"
+    },
+    {
+      "id": "B1-029",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_safety_cli.SafetyTests.test_two_actual_writers",
+        "tests.integration.test_core.CoreTests.test_two_workers_cannot_claim_same_lease"
+      ],
+      "scope_note": "Concurrent SQLite writers and interleaved send lease"
+    },
+    {
+      "id": "B1-030",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_notifier_transient_retry_then_success"
+      ],
+      "scope_note": "Fake send retry"
+    },
+    {
+      "id": "B1-031",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_notification_crash_after_send_is_ambiguous",
+        "tests.integration.test_core.CoreTests.test_ambiguous_delivery_not_automatically_resent"
+      ],
+      "scope_note": "Ambiguous held, no exactly-once promise"
+    },
+    {
+      "id": "B1-032",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_core.CoreTests.test_notifier_retry_and_rate_limit",
+        "tests.integration.test_core.CoreTests.test_permanent_notification_error_dead_letter",
+        "tests.integration.test_core.CoreTests.test_notification_retry_cap"
+      ],
+      "scope_note": "Fake retry_after, dead letter and bounded attempts"
+    },
+    {
+      "id": "B1-033",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_safety_cli.SafetyTests.test_json_logger_redacts_unknown_message_and_exception",
+        "tests.integration.test_core.CoreTests.test_sensitive_unknown_fields_redacted"
+      ],
+      "scope_note": "Redaction works; no Telegram markup/message parser to test"
+    },
+    {
+      "id": "B1-034",
+      "status": "PASS",
+      "executed_tests": [
+        "tests.integration.test_safety_cli.SafetyTests.test_sqlite_error_rolls_back_and_can_replay",
+        "tests.integration.test_core.CoreTests.test_backup_restore_replay"
+      ],
+      "scope_note": "Injected SQLite OperationalError and backup/restore variant; physical disk-full not tested"
+    },
+    {
+      "id": "B1-035",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_safety_cli.SafetyTests.test_utc_gmt7_day_boundary",
+        "tests.integration.test_core.CoreTests.test_health_and_processing_lag"
+      ],
+      "scope_note": "GMT+7/lag tested; stale-source policy and independent watchdog absent"
+    },
+    {
+      "id": "B1-036",
+      "status": "NOT TESTED",
+      "executed_tests": [
+        "tests.integration.test_safety_cli.SafetyTests.test_financial_action_cli_commands_are_rejected",
+        "tests.integration.test_safety_cli.SafetyTests.test_no_network_or_credentials_dependencies_in_source"
+      ],
+      "scope_note": "Offline action guard tested; Bot4 authentication/replay TTL absent"
+    },
+    {
+      "id": "B1-037",
+      "status": "NOT TESTED",
+      "executed_tests": [],
+      "scope_note": "No Windows24h soak"
+    },
+    {
+      "id": "B1-038",
+      "status": "NOT TESTED",
+      "executed_tests": [],
+      "scope_note": "No VPS24h soak/watchdog/RPO-RTO measurement"
+    },
+    {
+      "id": "B1-039",
+      "status": "NOT TESTED",
+      "executed_tests": [],
+      "scope_note": "No live Binance requests permitted"
+    },
+    {
+      "id": "B1-040",
+      "status": "NOT TESTED",
+      "executed_tests": [],
+      "scope_note": "1000 local ingest-to-fake-ack samples executed in fake-latency.json; live Telegram/source latency and SLO not tested"
+    }
+  ]
+}

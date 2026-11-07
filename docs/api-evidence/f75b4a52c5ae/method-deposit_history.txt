@@ -1,0 +1,71 @@
+def deposit_history(
+    self,
+    include_source: Optional[bool] = None,
+    coin: Optional[str] = None,
+    status: Optional[DepositHistoryStatusEnum] = None,
+    start_time: Optional[int] = None,
+    end_time: Optional[int] = None,
+    offset: Optional[int] = None,
+    limit: Optional[int] = None,
+    recv_window: Optional[int] = None,
+    tx_id: Optional[str] = None,
+) -> ApiResponse[DepositHistoryResponse]:
+    """
+            Deposit History (supporting network) (USER_DATA)
+            GET /sapi/v1/capital/deposit/hisrec
+            https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/capital#deposit-history
+
+            Fetch deposit history.
+
+    Weight(IP): 1
+
+    Security Type: USER_DATA
+
+    Notes:
+    - Please notice the default `startTime` and `endTime` to make sure that time interval is within 0-90 days.
+    - If both `startTime` and `endTime` are sent, time between `startTime` and `endTime` must be less than 90 days.
+
+            Args:
+                include_source (Optional[bool] = None): return `sourceAddress` field when set to `true`
+                coin (Optional[str] = None):
+                status (Optional[DepositHistoryStatusEnum] = None): 0: pending, 1: success, 2: rejected, 6: credited but cannot withdraw, 7: Wrong Deposit, 8: Waiting User confirm
+                start_time (Optional[int] = None): Default: 90 days from current timestamp
+                end_time (Optional[int] = None): Default: present timestamp
+                offset (Optional[int] = None):
+                limit (Optional[int] = None):
+                recv_window (Optional[int] = None):
+                tx_id (Optional[str] = None):
+
+            Returns:
+                ApiResponse[DepositHistoryResponse]
+
+            Raises:
+                RequiredError: If a required parameter is missing.
+
+    """
+
+    request_body = {}
+    payload = {
+        "include_source": include_source,
+        "coin": coin,
+        "status": status,
+        "start_time": start_time,
+        "end_time": end_time,
+        "offset": offset,
+        "limit": limit,
+        "recv_window": recv_window,
+        "tx_id": tx_id,
+    }
+
+    return send_request(
+        self._session,
+        self._configuration,
+        method="GET",
+        path="/sapi/v1/capital/deposit/hisrec",
+        payload=payload,
+        body=request_body,
+        time_unit=self._configuration.time_unit,
+        response_model=DepositHistoryResponse,
+        is_signed=True,
+        signer=self._signer,
+    )

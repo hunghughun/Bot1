@@ -1,0 +1,23 @@
+{
+  "mode": "offline",
+  "live_readonly_enabled": false,
+  "network_enabled": false,
+  "snapshot_only": true,
+  "database": "data/experiments/balance-snapshot-only.sqlite",
+  "database_owner": "SnapshotSandbox",
+  "write_business_ledger": false,
+  "send_real_telegram": false,
+  "credential_loading_enabled": false,
+  "sdk_candidate": {
+    "method": "GET",
+    "base_url": "https://fapi.binance.com",
+    "path": "/fapi/v3/balance"
+  },
+  "active_allowlist": [],
+  "required_before_live": [
+    "API-docs/auth/permission review",
+    "read-only key permission verification without trading/transfer/withdrawal",
+    "reviewed signer/clock/rate/timeout/redirect/credential implementation",
+    "explicit approval for a separate snapshot-only trial"
+  ]
+}

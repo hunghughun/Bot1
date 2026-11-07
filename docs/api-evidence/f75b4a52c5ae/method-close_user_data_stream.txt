@@ -1,0 +1,36 @@
+def close_user_data_stream(
+    self,
+) -> ApiResponse[None]:
+    """
+            Close User Data Stream (USER_STREAM)
+            DELETE /fapi/v1/listenKey
+            https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/user-data-streams#close-user-data-stream
+
+            Close out a user data stream.
+
+    Weight(IP): 1
+
+    Security Type: USER_STREAM
+
+            Args:
+
+            Returns:
+                ApiResponse[None]
+
+            Raises:
+                RequiredError: If a required parameter is missing.
+
+    """
+
+    request_body = None
+    payload = None
+
+    return send_request(
+        self._session,
+        self._configuration,
+        method="DELETE",
+        path="/fapi/v1/listenKey",
+        payload=payload,
+        body=request_body,
+        time_unit=self._configuration.time_unit,
+    )

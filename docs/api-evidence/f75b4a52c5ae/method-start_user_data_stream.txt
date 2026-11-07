@@ -1,0 +1,40 @@
+def start_user_data_stream(
+    self,
+) -> ApiResponse[StartUserDataStreamResponse]:
+    """
+            Start User Data Stream (USER_STREAM)
+            POST /fapi/v1/listenKey
+            https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/user-data-streams#start-user-data-stream
+
+            Start a new user data stream. The stream will close after 60 minutes
+    unless a keepalive is sent. If the account has an active `listenKey`,
+    that `listenKey` will be returned and its validity will be extended for
+    60 minutes.
+
+    Weight(IP): 1
+
+    Security Type: USER_STREAM
+
+            Args:
+
+            Returns:
+                ApiResponse[StartUserDataStreamResponse]
+
+            Raises:
+                RequiredError: If a required parameter is missing.
+
+    """
+
+    request_body = None
+    payload = None
+
+    return send_request(
+        self._session,
+        self._configuration,
+        method="POST",
+        path="/fapi/v1/listenKey",
+        payload=payload,
+        body=request_body,
+        time_unit=self._configuration.time_unit,
+        response_model=StartUserDataStreamResponse,
+    )

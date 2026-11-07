@@ -1,0 +1,52 @@
+def funding_wallet(
+    self,
+    asset: Optional[str] = None,
+    need_btc_valuation: Optional[bool] = None,
+    recv_window: Optional[int] = None,
+) -> ApiResponse[FundingWalletResponse]:
+    """
+            Funding Wallet (USER_DATA)
+            POST /sapi/v1/asset/get-funding-asset
+            https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/asset#funding-wallet
+
+            Query Funding Wallet
+
+    Weight(IP): 1
+
+    Security Type: USER_DATA
+
+    Notes:
+    - Currently supports querying the following business assets：Binance Pay, Binance Card, Binance Gift Card, Stock Token
+
+            Args:
+                asset (Optional[str] = None):
+                need_btc_valuation (Optional[bool] = None):
+                recv_window (Optional[int] = None):
+
+            Returns:
+                ApiResponse[FundingWalletResponse]
+
+            Raises:
+                RequiredError: If a required parameter is missing.
+
+    """
+
+    request_body = {}
+    payload = {
+        "asset": asset,
+        "need_btc_valuation": need_btc_valuation,
+        "recv_window": recv_window,
+    }
+
+    return send_request(
+        self._session,
+        self._configuration,
+        method="POST",
+        path="/sapi/v1/asset/get-funding-asset",
+        payload=payload,
+        body=request_body,
+        time_unit=self._configuration.time_unit,
+        response_model=FundingWalletResponse,
+        is_signed=True,
+        signer=self._signer,
+    )

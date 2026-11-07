@@ -1,0 +1,99 @@
+{
+  "recorded_at_utc": "2026-11-06T19:20:17.826646+00:00",
+  "user_date": "2026-11-07",
+  "timezone": "Asia/Bangkok",
+  "scope": "Balance smoke preparation and missing official docs; baseline is previous192-test state",
+  "manifest_excludes_itself": true,
+  "added_files": 7,
+  "modified_files": 7,
+  "deleted_files": [],
+  "protected_original_files_checked": 132,
+  "protected_original_changes": [],
+  "skill_core_mapper_and_previous192_tests_unchanged": true,
+  "changes": [
+    {
+      "path": "README.md",
+      "change": "modified",
+      "before_sha256": "6efa2412e949638cbc4e54979e2271b0a1bdfe5f167ea4cacf24259c8f898a06",
+      "after_sha256": "6f5064fef74495764df02d387d9044aaea820bd10be96f28a7a2740d4b7a3bad"
+    },
+    {
+      "path": "docs/API-CONTRACT-MATRIX.md",
+      "change": "modified",
+      "before_sha256": "e3d30867c042edd2d61b7b7dcaef37d496f5873f082774e58d69d4818dc36c25",
+      "after_sha256": "aaac00fe152c361ad622d64e52c41ffcc402806d177c676329d8f4f08dedcbbd"
+    },
+    {
+      "path": "docs/BALANCE-SMOKE-TEST.md",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "30c2d4398ced55dd3812e9cd4a7677325296af96124522cf1b03ecc5fc307961"
+    },
+    {
+      "path": "docs/BINANCE-ADAPTER-READINESS.md",
+      "change": "modified",
+      "before_sha256": "2350e8b1bf9d07aa7e377a777a7a0c0d6262161b36cee5db40de17aa303d3053",
+      "after_sha256": "2e09e2c8d5d7cc04a3fefbd04b64c5cbeb677562d212ca77ce8c55e6875b0af3"
+    },
+    {
+      "path": "docs/test-reports/adapter-offline-tests.json",
+      "change": "modified",
+      "before_sha256": "8ca60d376a9a6edfcb86ee552e022e80de14f4bbcf2739da4399b8b26a80cac7",
+      "after_sha256": "3fb5f96a5e5a469f8960c3a55da5710533c1a674843017290de192bf3f537250"
+    },
+    {
+      "path": "docs/test-reports/adapter-offline-tests.log",
+      "change": "modified",
+      "before_sha256": "b9a00259cc5df24b0b6cba0852175e861e068e8232bdb4adc9522145ca9766b4",
+      "after_sha256": "c26732f7e575830ff7e2de0296943c37d926ea5f873854560130583e0884b536"
+    },
+    {
+      "path": "docs/test-reports/api-contract-matrix.json",
+      "change": "modified",
+      "before_sha256": "e1dcfbb4c5948508634509dcf3291ba80e66316444e1bbdc73594102fff59cf4",
+      "after_sha256": "b410a9496dc0cdd2c03680b1ce0ad6c7e105977d55f47554fb2cafe4d668c0f9"
+    },
+    {
+      "path": "docs/test-reports/balance-official-doc-review.json",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "cd2a5d01becfb58e7d633e0b98cb9d4ce986761f2c0a4959030b4a3bfc0836c6"
+    },
+    {
+      "path": "docs/test-reports/balance-smoke-windows314.json",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "72d4110c1d4c5e6eb1231ee0a158c36d4911c1002832a6ec706ea1da3a382b62"
+    },
+    {
+      "path": "docs/vendor/binance/README.md",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "574e27303e9069540cc1dc759fa5eb8fbf15c998a739481cbfe87e781fb25bc7"
+    },
+    {
+      "path": "scripts/balance-smoke-test.py",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "5f53c590dcdec79e464ba59a41ee4346d94787e13187e0e4d03457b6458e191e"
+    },
+    {
+      "path": "scripts/run_adapter_tests.py",
+      "change": "modified",
+      "before_sha256": "c7e84f09d22fb6229a77c7cc25162c8acdfaca8dc1d5474acefbd75709b77b54",
+      "after_sha256": "2baffedd4d96cf6d7b6d973ba90108b1a9fb31318e509726d0125a9c4b2c8e73"
+    },
+    {
+      "path": "src/bot1/adapters/binance/smoke.py",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "adb679fa72f406c332bb467bb7853d6051aa19a2ab813c39d1b4e7f6afa1dcae"
+    },
+    {
+      "path": "tests/adapter_offline/test_balance_smoke.py",
+      "change": "added",
+      "before_sha256": null,
+      "after_sha256": "771135af8dc7d9ea180350cc2345d91c4b88c08d3c363037556da43d8cab4454"
+    }
+  ]
+}

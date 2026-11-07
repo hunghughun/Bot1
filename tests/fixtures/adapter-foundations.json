@@ -1,0 +1,9 @@
+{
+  "provenance": "synthetic JSON syntax fixtures, NOT Binance responses",
+  "binance_schema_verified": false,
+  "samples": [
+    {"wire": "{\"sample_decimal\":1.000000000000000001}", "expected_lexeme": "1.000000000000000001"},
+    {"wire": "{\"sample_decimal\":1e-18}", "expected_lexeme": "1e-18"},
+    {"wire": "{\"sample_decimal\":-0}", "expected_lexeme": "-0"}
+  ]
+}

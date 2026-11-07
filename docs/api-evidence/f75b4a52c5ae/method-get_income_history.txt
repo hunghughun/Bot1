@@ -1,0 +1,64 @@
+def get_income_history(
+    self,
+    symbol: Optional[str] = None,
+    income_type: Optional[GetIncomeHistoryIncomeTypeEnum] = None,
+    start_time: Optional[int] = None,
+    end_time: Optional[int] = None,
+    limit: Optional[int] = None,
+    recv_window: Optional[int] = None,
+) -> ApiResponse[GetIncomeHistoryResponse]:
+    """
+            Get Income History (USER_DATA)
+            GET /fapi/v1/income
+            https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/account#get-income-history
+
+            Query income history
+
+    Weight(IP): 30
+
+    Security Type: USER_DATA
+
+    Notes:
+    - If `incomeType ` is not sent, all kinds of flow will be returned
+    - If `startTime` and `endTime` are not sent, the recent 7-day data will be returned.
+    - `trandId` is unique in the same `incomeType` for a user.
+    - Income history only contains data for the last three months.
+
+            Args:
+                symbol (Optional[str] = None): Trading symbol.
+                income_type (Optional[GetIncomeHistoryIncomeTypeEnum] = None): Income type.
+                start_time (Optional[int] = None): Timestamp in milliseconds (inclusive start).
+                end_time (Optional[int] = None): Timestamp in milliseconds (inclusive end).
+                limit (Optional[int] = None): Maximum number of records to return.
+                recv_window (Optional[int] = None):
+
+            Returns:
+                ApiResponse[GetIncomeHistoryResponse]
+
+            Raises:
+                RequiredError: If a required parameter is missing.
+
+    """
+
+    request_body = {}
+    payload = {
+        "symbol": symbol,
+        "income_type": income_type,
+        "start_time": start_time,
+        "end_time": end_time,
+        "limit": limit,
+        "recv_window": recv_window,
+    }
+
+    return send_request(
+        self._session,
+        self._configuration,
+        method="GET",
+        path="/fapi/v1/income",
+        payload=payload,
+        body=request_body,
+        time_unit=self._configuration.time_unit,
+        response_model=GetIncomeHistoryResponse,
+        is_signed=True,
+        signer=self._signer,
+    )

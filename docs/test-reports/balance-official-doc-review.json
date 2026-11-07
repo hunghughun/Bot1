@@ -1,0 +1,172 @@
+{
+  "reviewed_at_utc": "2026-11-06T19:17:39.927991+00:00",
+  "user_date": "2026-11-07",
+  "user_timezone": "Asia/Bangkok",
+  "scope": "Futures Account Balance V3 only; no re-review of other APIs",
+  "official_url": "https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/account#futures-account-balance-v3",
+  "official_docs_status": "NOT VERIFIED",
+  "official_document_comparison_executed": false,
+  "network_policy": {
+    "mode": "restricted",
+    "state": "enforced",
+    "developers_host_allowed": false,
+    "changed_since_previous_denial": false
+  },
+  "network_docs_request_attempted_this_stage": false,
+  "previous_proxy_evidence": {
+    "path": "docs/test-reports/adapter-doc-access.json",
+    "sha256": "eebdf689c589db6e0d4bcc48920e2b235e86d6bd49319c1157346d0b5a3e7595",
+    "result": "CONNECT403 before target content; not Binance auth403"
+  },
+  "vendor_directory_present_at_start": false,
+  "vendor_directory_now_present": true,
+  "vendor_documents": [],
+  "vendor_readme_is_api_evidence": false,
+  "source_blocker": "Official HTML/PDF absent; unchanged destination restriction; no repeated/bypass network request",
+  "sdk_commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+  "sdk_only_comparisons": [
+    {
+      "item": "method/path",
+      "sdk_observation": "GET /fapi/v3/balance",
+      "sdk_evidence": "docs/api-evidence/f75b4a52c5ae/method-futures_account_balance_v3.txt",
+      "sdk_sha256": "bc229dd658c2b2de5b76f856b9f279dc646e676073f5093fed946b0759545b8e",
+      "official_api_docs_status": "NOT VERIFIED"
+    },
+    {
+      "item": "base_url",
+      "sdk_observation": "https://fapi.binance.com",
+      "sdk_evidence": "docs/api-evidence/f75b4a52c5ae/common-constants.txt",
+      "sdk_sha256": "bf30be97c657a9b2366ea13a923eefa8b6b5f9f7b971f4513a62f75772135248",
+      "official_api_docs_status": "NOT VERIFIED"
+    },
+    {
+      "item": "security/signing",
+      "sdk_observation": "USER_DATA; is_signed=True; timestamp/signature and HMAC/private-key branches in common-utils",
+      "sdk_evidence": "docs/api-evidence/f75b4a52c5ae/common-utils.txt",
+      "sdk_sha256": "75dfbaf3c6b7a407263ca39c80e0b08f64c4a0ee6fb31cb6863b94c1bc6c0667",
+      "official_api_docs_status": "NOT VERIFIED"
+    },
+    {
+      "item": "headers",
+      "sdk_observation": "X-MBX-APIKEY; time-unit optional in SDK; live ms profile not reviewed",
+      "sdk_evidence": "docs/api-evidence/f75b4a52c5ae/common-configuration.txt",
+      "sdk_sha256": "bf913ff1a6175fb2ef6060e8d8688af50b16b0394005ee031bb91869f5ad95bf",
+      "official_api_docs_status": "NOT VERIFIED"
+    },
+    {
+      "item": "request_parameters",
+      "sdk_observation": "recv_window Optional[int]; wire recvWindow; common timestamp/signature. Endpoint bounds NOT VERIFIED.",
+      "sdk_evidence": "docs/api-evidence/f75b4a52c5ae/method-futures_account_balance_v3.txt",
+      "sdk_sha256": "bc229dd658c2b2de5b76f856b9f279dc646e676073f5093fed946b0759545b8e",
+      "official_api_docs_status": "NOT VERIFIED"
+    },
+    {
+      "item": "request_weight",
+      "sdk_observation": "IP 5 per SDK docstring; server quota/reset NOT VERIFIED",
+      "sdk_evidence": "docs/api-evidence/f75b4a52c5ae/method-futures_account_balance_v3.txt",
+      "sdk_sha256": "bc229dd658c2b2de5b76f856b9f279dc646e676073f5093fed946b0759545b8e",
+      "official_api_docs_status": "NOT VERIFIED"
+    },
+    {
+      "item": "response_container",
+      "sdk_observation": "array, V3 inherits V2 inner; is_array=True",
+      "sdk_evidence": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v3_response.txt",
+      "sdk_sha256": "ab92152d96fbcc99cdb4e227d8375fcf48f102d8c4f701d64b4c9e8603b3efc8",
+      "official_api_docs_status": "NOT VERIFIED"
+    },
+    {
+      "item": "asset/accountAlias",
+      "sdk_observation": "Optional StrictStr; alias binding required locally",
+      "sdk_evidence": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v2_response_inner.txt",
+      "sdk_sha256": "dc0fe878edc86d767e7da8672de703778cbb25e41db6dbd5bbe7300e46feb60b",
+      "official_api_docs_status": "NOT VERIFIED"
+    },
+    {
+      "item": "financial_fields",
+      "sdk_observation": "balance, availableBalance, crossWalletBalance, crossUnPnl, maxWithdrawAmount: Optional StrictStr",
+      "sdk_evidence": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v2_response_inner.txt",
+      "sdk_sha256": "dc0fe878edc86d767e7da8672de703778cbb25e41db6dbd5bbe7300e46feb60b",
+      "official_api_docs_status": "NOT VERIFIED"
+    },
+    {
+      "item": "marginAvailable",
+      "sdk_observation": "Optional StrictBool",
+      "sdk_evidence": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v2_response_inner.txt",
+      "sdk_sha256": "dc0fe878edc86d767e7da8672de703778cbb25e41db6dbd5bbe7300e46feb60b",
+      "official_api_docs_status": "NOT VERIFIED"
+    },
+    {
+      "item": "updateTime",
+      "sdk_observation": "Optional StrictInt, last update ms per model description",
+      "sdk_evidence": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v2_response_inner.txt",
+      "sdk_sha256": "dc0fe878edc86d767e7da8672de703778cbb25e41db6dbd5bbe7300e46feb60b",
+      "official_api_docs_status": "NOT VERIFIED"
+    },
+    {
+      "item": "errors/retry",
+      "sdk_observation": "SDK common HTTP400/401/403/404/418/429/5xx; live codes/quota headers/timeout rules NOT VERIFIED",
+      "sdk_evidence": "docs/api-evidence/f75b4a52c5ae/common-utils.txt",
+      "sdk_sha256": "75dfbaf3c6b7a407263ca39c80e0b08f64c4a0ee6fb31cb6863b94c1bc6c0667",
+      "official_api_docs_status": "NOT VERIFIED"
+    }
+  ],
+  "official_doc_mapper_differences": {
+    "status": "NOT VERIFIED",
+    "reason": "No official document to compare. No differences invented; mapper unchanged."
+  },
+  "local_stricter_policies": [
+    "mapper requires 5 fields despite SDK Optional annotations",
+    "smoke requires all9 fields non-null to report complete inspection",
+    "reject unknown fields, duplicates, empty array, timestamp0/future and unsupported assets",
+    "NUMERIC-1 bounds are local, not Binance-declared maxima",
+    "candidate recvWindow1..5000ms, timeout1..30000ms and body1MiB are local policies, not verified Binance limits"
+  ],
+  "golden_fixtures": {
+    "sdk_mock_copy": "tests/fixtures/binance_sdk/balance_v3_response.json",
+    "official_api_examples": [],
+    "official_api_contract_tests_executed": 0,
+    "status": "NOT VERIFIED",
+    "reason": "Cannot derive an official API golden fixture without supplied or retrieved official API document"
+  },
+  "signing": {
+    "sdk_candidate": "HMAC-SHA256 hex, recvWindow/timestamp query; key header; synthetic only",
+    "independent_oracle": "OpenSSL dgst SHA256 HMAC over public synthetic bytes; positive test hardcodes result",
+    "official_api_compatibility": "NOT VERIFIED",
+    "actual_key_type": "NOT VERIFIED",
+    "rsa_ed25519": "Unsupported; no fallback"
+  },
+  "smoke": {
+    "command": "scripts/balance-smoke-test.py",
+    "offline_preparation": "PASS",
+    "candidate_route": [
+      "GET",
+      "https://fapi.binance.com",
+      "/fapi/v3/balance"
+    ],
+    "live_client_implemented": false,
+    "credential_loader_implemented": false,
+    "max_attempts_per_offline_harness": 1,
+    "fake_timeout_and_error_stop_tested": true,
+    "live_timeout_rate_limit_and_key_scopes": "NOT VERIFIED",
+    "operator_confirmation_required": true,
+    "confirmation_cannot_override_doc_gate": true,
+    "active_allowlist": [],
+    "network_executed": false,
+    "telegram_enabled": false,
+    "ledger_writes_enabled": false
+  },
+  "windows_python314": {
+    "status": "NOT TESTED",
+    "evidence": "docs/test-reports/balance-smoke-windows314.json",
+    "reason": "Linux/Python3.12.14 only; python3.14, pwsh, powershell unavailable"
+  },
+  "conclusion": "LIVE_BLOCKED; do not recommend a real-key query until mandatory conditions verified",
+  "required_manual_documents": "docs/vendor/binance/README.md",
+  "mandatory_blockers": [
+    "official Balance/base/auth/signing/parameters/limits/error documents",
+    "official API golden fixture and positive/negative document-based tests",
+    "granular read-only key permission verification and actual key type",
+    "reviewed live credential provider/transport/TLS/redirect/clock/timeout/rate implementation",
+    "Windows/Python3.14 execution evidence"
+  ]
+}

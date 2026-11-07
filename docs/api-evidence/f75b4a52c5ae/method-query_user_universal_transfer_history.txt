@@ -1,0 +1,75 @@
+def query_user_universal_transfer_history(
+    self,
+    type: Union[str, None],
+    start_time: Optional[int] = None,
+    end_time: Optional[int] = None,
+    current: Optional[int] = None,
+    size: Optional[int] = None,
+    from_symbol: Optional[QueryUserUniversalTransferHistoryFromSymbolEnum] = None,
+    to_symbol: Optional[QueryUserUniversalTransferHistoryToSymbolEnum] = None,
+    recv_window: Optional[int] = None,
+) -> ApiResponse[QueryUserUniversalTransferHistoryResponse]:
+    """
+            Query User Universal Transfer History (USER_DATA)
+            GET /sapi/v1/asset/transfer
+            https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/asset#query-user-universal-transfer-history
+
+            Query User Universal Transfer History
+
+    Weight(IP): 1
+
+    Security Type: USER_DATA
+
+    Notes:
+    - `fromSymbol` must be sent when type are ISOLATEDMARGIN_MARGIN and ISOLATEDMARGIN_ISOLATEDMARGIN
+    - `toSymbol` must be sent when type are MARGIN_ISOLATEDMARGIN and ISOLATEDMARGIN_ISOLATEDMARGIN
+    - Support query within the last 6 months only
+    - If `startTime`and `endTime` not sent, return records of the last 7 days by default
+
+            Args:
+                type (Union[str, None]):
+                start_time (Optional[int] = None):
+                end_time (Optional[int] = None):
+                current (Optional[int] = None):
+                size (Optional[int] = None):
+                from_symbol (Optional[QueryUserUniversalTransferHistoryFromSymbolEnum] = None):
+                to_symbol (Optional[QueryUserUniversalTransferHistoryToSymbolEnum] = None):
+                recv_window (Optional[int] = None):
+
+            Returns:
+                ApiResponse[QueryUserUniversalTransferHistoryResponse]
+
+            Raises:
+                RequiredError: If a required parameter is missing.
+
+    """
+
+    if type is None:
+        raise RequiredError(
+            field="type", error_message="Missing required parameter 'type'"
+        )
+
+    request_body = {}
+    payload = {
+        "type": type,
+        "start_time": start_time,
+        "end_time": end_time,
+        "current": current,
+        "size": size,
+        "from_symbol": from_symbol,
+        "to_symbol": to_symbol,
+        "recv_window": recv_window,
+    }
+
+    return send_request(
+        self._session,
+        self._configuration,
+        method="GET",
+        path="/sapi/v1/asset/transfer",
+        payload=payload,
+        body=request_body,
+        time_unit=self._configuration.time_unit,
+        response_model=QueryUserUniversalTransferHistoryResponse,
+        is_signed=True,
+        signer=self._signer,
+    )

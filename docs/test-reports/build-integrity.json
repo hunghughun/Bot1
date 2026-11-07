@@ -1,0 +1,221 @@
+{
+  "scope": "offline core build; original Skill and audit files preserved",
+  "original_files_unchanged": 22,
+  "original_sha256": {
+    "docs/skill-audit/SCENARIOS.md": "72f49feb8dd06265c7015e6341bcdd7237aad4f6e13f06baa5fc5783d4b0fe74",
+    "docs/skill-audit/RETEST-V2.md": "79df0c086ac3a0b60b727cd3134e8ae3241e4179f5c6dac49296364f797777cd",
+    "docs/skill-audit/SCENARIOS-V2.md": "0db928d05a3460118070a907693b75e393aa92af7700f0c3de08e930bce92b99",
+    "docs/skill-audit/TEST-PLAN.md": "a7cf2239da906d91fe4290d3a99f6a1e9820752af9f9b32de721065b397fabb9",
+    "docs/skill-audit/REPORT.md": "3cc6a4ed6f32afeae0220aa76f855e8cea6aec6cad396328bc92264ae99ba29b",
+    "docs/skill-audit/numeric-results-v2.json": "21c861f3c01929f2348c5ac7fcc49fa5370415f5f63ee8cd9e6b531a019946e4",
+    "docs/skill-audit/evidence.json": "7ad02cdf9f272ef8bc00e1166e192902634af063f9b31be96aa1b1d008724e1f",
+    "docs/skill-audit/verification-v2.json": "c17f9e91881a56b489a34a7d132dafabaa6d8345a3e5a131b4076f1a0a5e2343",
+    "docs/skill-audit/READINESS-V3.md": "f0962d1adcd13885930b4ad0d1c541d378b02399a19fff0df23f242ca6cf216a",
+    "docs/skill-audit/v3-evidence/integrity.json": "c587ed87c7e68cfaf2a16dae731bcd54aac07603dc69e36314e2f226661f07ac",
+    "docs/skill-audit/v3-evidence/execution.json": "83951cd6a540d679384e416cc428e4badbe2a8f8aae1ef9078eb87869ea08ed1",
+    "docs/skill-audit/v3-evidence/api-matrix.json": "5be27e7fae1e2a3b14b193869bec2b9b211b0c7ca736b8064fcad1a051550a5a",
+    "docs/skill-audit/checks/check_numeric_policy.py": "3a65ae9f7e578426f68e76bcdbe7b610af8223c78a0b2c840a4ebafe0b5d442f",
+    ".agents/skills/binance-account-monitor/SKILL.md": "ef7087b1344cb3914979b88aac5206514d96816b80dbd7ad76bb22ea79c56157",
+    ".agents/skills/binance-account-monitor/references/account-events.md": "75e591d1d88728e8009f9d078bc740d9154e4d075d47544f9353c86ad5ad7eba",
+    ".agents/skills/binance-account-monitor/references/websocket-recovery.md": "3856988ac63459b7e9cb49a9cf62adfa09e382e1bb4df89c8c84a6e373cd871a",
+    ".agents/skills/binance-account-monitor/references/security-rules.md": "399c450684bce1282ba0aee6958edbd3ab9afb0034330bba97dfc51a564b8be3",
+    ".agents/skills/binance-account-monitor/references/binance-api.md": "28b798bea6b28219531dc832647e3c2596f6de189b8c60d61f79b91f3b64dc3c",
+    ".agents/skills/binance-account-monitor/references/financial-arithmetic.md": "b5ce6a7d74c0aea8f90daa8a808fbaeca49caa7a8b9f7faeb17c9bc5bb0c36a0",
+    ".agents/skills/binance-account-monitor/references/telegram-notifications.md": "b0b3f76ad24c173ab78c138aeda0eff782597853107416042386b44473559768",
+    ".agents/skills/binance-account-monitor/references/testing-guidelines.md": "b53b7ff08ab641e8d22bd2b967709e25de3c1e9326253cac7a9649be224e63af",
+    ".agents/skills/binance-account-monitor/references/deposit-withdrawal.md": "ae057b6a578d58ab70305d86704a228c47582815a8dbd4e56f7ea90cc5e33be8"
+  },
+  "new_files_excluding_self": [
+    {
+      "file": ".gitignore",
+      "sha256": "5c30b2db47cea6b1eb302f520514b436a92029aab93c921a2a13d9f79f17fe91"
+    },
+    {
+      "file": "README.md",
+      "sha256": "cf36019f1114ea9a5269dd9d7ea74e3bfc9c2ee687692d21fe0fc214985796b8"
+    },
+    {
+      "file": "data/mock/scenario.json",
+      "sha256": "1bf8c6910aba657eba29d3df7067316fd737e5be779bb5ddee5b269393659c68"
+    },
+    {
+      "file": "data/runtime/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "docs/OFFLINE-CORE-REPORT.md",
+      "sha256": "7fdc5e68311a2dafc550f5a2d22385d10de6d2df0a5e28b7471f51ba2905a10b"
+    },
+    {
+      "file": "docs/architecture/OFFLINE-CORE.md",
+      "sha256": "7f3764053f6f1321893be8f1b7046c764acad3c03147649fe31fd2f1ce525d0a"
+    },
+    {
+      "file": "docs/test-reports/coverage-matrix.json",
+      "sha256": "edeb73990409b109ff23945862eb19d95ed44eecebad7ba272bd8dc88031e88d"
+    },
+    {
+      "file": "docs/test-reports/fake-latency.json",
+      "sha256": "d46c694e974519bd7607fec5fb532c9a76ba6ca8889527c6c582623eb2526291"
+    },
+    {
+      "file": "docs/test-reports/offline-demo.json",
+      "sha256": "e94fa8493531cd7c5fea744504ae486e9bba474aefd9a5cff11ead1ed8d04af5"
+    },
+    {
+      "file": "docs/test-reports/runtime-tests.json",
+      "sha256": "ebbba6dc560237c35825085cec30be3b46bb14a4ad8cceb0cb467752d9ffb9f8"
+    },
+    {
+      "file": "docs/test-reports/runtime-tests.txt",
+      "sha256": "2893964e1cfd456882a7e9f6415f36d0ce8e75dd1dd9f61f3f373c3bdfca6468"
+    },
+    {
+      "file": "pyproject.toml",
+      "sha256": "4681c553f31f523902463d41a83d86c34c1a65787da6080bbc1df14b38ea9bcc"
+    },
+    {
+      "file": "scripts/bot1.py",
+      "sha256": "0c9debb889aa5b3a44f66a758d8fa3e2449b46a254db1f01496bc4a4a020f9f5"
+    },
+    {
+      "file": "scripts/measure_fake_latency.py",
+      "sha256": "72f2225f5fe71aa54bc41ae8f530338b884c4a4eebd8dab75222a9de003628e8"
+    },
+    {
+      "file": "scripts/run_tests.py",
+      "sha256": "b9c4cb2ed7ca88e434b6fafcac993f9a8259247073c0e00af47f552739e6ed91"
+    },
+    {
+      "file": "src/bot1/__init__.py",
+      "sha256": "10e320828ac7cd41d782a315dcf3e8948df6e18b2f647a0144d5305a77e656ab"
+    },
+    {
+      "file": "src/bot1/cli.py",
+      "sha256": "b94f1963fc53445bc01da953eb882fbd0d2c6505ec94d358c63d6482f9eb23db"
+    },
+    {
+      "file": "src/bot1/core/__init__.py",
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "file": "src/bot1/core/numeric.py",
+      "sha256": "09784ad7434b9a22e96fcc70b9352af727ba9ecfeced6c288a113b5554bd98e0"
+    },
+    {
+      "file": "src/bot1/database/__init__.py",
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "file": "src/bot1/database/store.py",
+      "sha256": "1c2f20020951528c78a1bcc792c4821d275cf31798f50029cf88c8468ca878ec"
+    },
+    {
+      "file": "src/bot1/domain/__init__.py",
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "file": "src/bot1/domain/events.py",
+      "sha256": "1aaa2c5b82f2adc458276901ebb08b2522dfb6f0c437a5c6c6fa0966ed418fc3"
+    },
+    {
+      "file": "src/bot1/health/__init__.py",
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "file": "src/bot1/health/monitor.py",
+      "sha256": "301d18a05795681ce565b02526d6ec307152340ebd973524234f7b3e713432ae"
+    },
+    {
+      "file": "src/bot1/ledger/__init__.py",
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "file": "src/bot1/ledger/engine.py",
+      "sha256": "38e1a488d77d45b2bd35b95f0d6be92a27b3174469f37001d4e1eb8db5d93d30"
+    },
+    {
+      "file": "src/bot1/notifications/__init__.py",
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "file": "src/bot1/notifications/fake.py",
+      "sha256": "718279415f84ed836b3d5b58db5dd4a6e296e27b0e46bff469029a8b2870c552"
+    },
+    {
+      "file": "src/bot1/notifications/outbox.py",
+      "sha256": "b7146263a11ff9b8a8679b6cb634e01895aa40c7fbab5f023a18b5a7def21cbc"
+    },
+    {
+      "file": "src/bot1/recovery/__init__.py",
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "file": "src/bot1/recovery/runner.py",
+      "sha256": "e9cf4a2929cf070b572108e147903082b9a15aec1069580499477b8db754a150"
+    },
+    {
+      "file": "src/bot1/sources/__init__.py",
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "file": "src/bot1/sources/fake.py",
+      "sha256": "f94c72cff54164effd854e9a23411300b5fab5323614883fd0971f9cb4990b60"
+    },
+    {
+      "file": "tests/__init__.py",
+      "sha256": "91c9bc4e72330f34a060a750c1055bbdbbc91e466df1b0f6f017f9a292b64b38"
+    },
+    {
+      "file": "tests/fixtures/__init__.py",
+      "sha256": "91c9bc4e72330f34a060a750c1055bbdbbc91e466df1b0f6f017f9a292b64b38"
+    },
+    {
+      "file": "tests/fixtures/helpers.py",
+      "sha256": "c89e1be2ba9e07c6462c0f21d70fcaf3ee9396b529cdbeb90548ae769f374ef6"
+    },
+    {
+      "file": "tests/integration/__init__.py",
+      "sha256": "91c9bc4e72330f34a060a750c1055bbdbbc91e466df1b0f6f017f9a292b64b38"
+    },
+    {
+      "file": "tests/integration/test_core.py",
+      "sha256": "6a950fc2c0caa9fa70d16001a777c9ed7b4203cf3134a89551dca0f459e24a82"
+    },
+    {
+      "file": "tests/integration/test_recovery_edges.py",
+      "sha256": "d008a6c2419a492f15c47fcf4c377d2ab41f62fd0001531a16c1accc1069e63f"
+    },
+    {
+      "file": "tests/integration/test_safety_cli.py",
+      "sha256": "40db1c5d37f3ab45803bcd492c56f37ed57f6aa2bb193240042ceba28a002eb1"
+    },
+    {
+      "file": "tests/unit/__init__.py",
+      "sha256": "91c9bc4e72330f34a060a750c1055bbdbbc91e466df1b0f6f017f9a292b64b38"
+    },
+    {
+      "file": "tests/unit/test_numeric.py",
+      "sha256": "fd04854fc732294c2bee41ae940080654439e7dfa858a4baa654871dd7054331"
+    }
+  ],
+  "self_hash_excluded": "docs/test-reports/build-integrity.json",
+  "runtime_suite": {
+    "executed": 124,
+    "pass": 124,
+    "fail": 0,
+    "not_tested": 0,
+    "python": "3.12.14"
+  },
+  "new_file_count_including_self": 44,
+  "runtime_files_ignored_by_git": [
+    "data/runtime/*.sqlite",
+    "data/runtime/*.sqlite-wal",
+    "data/runtime/*.sqlite-shm",
+    "data/runtime/*.jsonl"
+  ],
+  "binance_account_requests": 0,
+  "telegram_real_requests": 0,
+  "dependencies_downloaded": false,
+  "vps_deployed": false
+}

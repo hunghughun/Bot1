@@ -1,0 +1,333 @@
+{
+  "audit_date_gmt_plus_7": "2026-11-06",
+  "scope": "Skill audit and test-plan documentation only; original skill unchanged",
+  "skill_unchanged_sha256": true,
+  "static": {
+    "file_count": 8,
+    "manifest_sha256": {
+      "SKILL.md": "8ae8f06ddb11f1df3a63760c9b57656e1e267166dc562cd34fd0c3a64606a2b2",
+      "references/account-events.md": "7fba286b4b989103e100b65dcad2ae17fc996e17cb7350670b2d27fd53a59a48",
+      "references/binance-api.md": "28b798bea6b28219531dc832647e3c2596f6de189b8c60d61f79b91f3b64dc3c",
+      "references/deposit-withdrawal.md": "ae057b6a578d58ab70305d86704a228c47582815a8dbd4e56f7ea90cc5e33be8",
+      "references/security-rules.md": "399c450684bce1282ba0aee6958edbd3ab9afb0034330bba97dfc51a564b8be3",
+      "references/telegram-notifications.md": "b0b3f76ad24c173ab78c138aeda0eff782597853107416042386b44473559768",
+      "references/testing-guidelines.md": "d789725739da82e8dfd48086147c639e9261ab4025119da3d3bdf0382204dea9",
+      "references/websocket-recovery.md": "3856988ac63459b7e9cb49a9cf62adfa09e382e1bb4df89c8c84a6e373cd871a"
+    },
+    "yaml": {
+      "keys": [
+        "name",
+        "description"
+      ],
+      "name": "binance-account-monitor",
+      "description_length": 331,
+      "pass": true
+    },
+    "local_links": [
+      {
+        "source": "SKILL.md",
+        "target": "references/security-rules.md",
+        "exists": true,
+        "inside_skill": true
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/binance-api.md",
+        "exists": true,
+        "inside_skill": true
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/account-events.md",
+        "exists": true,
+        "inside_skill": true
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/deposit-withdrawal.md",
+        "exists": true,
+        "inside_skill": true
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/websocket-recovery.md",
+        "exists": true,
+        "inside_skill": true
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/testing-guidelines.md",
+        "exists": true,
+        "inside_skill": true
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/telegram-notifications.md",
+        "exists": true,
+        "inside_skill": true
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/binance-api.md",
+        "exists": true,
+        "inside_skill": true
+      },
+      {
+        "source": "references/websocket-recovery.md",
+        "target": "binance-api.md",
+        "exists": true,
+        "inside_skill": true
+      }
+    ],
+    "placeholder_markers": [],
+    "extra_files": [],
+    "official_validator": {
+      "source": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/scripts/quick_validate.py",
+      "sha256": "6cc9dc3199c935916cf6f73fcbbbb0e3bb1b58c8f5109fefa499978908164f51",
+      "exit_code": 0,
+      "stdout": "Skill is valid!"
+    },
+    "discovery": {
+      "source": "codex app-server stdio skills/list",
+      "cwd": "/workspace/Bot1",
+      "responses": [],
+      "returncode": 1
+    }
+  },
+  "oracle": {
+    "scope": "No bot implementation or network; arithmetic/time oracles only",
+    "oracles": [
+      {
+        "id": "O01",
+        "inputs": [
+          "100",
+          "8",
+          "-1",
+          "-0.5"
+        ],
+        "actual": "106.5",
+        "expected": "106.5",
+        "status": "PASS",
+        "scope": "independent arithmetic/time oracle, not Bot 1"
+      },
+      {
+        "id": "O02",
+        "inputs": {
+          "spot_open": "0",
+          "deposit": "100",
+          "transfer": "100"
+        },
+        "actual": "0",
+        "expected": "0",
+        "status": "PASS",
+        "scope": "independent arithmetic/time oracle, not Bot 1"
+      },
+      {
+        "id": "O03",
+        "inputs": {
+          "futures_open": "0",
+          "transfer": "100"
+        },
+        "actual": "100",
+        "expected": "100",
+        "status": "PASS",
+        "scope": "independent arithmetic/time oracle, not Bot 1"
+      },
+      {
+        "id": "O04",
+        "inputs": {
+          "spot_open": "100",
+          "withdraw_gross": "20",
+          "fee_separate": "1"
+        },
+        "actual": "79",
+        "expected": "79",
+        "status": "PASS",
+        "scope": "independent arithmetic/time oracle, not Bot 1"
+      },
+      {
+        "id": "O05",
+        "inputs": {
+          "wallet_before": "100",
+          "wallet_after": "100",
+          "available": [
+            "80",
+            "60"
+          ]
+        },
+        "actual": "0",
+        "expected": "0",
+        "status": "PASS",
+        "scope": "independent arithmetic/time oracle, not Bot 1"
+      },
+      {
+        "id": "O06",
+        "inputs": [
+          "0.1",
+          "0.2"
+        ],
+        "actual": "0.3",
+        "expected": "0.3",
+        "status": "PASS",
+        "scope": "independent arithmetic/time oracle, not Bot 1"
+      },
+      {
+        "id": "O07",
+        "inputs": "2026-11-06T20:30:00Z",
+        "actual": "2026-11-07T03:30:00+07:00",
+        "expected": "2026-11-07T03:30:00+07:00",
+        "status": "PASS",
+        "scope": "independent arithmetic/time oracle, not Bot 1"
+      }
+    ],
+    "hazard_reproductions": [
+      {
+        "id": "H01",
+        "constructor_accepts": [
+          "NaN",
+          "Infinity",
+          "-Infinity"
+        ],
+        "is_finite": {
+          "NaN": false,
+          "Infinity": false,
+          "-Infinity": false
+        },
+        "finding": "Decimal constructor alone is insufficient validation"
+      },
+      {
+        "id": "H02",
+        "a": "1234567890123456789012345678.90",
+        "b": "0.01",
+        "default_precision_28_result": "1234567890123456789012345679",
+        "precision_50_result": "1234567890123456789012345678.91",
+        "finding": "Default context can round during arithmetic; input bounds and precision policy missing"
+      }
+    ]
+  },
+  "manual_tabletop_scenarios": [
+    {
+      "id": "S01",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S02",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S03",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S04",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S05",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S06",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S07",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S08",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S09",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S10",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S11",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S12",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S13",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S14",
+      "review_status": "FAIL",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S15",
+      "review_status": "FAIL",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    },
+    {
+      "id": "S16",
+      "review_status": "PASS",
+      "scope": "manual tabletop review of guidance in this session",
+      "bot_runtime_status": "NOT TESTED"
+    }
+  ],
+  "public_documentation_check": {
+    "url": "https://developers.binance.com/docs/derivatives/usds-margined-futures/account/rest-api/Account-Information-V3",
+    "observed": "curl exit 56, HTTP 403, CONNECT tunnel failed",
+    "api_contract_validation": "NOT TESTED",
+    "account_api_calls": 0,
+    "telegram_calls": 0
+  },
+  "discovery_status": "NOT TESTED: app-server initialization failed before skills/list response",
+  "discovery_safe_error": "Read-only file system (os error 30); first attempt unable to open /home/agent/.codex/state_5.sqlite; retry with sqlite_home/log_dir under /tmp still failed",
+  "codex_cli_version": "0.167.0-alpha.4",
+  "bot_1_test_plan": {
+    "total_cases": 40,
+    "executed_on_bot": 0,
+    "status": "NOT TESTED"
+  },
+  "quality_score": {
+    "structure": 17,
+    "current_api": 4,
+    "financial": 18,
+    "recovery": 14,
+    "telegram": 9,
+    "security_document_review": 10,
+    "total": 72,
+    "out_of": 100,
+    "gate": "FAIL: financial specification F01/F02",
+    "not_an_official_openai_score": true
+  }
+}

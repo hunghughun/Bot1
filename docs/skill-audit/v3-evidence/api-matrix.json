@@ -1,0 +1,544 @@
+{
+  "sources": {
+    "futures-account": {
+      "url": "https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/account",
+      "attempted_at_utc": "2026-11-06T16:30:33.670420+00:00",
+      "content_verified_at": null,
+      "fetch_status": "BLOCKED: proxy CONNECT 403"
+    },
+    "wallet-capital": {
+      "url": "https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/capital",
+      "attempted_at_utc": "2026-11-06T16:30:33.672941+00:00",
+      "content_verified_at": null,
+      "fetch_status": "BLOCKED: proxy CONNECT 403"
+    },
+    "wallet-asset": {
+      "url": "https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/asset",
+      "attempted_at_utc": "2026-11-06T16:30:33.671308+00:00",
+      "content_verified_at": null,
+      "fetch_status": "BLOCKED: proxy CONNECT 403"
+    }
+  },
+  "functions": [
+    {
+      "id": "futures_balance",
+      "function": "Số dư Futures USDT-M",
+      "status": "NOT TESTED",
+      "source_candidates": [
+        "futures-account"
+      ],
+      "source_note": "Candidate entry pages only; no official content retrieved. Stream/recovery require additional official references not yet located.",
+      "content_verified_at": null,
+      "endpoint": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "http_method": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "security_type": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "required_api_key_permissions": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "request_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "response_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "monetary_json_types": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "time_window": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "pagination": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "rate_limits": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "current_support_status": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "numeric_1_compatibility": {
+        "status": "NOT VERIFIED",
+        "value": null
+      }
+    },
+    {
+      "id": "pnl",
+      "function": "Realized/unrealized PnL",
+      "status": "NOT TESTED",
+      "source_candidates": [
+        "futures-account"
+      ],
+      "source_note": "Candidate entry pages only; no official content retrieved. Stream/recovery require additional official references not yet located.",
+      "content_verified_at": null,
+      "endpoint": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "http_method": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "security_type": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "required_api_key_permissions": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "request_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "response_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "monetary_json_types": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "time_window": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "pagination": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "rate_limits": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "current_support_status": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "numeric_1_compatibility": {
+        "status": "NOT VERIFIED",
+        "value": null
+      }
+    },
+    {
+      "id": "commission",
+      "function": "Commission",
+      "status": "NOT TESTED",
+      "source_candidates": [
+        "futures-account"
+      ],
+      "source_note": "Candidate entry pages only; no official content retrieved. Stream/recovery require additional official references not yet located.",
+      "content_verified_at": null,
+      "endpoint": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "http_method": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "security_type": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "required_api_key_permissions": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "request_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "response_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "monetary_json_types": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "time_window": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "pagination": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "rate_limits": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "current_support_status": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "numeric_1_compatibility": {
+        "status": "NOT VERIFIED",
+        "value": null
+      }
+    },
+    {
+      "id": "funding",
+      "function": "Funding fee",
+      "status": "NOT TESTED",
+      "source_candidates": [
+        "futures-account"
+      ],
+      "source_note": "Candidate entry pages only; no official content retrieved. Stream/recovery require additional official references not yet located.",
+      "content_verified_at": null,
+      "endpoint": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "http_method": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "security_type": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "required_api_key_permissions": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "request_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "response_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "monetary_json_types": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "time_window": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "pagination": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "rate_limits": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "current_support_status": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "numeric_1_compatibility": {
+        "status": "NOT VERIFIED",
+        "value": null
+      }
+    },
+    {
+      "id": "deposit_history",
+      "function": "Deposit history",
+      "status": "NOT TESTED",
+      "source_candidates": [
+        "wallet-capital"
+      ],
+      "source_note": "Candidate entry pages only; no official content retrieved. Stream/recovery require additional official references not yet located.",
+      "content_verified_at": null,
+      "endpoint": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "http_method": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "security_type": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "required_api_key_permissions": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "request_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "response_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "monetary_json_types": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "time_window": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "pagination": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "rate_limits": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "current_support_status": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "numeric_1_compatibility": {
+        "status": "NOT VERIFIED",
+        "value": null
+      }
+    },
+    {
+      "id": "withdraw_history",
+      "function": "Withdraw history",
+      "status": "NOT TESTED",
+      "source_candidates": [
+        "wallet-capital"
+      ],
+      "source_note": "Candidate entry pages only; no official content retrieved. Stream/recovery require additional official references not yet located.",
+      "content_verified_at": null,
+      "endpoint": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "http_method": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "security_type": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "required_api_key_permissions": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "request_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "response_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "monetary_json_types": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "time_window": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "pagination": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "rate_limits": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "current_support_status": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "numeric_1_compatibility": {
+        "status": "NOT VERIFIED",
+        "value": null
+      }
+    },
+    {
+      "id": "transfer_history",
+      "function": "Spot/Futures/Funding transfer history",
+      "status": "NOT TESTED",
+      "source_candidates": [
+        "wallet-asset"
+      ],
+      "source_note": "Candidate entry pages only; no official content retrieved. Stream/recovery require additional official references not yet located.",
+      "content_verified_at": null,
+      "endpoint": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "http_method": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "security_type": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "required_api_key_permissions": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "request_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "response_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "monetary_json_types": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "time_window": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "pagination": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "rate_limits": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "current_support_status": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "numeric_1_compatibility": {
+        "status": "NOT VERIFIED",
+        "value": null
+      }
+    },
+    {
+      "id": "account_stream",
+      "function": "Current account update transport",
+      "status": "NOT TESTED",
+      "source_candidates": [],
+      "source_note": "Candidate entry pages only; no official content retrieved. Stream/recovery require additional official references not yet located.",
+      "content_verified_at": null,
+      "endpoint": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "http_method": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "security_type": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "required_api_key_permissions": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "request_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "response_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "monetary_json_types": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "time_window": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "pagination": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "rate_limits": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "current_support_status": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "numeric_1_compatibility": {
+        "status": "NOT VERIFIED",
+        "value": null
+      }
+    },
+    {
+      "id": "gap_recovery",
+      "function": "History recovery after stream gap",
+      "status": "NOT TESTED",
+      "source_candidates": [],
+      "source_note": "Candidate entry pages only; no official content retrieved. Stream/recovery require additional official references not yet located.",
+      "content_verified_at": null,
+      "endpoint": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "http_method": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "security_type": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "required_api_key_permissions": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "request_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "response_schema": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "monetary_json_types": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "time_window": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "pagination": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "rate_limits": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "current_support_status": {
+        "status": "NOT VERIFIED",
+        "value": null
+      },
+      "numeric_1_compatibility": {
+        "status": "NOT VERIFIED",
+        "value": null
+      }
+    }
+  ],
+  "verified_endpoints_recommended": [],
+  "uses_unverified_sdk_or_memory_as_evidence": false
+}

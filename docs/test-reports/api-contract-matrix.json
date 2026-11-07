@@ -1,0 +1,530 @@
+{
+  "repository": "https://github.com/binance/binance-connector-python",
+  "commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+  "versions": {
+    "clients/derivatives_trading_usds_futures": "18.3.0",
+    "clients/wallet": "13.10.0",
+    "clients/spot": "13.5.0"
+  },
+  "sdk_evidence_status": "PASS",
+  "full_api_docs_status": "NOT VERIFIED",
+  "active_allowlist": [],
+  "contracts": [
+    {
+      "name": "futures_account_balance_v3",
+      "signature": "self, recv_window: Optional[int]=None",
+      "docstring": "        Futures Account Balance V3 (USER_DATA)\n        GET /fapi/v3/balance\n        https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/account#futures-account-balance-v3\n\n        Query account balance information.\n\nWeight(IP): 5\n\nSecurity Type: USER_DATA\n\n        Args:\n            recv_window (Optional[int] = None):\n\n        Returns:\n            ApiResponse[FuturesAccountBalanceV3Response]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'GET'",
+        "path": "'/fapi/v3/balance'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit",
+        "response_model": "FuturesAccountBalanceV3Response",
+        "is_signed": "True",
+        "signer": "self._signer"
+      },
+      "evidence": {
+        "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/account_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/account_api.py#L182",
+        "full_source_sha256": "b666de8063bdbde0c4d6e511bd03cfb8d33b8d4afb87eb24ff1d54ecfdb7da39",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-futures_account_balance_v3.txt",
+        "retained_sha256": "bc229dd658c2b2de5b76f856b9f279dc646e676073f5093fed946b0759545b8e",
+        "start_line": 182,
+        "end_line": 222
+      },
+      "family": "futures_balance_v3",
+      "financial": [
+        "balance",
+        "crossWalletBalance",
+        "crossUnPnl",
+        "availableBalance",
+        "maxWithdrawAmount"
+      ],
+      "identity": "No native transaction ID. Local observation ID binds accountAlias/account/asset/poll_id/metric; body SHA retained separately. updateTime is last update, not acquisition time.",
+      "pagination": "Snapshot array; no pagination params in SDK. No history coverage.",
+      "mapping": "PASS: offline wallet/available BALANCE_SNAPSHOT only; cross values retained, not posted. Full API/permissions NOT VERIFIED.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    },
+    {
+      "name": "account_information_v3",
+      "signature": "self, recv_window: Optional[int]=None",
+      "docstring": "        Account Information V3 (USER_DATA)\n        GET /fapi/v3/account\n        https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/account#account-information-v3\n\n        Get current account information. User in single-asset/ multi-assets mode will see different value, see comments in response section for detail.\n\nWeight(IP): 5\n\nSecurity Type: USER_DATA\n\n        Args:\n            recv_window (Optional[int] = None):\n\n        Returns:\n            ApiResponse[AccountInformationV3Response]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'GET'",
+        "path": "'/fapi/v3/account'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit",
+        "response_model": "AccountInformationV3Response",
+        "is_signed": "True",
+        "signer": "self._signer"
+      },
+      "evidence": {
+        "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/account_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/account_api.py#L98",
+        "full_source_sha256": "b666de8063bdbde0c4d6e511bd03cfb8d33b8d4afb87eb24ff1d54ecfdb7da39",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-account_information_v3.txt",
+        "retained_sha256": "e0cdd3be7df16658208e7af53ee9b8b52993ffd55b33ceccaa77e596b4f5c990",
+        "start_line": 98,
+        "end_line": 138
+      },
+      "family": "futures_account",
+      "financial": [
+        "total*",
+        "availableBalance",
+        "maxWithdrawAmount",
+        "assets.*",
+        "positions.*"
+      ],
+      "identity": "State snapshot only. Must not sum aggregate USD valuations with asset rows, or post balance deltas.",
+      "pagination": "Snapshot object; no paging in SDK.",
+      "mapping": "NOT VERIFIED: no mapper. Single-asset USDT versus multi-assets USD semantics require explicit unit/mode binding.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    },
+    {
+      "name": "get_income_history",
+      "signature": "self, symbol: Optional[str]=None, income_type: Optional[GetIncomeHistoryIncomeTypeEnum]=None, start_time: Optional[int]=None, end_time: Optional[int]=None, limit: Optional[int]=None, recv_window: Optional[int]=None",
+      "docstring": "        Get Income History (USER_DATA)\n        GET /fapi/v1/income\n        https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/account#get-income-history\n\n        Query income history\n\nWeight(IP): 30\n\nSecurity Type: USER_DATA\n\nNotes:\n- If `incomeType ` is not sent, all kinds of flow will be returned\n- If `startTime` and `endTime` are not sent, the recent 7-day data will be returned.\n- `trandId` is unique in the same `incomeType` for a user.\n- Income history only contains data for the last three months.\n\n        Args:\n            symbol (Optional[str] = None): Trading symbol.\n            income_type (Optional[GetIncomeHistoryIncomeTypeEnum] = None): Income type.\n            start_time (Optional[int] = None): Timestamp in milliseconds (inclusive start).\n            end_time (Optional[int] = None): Timestamp in milliseconds (inclusive end).\n            limit (Optional[int] = None): Maximum number of records to return.\n            recv_window (Optional[int] = None):\n\n        Returns:\n            ApiResponse[GetIncomeHistoryResponse]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'GET'",
+        "path": "'/fapi/v1/income'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit",
+        "response_model": "GetIncomeHistoryResponse",
+        "is_signed": "True",
+        "signer": "self._signer"
+      },
+      "evidence": {
+        "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/account_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/account_api.py#L788",
+        "full_source_sha256": "b666de8063bdbde0c4d6e511bd03cfb8d33b8d4afb87eb24ff1d54ecfdb7da39",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-get_income_history.txt",
+        "retained_sha256": "ec7272066472b0a5f28f6cf2627af97d710a64f75ebcf55c87e50200721d905e",
+        "start_line": 788,
+        "end_line": 851
+      },
+      "family": "futures_income",
+      "financial": [
+        "income"
+      ],
+      "identity": "SDK doc says trandId unique within incomeType/user; model spelling tranId. Preserve exact integer tranId and tradeId string. Cross-source identity/sign/time-unit/reversal rules not verified.",
+      "pagination": "SDK: default last 7 days; retained last 3 months; inclusive startTime/endTime (ms); limit optional, no page param. Limit default/max and equal-timestamp truncation not verified.",
+      "mapping": "NOT VERIFIED: incomeType enum is not proof of cashflow sign, settlement/finality or cross-source correlation.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    },
+    {
+      "name": "position_information_v3",
+      "signature": "self, symbol: Optional[str]=None, recv_window: Optional[int]=None",
+      "docstring": "        Position Information V3 (USER_DATA)\n        GET /fapi/v3/positionRisk\n        https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/trade#position-information-v3\n\n        Get current position information(only symbol that has position or open\norders will be returned).\n\nWeight(IP): 5\n\nSecurity Type: USER_DATA\n\nNotes:\n- Please use with user data stream `ACCOUNT_UPDATE` to meet your timeliness and accuracy needs.\n\n        Args:\n            symbol (Optional[str] = None):\n            recv_window (Optional[int] = None):\n\n        Returns:\n            ApiResponse[PositionInformationV3Response]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'GET'",
+        "path": "'/fapi/v3/positionRisk'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit",
+        "response_model": "PositionInformationV3Response",
+        "is_signed": "True",
+        "signer": "self._signer"
+      },
+      "evidence": {
+        "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/trade_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/trade_api.py#L1757",
+        "full_source_sha256": "0f482140acd6561cc02571110767e5c9dd363a671be0542a859536f014b1c603",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-position_information_v3.txt",
+        "retained_sha256": "978b65aa5a7ed8727c57a88bacc4b6560a0fea3d1baf168a899b4ffcad13e66d",
+        "start_line": 1757,
+        "end_line": 1803
+      },
+      "family": "futures_positions",
+      "financial": [
+        "positionAmt",
+        "entryPrice",
+        "breakEvenPrice",
+        "markPrice",
+        "unRealizedProfit",
+        "liquidationPrice",
+        "isolatedMargin",
+        "notional",
+        "isolatedWallet",
+        "initialMargin",
+        "maintMargin",
+        "positionInitialMargin",
+        "openOrderInitialMargin"
+      ],
+      "identity": "State by symbol/positionSide, not economic event ID. Positive long/negative short per model; bidNotional/askNotional marked ignore.",
+      "pagination": "SDK: only symbols with position/open orders; no paging params. Missing symbol not proof of closed event/history coverage.",
+      "mapping": "NOT VERIFIED: no PnL posting. Must not sum snapshot unrealizedProfit with realized income.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    },
+    {
+      "name": "deposit_history",
+      "signature": "self, include_source: Optional[bool]=None, coin: Optional[str]=None, status: Optional[DepositHistoryStatusEnum]=None, start_time: Optional[int]=None, end_time: Optional[int]=None, offset: Optional[int]=None, limit: Optional[int]=None, recv_window: Optional[int]=None, tx_id: Optional[str]=None",
+      "docstring": "        Deposit History (supporting network) (USER_DATA)\n        GET /sapi/v1/capital/deposit/hisrec\n        https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/capital#deposit-history\n\n        Fetch deposit history.\n\nWeight(IP): 1\n\nSecurity Type: USER_DATA\n\nNotes:\n- Please notice the default `startTime` and `endTime` to make sure that time interval is within 0-90 days.\n- If both `startTime` and `endTime` are sent, time between `startTime` and `endTime` must be less than 90 days.\n\n        Args:\n            include_source (Optional[bool] = None): return `sourceAddress` field when set to `true`\n            coin (Optional[str] = None):\n            status (Optional[DepositHistoryStatusEnum] = None): 0: pending, 1: success, 2: rejected, 6: credited but cannot withdraw, 7: Wrong Deposit, 8: Waiting User confirm\n            start_time (Optional[int] = None): Default: 90 days from current timestamp\n            end_time (Optional[int] = None): Default: present timestamp\n            offset (Optional[int] = None):\n            limit (Optional[int] = None):\n            recv_window (Optional[int] = None):\n            tx_id (Optional[str] = None):\n\n        Returns:\n            ApiResponse[DepositHistoryResponse]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'GET'",
+        "path": "'/sapi/v1/capital/deposit/hisrec'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit",
+        "response_model": "DepositHistoryResponse",
+        "is_signed": "True",
+        "signer": "self._signer"
+      },
+      "evidence": {
+        "path": "clients/wallet/src/binance_sdk_wallet/rest_api/api/capital_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/api/capital_api.py#L149",
+        "full_source_sha256": "e4154c35bf91c8dd7e4b4cfed5aabbd94a1cd508245dab1a8aedcbd7c0ab8a5b",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-deposit_history.txt",
+        "retained_sha256": "960caf94875b14a462294e0ac074c8f6597098a46e65d6193884b8fc91b92e0a",
+        "start_line": 149,
+        "end_line": 219
+      },
+      "family": "deposit_history",
+      "financial": [
+        "amount"
+      ],
+      "identity": "Preserve id, txId, network, transferType, walletType. Model lacks explanatory transferType/walletType descriptions; do not borrow withdrawal meanings.",
+      "pagination": "SDK: default start 90 days ago/end now; explicit interval less than 90 days. offset/limit; default/max limit, total retention and same-timestamp boundary completeness not verified.",
+      "mapping": "NOT VERIFIED: status 0 pending/1 success/2 rejected/6 credited cannot withdraw/7 wrong/8 waiting confirmation per SDK doc. These do not alone prove external deposit or economic finality.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    },
+    {
+      "name": "withdraw_history",
+      "signature": "self, coin: Optional[str]=None, withdraw_order_id: Optional[str]=None, status: Optional[int]=None, offset: Optional[int]=None, limit: Optional[int]=None, id_list: Optional[str]=None, start_time: Optional[int]=None, end_time: Optional[int]=None, recv_window: Optional[int]=None",
+      "docstring": "        Withdraw History (supporting network) (USER_DATA)\n        GET /sapi/v1/capital/withdraw/history\n        https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/capital#withdraw-history\n\n        Fetch withdraw history\n\nWeight(UID): 18000 (10 requests per second)\n\nSecurity Type: USER_DATA\n\nNotes:\n- `network` may not be in the response for old withdraw.\n- Please notice the default `startTime` and `endTime` to make sure that time interval is within 0-90 days.\n- If both `startTime` and `endTime`are sent, time between `startTime`and `endTime`must be less than 90 days.\n- If `withdrawOrderId` is sent, time between `startTime` and `endTime` must be less than 7 days.\n- If `withdrawOrderId` is sent, `startTime` and `endTime` are not sent, will return last 7 days records by default.\n- Maximum support `idList` number is 45.\n\n        Args:\n            coin (Optional[str] = None):\n            withdraw_order_id (Optional[str] = None): client side id for withdrawal, if provided in POST `/sapi/v1/capital/withdraw/apply`, can be used here for\nquery.\n            status (Optional[int] = None): 0(0: Email Sent, 2: Awaiting Approval 3: Rejected 4: Processing 6: Completed)\n            offset (Optional[int] = None): Default: 0\n            limit (Optional[int] = None):\n            id_list (Optional[str] = None): id list returned in the response of POST `/sapi/v1/capital/withdraw/apply`, separated by `,`\n            start_time (Optional[int] = None): Default: 90 days from current timestamp\n            end_time (Optional[int] = None): Default: present timestamp\n            recv_window (Optional[int] = None):\n\n        Returns:\n            ApiResponse[WithdrawHistoryResponse]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'GET'",
+        "path": "'/sapi/v1/capital/withdraw/history'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit",
+        "response_model": "WithdrawHistoryResponse",
+        "is_signed": "True",
+        "signer": "self._signer"
+      },
+      "evidence": {
+        "path": "clients/wallet/src/binance_sdk_wallet/rest_api/api/capital_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/api/capital_api.py#L496",
+        "full_source_sha256": "e4154c35bf91c8dd7e4b4cfed5aabbd94a1cd508245dab1a8aedcbd7c0ab8a5b",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-withdraw_history.txt",
+        "retained_sha256": "7a721d9d7ce2d4ffb2b79254364f4b4af0d2dd68bcdaa85c18d1851d5c191f88",
+        "start_line": 496,
+        "end_line": 571
+      },
+      "family": "withdraw_history",
+      "financial": [
+        "amount",
+        "transactionFee"
+      ],
+      "identity": "id is Binance withdrawal ID; txId distinct chain ID; withdrawOrderId optional. transferType 1 internal/0 external; walletType 1 Funding/0 Spot per model. Gross/net and fee-leg accounting not verified.",
+      "pagination": "SDK: default 90 days; interval less than 90 days; withdrawOrderId interval less than 7 days/default 7 days; offset default0, limit bound unknown; idList max45. network may be absent for old records.",
+      "mapping": "NOT VERIFIED: doc has incomplete/malformed status list; 6 completed per model. applyTime/completeTime are UTC strings, exact accepted format still needs official evidence.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    },
+    {
+      "name": "query_user_universal_transfer_history",
+      "signature": "self, type: Union[str, None], start_time: Optional[int]=None, end_time: Optional[int]=None, current: Optional[int]=None, size: Optional[int]=None, from_symbol: Optional[QueryUserUniversalTransferHistoryFromSymbolEnum]=None, to_symbol: Optional[QueryUserUniversalTransferHistoryToSymbolEnum]=None, recv_window: Optional[int]=None",
+      "docstring": "        Query User Universal Transfer History (USER_DATA)\n        GET /sapi/v1/asset/transfer\n        https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/asset#query-user-universal-transfer-history\n\n        Query User Universal Transfer History\n\nWeight(IP): 1\n\nSecurity Type: USER_DATA\n\nNotes:\n- `fromSymbol` must be sent when type are ISOLATEDMARGIN_MARGIN and ISOLATEDMARGIN_ISOLATEDMARGIN\n- `toSymbol` must be sent when type are MARGIN_ISOLATEDMARGIN and ISOLATEDMARGIN_ISOLATEDMARGIN\n- Support query within the last 6 months only\n- If `startTime`and `endTime` not sent, return records of the last 7 days by default\n\n        Args:\n            type (Union[str, None]):\n            start_time (Optional[int] = None):\n            end_time (Optional[int] = None):\n            current (Optional[int] = None):\n            size (Optional[int] = None):\n            from_symbol (Optional[QueryUserUniversalTransferHistoryFromSymbolEnum] = None):\n            to_symbol (Optional[QueryUserUniversalTransferHistoryToSymbolEnum] = None):\n            recv_window (Optional[int] = None):\n\n        Returns:\n            ApiResponse[QueryUserUniversalTransferHistoryResponse]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'GET'",
+        "path": "'/sapi/v1/asset/transfer'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit",
+        "response_model": "QueryUserUniversalTransferHistoryResponse",
+        "is_signed": "True",
+        "signer": "self._signer"
+      },
+      "evidence": {
+        "path": "clients/wallet/src/binance_sdk_wallet/rest_api/api/asset_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/api/asset_api.py#L735",
+        "full_source_sha256": "2da98b82ac9dae2806438649b3edee6e4869e30ef246f5d797a2abe56b8f6e3a",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-query_user_universal_transfer_history.txt",
+        "retained_sha256": "b792ad74e124e491da3d315e27aeeff984b7bbac4088b6c612f18d859f45ad5d",
+        "start_line": 735,
+        "end_line": 809
+      },
+      "family": "universal_transfer_history",
+      "financial": [
+        "rows.amount"
+      ],
+      "identity": "Preserve rows.tranId as integer lexeme; no proven equality to income tranId. rows.type binds wallets only after enum/document review; not external cashflow.",
+      "pagination": "SDK: last 6 months, default last7 days; current/size params, base/default/max not described. Conditional isolated-margin fromSymbol/toSymbol.",
+      "mapping": "NOT VERIFIED: response total integer, rows status CONFIRMED/FAILED/PENDING. No posting until type direction and correlation proven. Same path POST must remain forbidden.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    },
+    {
+      "name": "query_user_wallet_balance",
+      "signature": "self, quote_asset: Optional[str]=None, need_balance_detail: Optional[bool]=None, recv_window: Optional[int]=None",
+      "docstring": "        Query User Wallet Balance (USER_DATA)\n        GET /sapi/v1/asset/wallet/balance\n        https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/asset#query-user-wallet-balance\n\n        Query User Wallet Balance\n\nWeight(IP): 60\n\nSecurity Type: USER_DATA\n\n        Args:\n            quote_asset (Optional[str] = None):\n            need_balance_detail (Optional[bool] = None): Whether to return the per-asset balance detail for each wallet. When `false` or omitted, the response is\nunchanged from current behavior.\n            recv_window (Optional[int] = None):\n\n        Returns:\n            ApiResponse[QueryUserWalletBalanceResponse]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'GET'",
+        "path": "'/sapi/v1/asset/wallet/balance'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit",
+        "response_model": "QueryUserWalletBalanceResponse",
+        "is_signed": "True",
+        "signer": "self._signer"
+      },
+      "evidence": {
+        "path": "clients/wallet/src/binance_sdk_wallet/rest_api/api/asset_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/api/asset_api.py#L811",
+        "full_source_sha256": "2da98b82ac9dae2806438649b3edee6e4869e30ef246f5d797a2abe56b8f6e3a",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-query_user_wallet_balance.txt",
+        "retained_sha256": "f9194b16ea8183ec070e173e0f57d55e4075d1a073d696639896e72c182bcb8d",
+        "start_line": 811,
+        "end_line": 860
+      },
+      "family": "spot_funding_balances",
+      "financial": [
+        "balance",
+        "assetBalances.free",
+        "assetBalances.locked",
+        "assetBalances.freeze",
+        "assetBalances.withdrawing",
+        "assetBalances.btcValuation"
+      ],
+      "identity": "Wallet valuation/state; walletName not ledger event ID. needBalanceDetail changes nested response. Quote valuation must not be relabelled USDT or added to per-asset balances.",
+      "pagination": "Snapshot array; quoteAsset/needBalanceDetail/recvWindow; no paging params.",
+      "mapping": "NOT VERIFIED: no mapper; currency/valuation and field composition need API-doc confirmation.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    },
+    {
+      "name": "funding_wallet",
+      "signature": "self, asset: Optional[str]=None, need_btc_valuation: Optional[bool]=None, recv_window: Optional[int]=None",
+      "docstring": "        Funding Wallet (USER_DATA)\n        POST /sapi/v1/asset/get-funding-asset\n        https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/asset#funding-wallet\n\n        Query Funding Wallet\n\nWeight(IP): 1\n\nSecurity Type: USER_DATA\n\nNotes:\n- Currently supports querying the following business assets\uff1aBinance Pay, Binance Card, Binance Gift Card, Stock Token\n\n        Args:\n            asset (Optional[str] = None):\n            need_btc_valuation (Optional[bool] = None):\n            recv_window (Optional[int] = None):\n\n        Returns:\n            ApiResponse[FundingWalletResponse]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'POST'",
+        "path": "'/sapi/v1/asset/get-funding-asset'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit",
+        "response_model": "FundingWalletResponse",
+        "is_signed": "True",
+        "signer": "self._signer"
+      },
+      "evidence": {
+        "path": "clients/wallet/src/binance_sdk_wallet/rest_api/api/asset_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/api/asset_api.py#L402",
+        "full_source_sha256": "2da98b82ac9dae2806438649b3edee6e4869e30ef246f5d797a2abe56b8f6e3a",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-funding_wallet.txt",
+        "retained_sha256": "46fbbaae99b0ed8af39d42c754aa44326f461ca20dad43d2b23003fab3e848d3",
+        "start_line": 402,
+        "end_line": 453
+      },
+      "family": "spot_funding_balances",
+      "financial": [
+        "free",
+        "locked",
+        "freeze",
+        "withdrawing",
+        "btcValuation"
+      ],
+      "identity": "Funding state, NOT Spot free balance. No event ID.",
+      "pagination": "Snapshot array; asset/needBtcValuation/recvWindow; no paging params.",
+      "mapping": "NOT VERIFIED: SDK POST query, not allowlisted. Preserve field distinctions; do not infer free+locked equals all wallet balance.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    },
+    {
+      "name": "get_account",
+      "signature": "self, omit_zero_balances: Optional[bool]=None, recv_window: Optional[float]=None",
+      "docstring": "        Account information (USER_DATA)\n        GET /api/v3/account\n        https://developers.binance.com/en/docs/catalog/core-trading-spot-trading/api/rest-api/account#get-account\n\n        Get current account information.\n\nWeight(IP): 20\n\nSecurity Type: USER_DATA\n\nNotes:\n**Data Source:** Memory => Database\n\n        Args:\n            omit_zero_balances (Optional[bool] = None): When set to `true`, emits only the non-zero balances of an account.\n            recv_window (Optional[float] = None): Supports up to three decimal places of precision (e.g., 6000.346) so that microseconds may be specified.\n\n        Returns:\n            ApiResponse[GetAccountResponse]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'GET'",
+        "path": "'/api/v3/account'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit",
+        "response_model": "GetAccountResponse",
+        "is_signed": "True",
+        "signer": "self._signer"
+      },
+      "evidence": {
+        "path": "clients/spot/src/binance_sdk_spot/rest_api/api/account_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/spot/src/binance_sdk_spot/rest_api/api/account_api.py#L235",
+        "full_source_sha256": "d77af5202cefc28dc2c1ab80bace66bf9f5d4308eb28d11d0516eb2a78e377a7",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-get_account.txt",
+        "retained_sha256": "c2530c0908fd8b01ee044779c55e186890c401cccc10e20f1c80c2581e088476",
+        "start_line": 235,
+        "end_line": 280
+      },
+      "family": "spot_funding_balances",
+      "financial": [
+        "balances.free",
+        "balances.locked",
+        "commissionRates.*"
+      ],
+      "identity": "Spot snapshot only; permissions/canTrade response does NOT certify the key UI grants. Account UID integer is not event ID.",
+      "pagination": "SDK: omitZeroBalances optional; Memory=>Database source. No pagination params.",
+      "mapping": "NOT VERIFIED: no Spot mapper. Do not combine raw Spot balances with aggregate quote valuations or Funding wallet.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    },
+    {
+      "name": "start_user_data_stream",
+      "signature": "self",
+      "docstring": "        Start User Data Stream (USER_STREAM)\n        POST /fapi/v1/listenKey\n        https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/user-data-streams#start-user-data-stream\n\n        Start a new user data stream. The stream will close after 60 minutes\nunless a keepalive is sent. If the account has an active `listenKey`,\nthat `listenKey` will be returned and its validity will be extended for\n60 minutes.\n\nWeight(IP): 1\n\nSecurity Type: USER_STREAM\n\n        Args:\n\n        Returns:\n            ApiResponse[StartUserDataStreamResponse]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'POST'",
+        "path": "'/fapi/v1/listenKey'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit",
+        "response_model": "StartUserDataStreamResponse"
+      },
+      "evidence": {
+        "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/user_data_streams_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/user_data_streams_api.py#L110",
+        "full_source_sha256": "6d75e69c8b894f2a84a92cfaab49089d7a9bdb6a03cc4ad0aa900c6ef6053646",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-start_user_data_stream.txt",
+        "retained_sha256": "43c32878941ae6f9590a5a84e81002dc93152e9655b602a99470bc0c533eb3c0",
+        "start_line": 110,
+        "end_line": 149
+      },
+      "family": "futures_user_stream",
+      "financial": [
+        "ACCOUNT_UPDATE.a.B:wb,cw,bc",
+        "a.P:pa,ep,bep,cr,up,iw",
+        "ORDER_TRADE_UPDATE.o:n,rp,p,q,L,l,z,ap"
+      ],
+      "identity": "ACCOUNT_UPDATE lacks a proven unique economic transaction ID. bc excludes PnL/commission; cr accumulated and pre-fee, not a new realized posting. ORDER_TRADE_UPDATE has i/t but link to REST income tradeId needs verified namespace/settlement rules.",
+      "pagination": "SDK lifecycle60min; snapshot+income+capital recovery needs overlap/retention/gap proofs. Event E/T timestamp units, ordering/duplicates and account binding not fully verified.",
+      "mapping": "NOT VERIFIED: lifecycle/events/correlation disabled. Create/renew/delete stream session is not a query and not included in snapshot-only allowlist.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    },
+    {
+      "name": "keepalive_user_data_stream",
+      "signature": "self",
+      "docstring": "        Keepalive User Data Stream (USER_STREAM)\n        PUT /fapi/v1/listenKey\n        https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/user-data-streams#keepalive-user-data-stream\n\n        Keepalive a user data stream to prevent a time out. User data streams\nwill close after 60 minutes. It's recommended to send a ping about every\n60 minutes.\n\nWeight(IP): 1\n\nSecurity Type: USER_STREAM\n\n        Args:\n\n        Returns:\n            ApiResponse[KeepaliveUserDataStreamResponse]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'PUT'",
+        "path": "'/fapi/v1/listenKey'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit",
+        "response_model": "KeepaliveUserDataStreamResponse"
+      },
+      "evidence": {
+        "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/user_data_streams_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/user_data_streams_api.py#L70",
+        "full_source_sha256": "6d75e69c8b894f2a84a92cfaab49089d7a9bdb6a03cc4ad0aa900c6ef6053646",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-keepalive_user_data_stream.txt",
+        "retained_sha256": "4b8eb396165ee6ea312f1d5ec4757d0b080a8a6ad3478db5f3c9c34d703a97e3",
+        "start_line": 70,
+        "end_line": 108
+      },
+      "family": "futures_user_stream",
+      "financial": [
+        "ACCOUNT_UPDATE.a.B:wb,cw,bc",
+        "a.P:pa,ep,bep,cr,up,iw",
+        "ORDER_TRADE_UPDATE.o:n,rp,p,q,L,l,z,ap"
+      ],
+      "identity": "ACCOUNT_UPDATE lacks a proven unique economic transaction ID. bc excludes PnL/commission; cr accumulated and pre-fee, not a new realized posting. ORDER_TRADE_UPDATE has i/t but link to REST income tradeId needs verified namespace/settlement rules.",
+      "pagination": "SDK lifecycle60min; snapshot+income+capital recovery needs overlap/retention/gap proofs. Event E/T timestamp units, ordering/duplicates and account binding not fully verified.",
+      "mapping": "NOT VERIFIED: lifecycle/events/correlation disabled. Create/renew/delete stream session is not a query and not included in snapshot-only allowlist.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    },
+    {
+      "name": "close_user_data_stream",
+      "signature": "self",
+      "docstring": "        Close User Data Stream (USER_STREAM)\n        DELETE /fapi/v1/listenKey\n        https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/user-data-streams#close-user-data-stream\n\n        Close out a user data stream.\n\nWeight(IP): 1\n\nSecurity Type: USER_STREAM\n\n        Args:\n\n        Returns:\n            ApiResponse[None]\n\n        Raises:\n            RequiredError: If a required parameter is missing.",
+      "request_call": {
+        "method": "'DELETE'",
+        "path": "'/fapi/v1/listenKey'",
+        "payload": "payload",
+        "body": "request_body",
+        "time_unit": "self._configuration.time_unit"
+      },
+      "evidence": {
+        "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/user_data_streams_api.py",
+        "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/api/user_data_streams_api.py#L33",
+        "full_source_sha256": "6d75e69c8b894f2a84a92cfaab49089d7a9bdb6a03cc4ad0aa900c6ef6053646",
+        "retained_file": "docs/api-evidence/f75b4a52c5ae/method-close_user_data_stream.txt",
+        "retained_sha256": "0673a6bb68067d330f88d5a4178177c5417267550b772fc91de9cf806864080b",
+        "start_line": 33,
+        "end_line": 68
+      },
+      "family": "futures_user_stream",
+      "financial": [
+        "ACCOUNT_UPDATE.a.B:wb,cw,bc",
+        "a.P:pa,ep,bep,cr,up,iw",
+        "ORDER_TRADE_UPDATE.o:n,rp,p,q,L,l,z,ap"
+      ],
+      "identity": "ACCOUNT_UPDATE lacks a proven unique economic transaction ID. bc excludes PnL/commission; cr accumulated and pre-fee, not a new realized posting. ORDER_TRADE_UPDATE has i/t but link to REST income tradeId needs verified namespace/settlement rules.",
+      "pagination": "SDK lifecycle60min; snapshot+income+capital recovery needs overlap/retention/gap proofs. Event E/T timestamp units, ordering/duplicates and account binding not fully verified.",
+      "mapping": "NOT VERIFIED: lifecycle/events/correlation disabled. Create/renew/delete stream session is not a query and not included in snapshot-only allowlist.",
+      "evidence_level": "OFFICIAL_SDK_ONLY",
+      "api_docs_crosschecked": false,
+      "retrieved_at_utc": "2026-11-06T18:31:09.887090+00:00",
+      "permission": "SDK USER_DATA signed (or USER_STREAM key header for listenKey); granular UI/key scopes NOT VERIFIED. Never enable trading/transfer/withdrawal to make monitoring work.",
+      "errors_retry": "Shared SDK common-utils/errors evidence; endpoint-specific numeric codes and server limits NOT VERIFIED; no live implementation."
+    }
+  ],
+  "balance_official_document_review": {
+    "status": "NOT VERIFIED",
+    "report": "docs/test-reports/balance-official-doc-review.json",
+    "vendor_documents": 0,
+    "golden_api_fixtures": 0,
+    "live_smoke_status": "BLOCKED",
+    "reviewed_at_utc": "2026-11-06T19:17:39.927991+00:00"
+  },
+  "latest_balance_recheck": {
+    "status": "NOT VERIFIED",
+    "evidence": "docs/test-reports/balance-readiness-recheck.json",
+    "official_vendor_documents": 0,
+    "windows_tests_executed": 0,
+    "windows_status": "NOT TESTED",
+    "live_readonly_enabled": false,
+    "network_draft_saved_not_applied": true
+  }
+}

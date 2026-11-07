@@ -1,0 +1,52 @@
+def test_futures_account_balance_v3_success(self, mock_get_signature):
+    """Test futures_account_balance_v3() successfully with required parameters only."""
+
+    expected_response = [
+        {
+            "accountAlias": "SgsR",
+            "asset": "USDT",
+            "balance": "122607.35137903",
+            "crossWalletBalance": "23.72469206",
+            "crossUnPnl": "0.00000000",
+            "availableBalance": "23.72469206",
+            "maxWithdrawAmount": "23.72469206",
+            "marginAvailable": True,
+            "updateTime": 1617939110373,
+        }
+    ]
+    mock_get_signature.return_value = "mocked_signature"
+    self.set_mock_response(expected_response)
+
+    response = self.client.futures_account_balance_v3()
+
+    actual_call_args = self.mock_session.request.call_args
+    request_kwargs = actual_call_args.kwargs
+
+    self.mock_session.request.assert_called_once()
+    mock_get_signature.assert_called_once()
+
+    assert "url" in request_kwargs
+    assert "signature" in parse_qs(request_kwargs["params"])
+    assert "/fapi/v3/balance" in request_kwargs["url"]
+    assert request_kwargs["method"] == "GET"
+
+    assert response is not None
+
+    is_list = isinstance(expected_response, list)
+    is_flat_list = (
+        is_list and not isinstance(expected_response[0], list) if is_list else False
+    )
+    is_oneof = is_one_of_model(FuturesAccountBalanceV3Response)
+
+    if is_list and not is_flat_list:
+        expected = expected_response
+    elif (
+        is_oneof or is_list or hasattr(FuturesAccountBalanceV3Response, "from_dict")
+    ):
+        expected = FuturesAccountBalanceV3Response.from_dict(expected_response)
+    else:
+        expected = FuturesAccountBalanceV3Response.model_validate_json(
+            json.dumps(expected_response)
+        )
+
+    assert response.data() == expected

@@ -1,0 +1,159 @@
+{
+  "timestamp_utc": "2026-11-06T18:09:29.221205+00:00",
+  "modified_original_files": [
+    {
+      "file": "README.md",
+      "before": "cf36019f1114ea9a5269dd9d7ea74e3bfc9c2ee687692d21fe0fc214985796b8",
+      "after": "499a390abcff9144b418242d934eaeeff522fdda1c6d72e46352ffea22792cfc"
+    },
+    {
+      "file": "tests/__init__.py",
+      "before": "91c9bc4e72330f34a060a750c1055bbdbbc91e466df1b0f6f017f9a292b64b38",
+      "after": "b783300dcf51f593f396d8fd8ec7c69166e7cd32be18191d23183aef68efb84f"
+    },
+    {
+      "file": "scripts/run_tests.py",
+      "before": "b9c4cb2ed7ca88e434b6fafcac993f9a8259247073c0e00af47f552739e6ed91",
+      "after": "d775b08fa83897c485dda4ad71d724a56262410b16e63fc4c1d10b5ce018eb78"
+    }
+  ],
+  "other_original_files_unchanged": 67,
+  "skill_numeric_ledger_core_schema_and_legacy_test_bodies_unchanged": true,
+  "old_databases_unchanged": true,
+  "new_files_excluding_this_json": [
+    {
+      "file": "docs/API-CONTRACT-MATRIX.md",
+      "sha256": "9196e8b4583a2a7717ac35e29a8c7f23e2df19db1c3fff6dca95b39cc4120ca5"
+    },
+    {
+      "file": "docs/BINANCE-ADAPTER-READINESS.md",
+      "sha256": "e7531f2c5cde11459124ede896b05dd2c30dce5b3503a51182f9ec854a97a0fb"
+    },
+    {
+      "file": "docs/test-reports/adapter-coverage-matrix.json",
+      "sha256": "e4e9e7f5034da293561173fde553b3a55043a8fc6e746129e783df66ed17f3b7"
+    },
+    {
+      "file": "docs/test-reports/adapter-doc-access.json",
+      "sha256": "eebdf689c589db6e0d4bcc48920e2b235e86d6bd49319c1157346d0b5a3e7595"
+    },
+    {
+      "file": "docs/test-reports/adapter-offline-tests.json",
+      "sha256": "483bda8e997e2ebdf1707a650fcffd864ff16f4ed276b40d16b96b9b1dd05929"
+    },
+    {
+      "file": "docs/test-reports/adapter-offline-tests.log",
+      "sha256": "a3b483b3ab55c7d5a8a8d1108b7837c9733d6658ed40b5d0e2958dcfb80540a6"
+    },
+    {
+      "file": "docs/test-reports/api-contract-matrix.json",
+      "sha256": "3d1093bc638fa3eb8d37c4841b1b1e62b427551362e051e734c5edca8b6a4b96"
+    },
+    {
+      "file": "docs/test-reports/compat-linux312.json",
+      "sha256": "f6ca2f0b04ba7ef3cc1be943fb9917607ccfbd1c9948800ec4505db315ce171e"
+    },
+    {
+      "file": "docs/test-reports/compat-linux312.log",
+      "sha256": "d525d16c5bd55fd0a594d05349c3fb97f427ad41280298e6ad46f4e9e3b7a8e1"
+    },
+    {
+      "file": "docs/test-reports/core-regression-before-adapter.json",
+      "sha256": "e8a2db58bfc62e5f6b7108ac2067acccea123cc016b6ffc85d3cbe0328dafaba"
+    },
+    {
+      "file": "docs/test-reports/windows-python314.json",
+      "sha256": "dd5f485c0728541996f5b4cd4770efbfe250e0418863ddb93be7258d43edc475"
+    },
+    {
+      "file": "scripts/check_compatibility.py",
+      "sha256": "51b2d3044c8fb95f75504b1f5209c647c564a5b3f354317a3ff895bf22ad578d"
+    },
+    {
+      "file": "scripts/run_adapter_tests.py",
+      "sha256": "ad6f7f9af3e86ffc0c713186c398b297c73a9bcbfca035d966c643deee9428eb"
+    },
+    {
+      "file": "scripts/test-windows-python314.ps1",
+      "sha256": "603795d00c68cf76b1ec7d2552f8d466294c6295087b99d3cba9b0dc7ea34cae"
+    },
+    {
+      "file": "src/bot1/adapters/__init__.py",
+      "sha256": "d0eb9b6ee67926b352ae9098c13dd0b0fe8951a4b233347b0ca354d7d6bb99f2"
+    },
+    {
+      "file": "src/bot1/adapters/binance/__init__.py",
+      "sha256": "5a7e3fc5805f1b6b171793cda97d5747faf1f39dc56a81c08d858303df228995"
+    },
+    {
+      "file": "src/bot1/adapters/binance/contracts.py",
+      "sha256": "eeb13b460cc475a4f691ae28ab14ff3b4b1e9cf5b0c85155856acc73eb6ffb91"
+    },
+    {
+      "file": "src/bot1/adapters/binance/correlation.py",
+      "sha256": "620d7fd3a9a9974267f5cd4346faf165e168b952224f7685fa6d2fd0b133c316"
+    },
+    {
+      "file": "src/bot1/adapters/binance/mapper.py",
+      "sha256": "8daeed6601aa66ac6d586ec25d4bd6342aebb0a3ecead689e8162c1f90cc213f"
+    },
+    {
+      "file": "src/bot1/adapters/binance/pagination.py",
+      "sha256": "2eef4a1659631a891284a1f161d47b3f2632619082e6f6f81216efac4f8f4a46"
+    },
+    {
+      "file": "src/bot1/adapters/binance/parsing.py",
+      "sha256": "2d308fa803585b209ec59a1d35ee525836a030be4ce694bb8828deddfe866730"
+    },
+    {
+      "file": "src/bot1/adapters/binance/policies.py",
+      "sha256": "1b6269946991fc98d38c0571d030b3832b9fe8b7671df0e4a7a563f7d882356c"
+    },
+    {
+      "file": "src/bot1/adapters/binance/safety.py",
+      "sha256": "28dbf6cd915b4babf88dbdd4291325504b8cd33c9725288e16426a433f49e3e1"
+    },
+    {
+      "file": "src/bot1/adapters/binance/schema.py",
+      "sha256": "2dfb0fd09a035703c7c5df265c529104a4fbabe3c2a7dabcf70b3933761f5c6f"
+    },
+    {
+      "file": "src/bot1/adapters/binance/source.py",
+      "sha256": "75b65249028542aa9782409ea82870ec2118be695e2dd721c09e08013ec4ecd4"
+    },
+    {
+      "file": "src/bot1/adapters/binance/websocket.py",
+      "sha256": "c55d35aef5396923202e25aed472408736c77eaf509736d88ef14e368c5bb82b"
+    },
+    {
+      "file": "src/sitecustomize.py",
+      "sha256": "dea0b78c2835ca660cd3ff2d75ac63c49a5bd0c5457b37f3cea2f21735a627f4"
+    },
+    {
+      "file": "tests/adapter_offline/__init__.py",
+      "sha256": "ca1e4373dd3f4b230e5cdebe377b9b5bc7871ea062ac76f9ce9e7f73a3e13e43"
+    },
+    {
+      "file": "tests/adapter_offline/test_foundations.py",
+      "sha256": "2f9ec81f05997ddb93cfb25c8dbf3a47c46fa588a2e0a260c1cd98a55505505d"
+    },
+    {
+      "file": "tests/fixtures/adapter-foundations.json",
+      "sha256": "770c7902098a5932abdda59011746f3f1fc5506a2b1d1075b9e7fb0ca7b6227e"
+    }
+  ],
+  "runtime_pass": 153,
+  "runtime_fail": 0,
+  "core_pass": 124,
+  "adapter_foundations_pass": 29,
+  "binance_contract_positive_tests_executed": 0,
+  "verified_contracts": 0,
+  "readonly_allowlist": [],
+  "live_readonly_enabled": false,
+  "authenticated_binance_requests": 0,
+  "real_telegram_requests": 0,
+  "docs_public_attempts": 3,
+  "docs_public_attempt_result": "proxy CONNECT403; outside offline tests",
+  "markdown_links_checked": 15,
+  "self_digest_excluded": "adapter-build-integrity.json"
+}

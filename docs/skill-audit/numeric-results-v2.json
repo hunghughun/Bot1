@@ -1,0 +1,417 @@
+{
+  "policy": "NUMERIC-1",
+  "scope": "independent specification model only; not Bot 1",
+  "data": "synthetic only",
+  "network_calls": 0,
+  "passed": 101,
+  "failed": 0,
+  "cases": [
+    {
+      "id": "NF-01",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-02",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-03",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-04",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-05",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-06",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-07",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-08",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-09",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-10",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-11",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-12",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-13",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-14",
+      "status": "PASS"
+    },
+    {
+      "id": "NF-15",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-01",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-02",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-03",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-04",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-05",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-06",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-07",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-08",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-09",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-10",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-11",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-12",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-13",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-14",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-15",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-16",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-17",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-18",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-19",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-20",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-21",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-22",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-23",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-24",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-25",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-26",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-27",
+      "status": "PASS"
+    },
+    {
+      "id": "BOUND-28",
+      "status": "PASS"
+    },
+    {
+      "id": "VALID-01",
+      "status": "PASS"
+    },
+    {
+      "id": "VALID-02",
+      "status": "PASS"
+    },
+    {
+      "id": "VALID-03",
+      "status": "PASS"
+    },
+    {
+      "id": "VALID-04",
+      "status": "PASS"
+    },
+    {
+      "id": "VALID-05",
+      "status": "PASS"
+    },
+    {
+      "id": "VALID-06",
+      "status": "PASS"
+    },
+    {
+      "id": "VALID-07",
+      "status": "PASS"
+    },
+    {
+      "id": "VALID-08",
+      "status": "PASS"
+    },
+    {
+      "id": "VALID-09",
+      "status": "PASS"
+    },
+    {
+      "id": "DOMAIN-NONNEG--1",
+      "status": "PASS"
+    },
+    {
+      "id": "DOMAIN-NONNEG--0",
+      "status": "PASS"
+    },
+    {
+      "id": "DOMAIN-POS--1",
+      "status": "PASS"
+    },
+    {
+      "id": "DOMAIN-POS-0",
+      "status": "PASS"
+    },
+    {
+      "id": "DOMAIN-POS--0",
+      "status": "PASS"
+    },
+    {
+      "id": "DOMAIN-ZERO-SNAPSHOT",
+      "status": "PASS"
+    },
+    {
+      "id": "DOMAIN-NEG-PNL",
+      "status": "PASS"
+    },
+    {
+      "id": "CTX-CONFIG",
+      "status": "PASS"
+    },
+    {
+      "id": "CTX-INEXACT",
+      "status": "PASS"
+    },
+    {
+      "id": "CTX-DIVZERO",
+      "status": "PASS"
+    },
+    {
+      "id": "CTX-ROUNDED",
+      "status": "PASS"
+    },
+    {
+      "id": "CTX-OVERFLOW",
+      "status": "PASS"
+    },
+    {
+      "id": "CTX-UNDERFLOW",
+      "status": "PASS"
+    },
+    {
+      "id": "CTX-FLOAT-TRAP",
+      "status": "PASS"
+    },
+    {
+      "id": "F02-REGRESSION",
+      "status": "PASS"
+    },
+    {
+      "id": "SUM-TENTHS",
+      "status": "PASS"
+    },
+    {
+      "id": "SUM-TINY",
+      "status": "PASS"
+    },
+    {
+      "id": "PRODUCT-MAX-96-DIGITS",
+      "status": "PASS"
+    },
+    {
+      "id": "AGGREGATE-MAX-N-BOUND",
+      "status": "PASS"
+    },
+    {
+      "id": "AGGREGATE-CANCEL-COUNT",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-01",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-02",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-03",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-04",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-05",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-06",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-07",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-08",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-09",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-10",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-11",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-ZERO-DENOM",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-SCALE--1",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-SCALE-19",
+      "status": "PASS"
+    },
+    {
+      "id": "RATIO-SCALE-True",
+      "status": "PASS"
+    },
+    {
+      "id": "DISPLAY-NO-LEDGER-MUTATION",
+      "status": "PASS"
+    },
+    {
+      "id": "S01-DEPOSIT-ARITHMETIC",
+      "status": "PASS"
+    },
+    {
+      "id": "S02-WITHDRAW-FEE-ARITHMETIC",
+      "status": "PASS"
+    },
+    {
+      "id": "S03-SPOT-ARITHMETIC",
+      "status": "PASS"
+    },
+    {
+      "id": "S03-FUTURES-ARITHMETIC",
+      "status": "PASS"
+    },
+    {
+      "id": "S03-EXTERNAL-CAPITAL-ORACLE",
+      "status": "PASS"
+    },
+    {
+      "id": "S04-FUTURES-ARITHMETIC",
+      "status": "PASS"
+    },
+    {
+      "id": "S04-SPOT-ARITHMETIC",
+      "status": "PASS"
+    },
+    {
+      "id": "S04-FUNDING-ARITHMETIC",
+      "status": "PASS"
+    },
+    {
+      "id": "S05-WALLET-DELTA-ORACLE",
+      "status": "PASS"
+    },
+    {
+      "id": "S06-FILL-QUANTITY-ORACLE",
+      "status": "PASS"
+    },
+    {
+      "id": "S06-CLOSE-PARTIAL-ORACLE",
+      "status": "PASS"
+    },
+    {
+      "id": "S07-PNL-FEES-ARITHMETIC",
+      "status": "PASS"
+    },
+    {
+      "id": "GENERATED-250-RATIO-SUM-PAIRS",
+      "status": "PASS"
+    }
+  ],
+  "generated_pairs_in_one_case": 250,
+  "billion_event_replay_executed": false,
+  "runtime_dedup_margin_recovery_telegram": "NOT TESTED"
+}

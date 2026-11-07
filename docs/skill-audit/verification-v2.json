@@ -1,0 +1,310 @@
+{
+  "timestamp_utc": "2026-11-06T16:19:57.208379+00:00",
+  "audit": "v2 NUMERIC-1",
+  "checks": {
+    "numeric_runner": {
+      "command": "python3 docs/skill-audit/checks/check_numeric_policy.py --output docs/skill-audit/numeric-results-v2.json",
+      "exit_code": 0,
+      "stdout": "NUMERIC-1 spec checker: 101 PASS, 0 FAIL; NOT Bot 1"
+    },
+    "official_validator": {
+      "source": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/scripts/quick_validate.py",
+      "sha256": "6cc9dc3199c935916cf6f73fcbbbb0e3bb1b58c8f5109fefa499978908164f51",
+      "exit_code": 0,
+      "stdout": "Skill is valid!",
+      "network_retrieval_in_v2": false
+    },
+    "yaml": {
+      "status": "PASS",
+      "name": "binance-account-monitor",
+      "description_length": 331
+    },
+    "skill_inventory": {
+      "status": "PASS",
+      "files": [
+        "SKILL.md",
+        "references/account-events.md",
+        "references/binance-api.md",
+        "references/deposit-withdrawal.md",
+        "references/financial-arithmetic.md",
+        "references/security-rules.md",
+        "references/telegram-notifications.md",
+        "references/testing-guidelines.md",
+        "references/websocket-recovery.md"
+      ],
+      "file_count": 9,
+      "reference_count": 8,
+      "extra_files": []
+    },
+    "numeric_policy_required_rules": {
+      "status": "PASS",
+      "scope": "static presence and manual proof review, not production enforcement"
+    },
+    "local_links": {
+      "status": "PASS",
+      "skill_link_count": 14,
+      "all_checked_link_count": 28,
+      "broken": 0,
+      "details": [
+        {
+          "source": ".agents/skills/binance-account-monitor/SKILL.md",
+          "target": "references/security-rules.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/SKILL.md",
+          "target": "references/binance-api.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/SKILL.md",
+          "target": "references/financial-arithmetic.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/SKILL.md",
+          "target": "references/account-events.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/SKILL.md",
+          "target": "references/deposit-withdrawal.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/SKILL.md",
+          "target": "references/websocket-recovery.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/SKILL.md",
+          "target": "references/testing-guidelines.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/SKILL.md",
+          "target": "references/telegram-notifications.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/SKILL.md",
+          "target": "references/financial-arithmetic.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/SKILL.md",
+          "target": "references/binance-api.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/references/account-events.md",
+          "target": "financial-arithmetic.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/references/financial-arithmetic.md",
+          "target": "testing-guidelines.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/references/testing-guidelines.md",
+          "target": "financial-arithmetic.md",
+          "exists": true
+        },
+        {
+          "source": ".agents/skills/binance-account-monitor/references/websocket-recovery.md",
+          "target": "binance-api.md",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/SCENARIOS.md",
+          "target": "SCENARIOS-V2.md",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/RETEST-V2.md",
+          "target": "REPORT.md",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/SCENARIOS-V2.md",
+          "target": "SCENARIOS.md",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/SCENARIOS-V2.md",
+          "target": "numeric-results-v2.json",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/TEST-PLAN.md",
+          "target": "../../.agents/skills/binance-account-monitor/references/financial-arithmetic.md",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/TEST-PLAN.md",
+          "target": "numeric-results-v2.json",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/TEST-PLAN.md",
+          "target": "RETEST-V2.md",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/TEST-PLAN.md",
+          "target": "REPORT.md",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/REPORT.md",
+          "target": "RETEST-V2.md",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/REPORT.md",
+          "target": "SCENARIOS.md",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/REPORT.md",
+          "target": "evidence.json",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/REPORT.md",
+          "target": "SCENARIOS.md",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/REPORT.md",
+          "target": "TEST-PLAN.md",
+          "exists": true
+        },
+        {
+          "source": "docs/skill-audit/REPORT.md",
+          "target": "TEST-PLAN.md",
+          "exists": true
+        }
+      ]
+    },
+    "scenario_reassessment": {
+      "reviewed": 16,
+      "runtime_pass": 0,
+      "runtime_fail": 0,
+      "runtime_not_tested": 16,
+      "classification": "REVIEWED documentation only; no function PASS"
+    },
+    "disk_integrity": {
+      "status": "PASS",
+      "changes": [
+        {
+          "file": ".agents/skills/binance-account-monitor/SKILL.md",
+          "kind": "modified",
+          "before_sha256": "8ae8f06ddb11f1df3a63760c9b57656e1e267166dc562cd34fd0c3a64606a2b2",
+          "after_sha256": "ef7087b1344cb3914979b88aac5206514d96816b80dbd7ad76bb22ea79c56157"
+        },
+        {
+          "file": ".agents/skills/binance-account-monitor/references/account-events.md",
+          "kind": "modified",
+          "before_sha256": "7fba286b4b989103e100b65dcad2ae17fc996e17cb7350670b2d27fd53a59a48",
+          "after_sha256": "75e591d1d88728e8009f9d078bc740d9154e4d075d47544f9353c86ad5ad7eba"
+        },
+        {
+          "file": ".agents/skills/binance-account-monitor/references/financial-arithmetic.md",
+          "kind": "created",
+          "before_sha256": null,
+          "after_sha256": "b5ce6a7d74c0aea8f90daa8a808fbaeca49caa7a8b9f7faeb17c9bc5bb0c36a0"
+        },
+        {
+          "file": ".agents/skills/binance-account-monitor/references/testing-guidelines.md",
+          "kind": "modified",
+          "before_sha256": "d789725739da82e8dfd48086147c639e9261ab4025119da3d3bdf0382204dea9",
+          "after_sha256": "b53b7ff08ab641e8d22bd2b967709e25de3c1e9326253cac7a9649be224e63af"
+        },
+        {
+          "file": "docs/skill-audit/REPORT.md",
+          "kind": "modified",
+          "before_sha256": "7dc1957865d04aa705e1ab63a11f24468f6a08ee248053ab191f8f4510a9847b",
+          "after_sha256": "3cc6a4ed6f32afeae0220aa76f855e8cea6aec6cad396328bc92264ae99ba29b"
+        },
+        {
+          "file": "docs/skill-audit/RETEST-V2.md",
+          "kind": "created",
+          "before_sha256": null,
+          "after_sha256": "79df0c086ac3a0b60b727cd3134e8ae3241e4179f5c6dac49296364f797777cd"
+        },
+        {
+          "file": "docs/skill-audit/SCENARIOS-V2.md",
+          "kind": "created",
+          "before_sha256": null,
+          "after_sha256": "0db928d05a3460118070a907693b75e393aa92af7700f0c3de08e930bce92b99"
+        },
+        {
+          "file": "docs/skill-audit/SCENARIOS.md",
+          "kind": "modified",
+          "before_sha256": "8d2f80e48482d04124e62df3bbb724ad4418599684854c9b3817e65cb354229e",
+          "after_sha256": "72f49feb8dd06265c7015e6341bcdd7237aad4f6e13f06baa5fc5783d4b0fe74"
+        },
+        {
+          "file": "docs/skill-audit/TEST-PLAN.md",
+          "kind": "modified",
+          "before_sha256": "d47505b683e865e64dd8d1d69f86fd6e545aa4234f856f46014d72a21147dc64",
+          "after_sha256": "a7cf2239da906d91fe4290d3a99f6a1e9820752af9f9b32de721065b397fabb9"
+        },
+        {
+          "file": "docs/skill-audit/checks/check_numeric_policy.py",
+          "kind": "created",
+          "before_sha256": null,
+          "after_sha256": "3a65ae9f7e578426f68e76bcdbe7b610af8223c78a0b2c840a4ebafe0b5d442f"
+        },
+        {
+          "file": "docs/skill-audit/numeric-results-v2.json",
+          "kind": "created",
+          "before_sha256": null,
+          "after_sha256": "21c861f3c01929f2348c5ac7fcc49fa5370415f5f63ee8cd9e6b531a019946e4"
+        },
+        {
+          "file": "docs/skill-audit/verification-v2.json",
+          "kind": "created",
+          "hash_note": "Own digest excluded to avoid self-reference"
+        }
+      ],
+      "removed": [],
+      "unchanged_skill_files": [
+        ".agents/skills/binance-account-monitor/references/binance-api.md",
+        ".agents/skills/binance-account-monitor/references/deposit-withdrawal.md",
+        ".agents/skills/binance-account-monitor/references/security-rules.md",
+        ".agents/skills/binance-account-monitor/references/telegram-notifications.md",
+        ".agents/skills/binance-account-monitor/references/websocket-recovery.md"
+      ],
+      "all_after_sha256_excluding_this_json": {
+        "docs/skill-audit/SCENARIOS.md": "72f49feb8dd06265c7015e6341bcdd7237aad4f6e13f06baa5fc5783d4b0fe74",
+        "docs/skill-audit/RETEST-V2.md": "79df0c086ac3a0b60b727cd3134e8ae3241e4179f5c6dac49296364f797777cd",
+        "docs/skill-audit/SCENARIOS-V2.md": "0db928d05a3460118070a907693b75e393aa92af7700f0c3de08e930bce92b99",
+        "docs/skill-audit/TEST-PLAN.md": "a7cf2239da906d91fe4290d3a99f6a1e9820752af9f9b32de721065b397fabb9",
+        "docs/skill-audit/REPORT.md": "3cc6a4ed6f32afeae0220aa76f855e8cea6aec6cad396328bc92264ae99ba29b",
+        "docs/skill-audit/numeric-results-v2.json": "21c861f3c01929f2348c5ac7fcc49fa5370415f5f63ee8cd9e6b531a019946e4",
+        "docs/skill-audit/evidence.json": "7ad02cdf9f272ef8bc00e1166e192902634af063f9b31be96aa1b1d008724e1f",
+        "docs/skill-audit/checks/check_numeric_policy.py": "3a65ae9f7e578426f68e76bcdbe7b610af8223c78a0b2c840a4ebafe0b5d442f",
+        ".agents/skills/binance-account-monitor/SKILL.md": "ef7087b1344cb3914979b88aac5206514d96816b80dbd7ad76bb22ea79c56157",
+        ".agents/skills/binance-account-monitor/references/account-events.md": "75e591d1d88728e8009f9d078bc740d9154e4d075d47544f9353c86ad5ad7eba",
+        ".agents/skills/binance-account-monitor/references/websocket-recovery.md": "3856988ac63459b7e9cb49a9cf62adfa09e382e1bb4df89c8c84a6e373cd871a",
+        ".agents/skills/binance-account-monitor/references/security-rules.md": "399c450684bce1282ba0aee6958edbd3ab9afb0034330bba97dfc51a564b8be3",
+        ".agents/skills/binance-account-monitor/references/binance-api.md": "28b798bea6b28219531dc832647e3c2596f6de189b8c60d61f79b91f3b64dc3c",
+        ".agents/skills/binance-account-monitor/references/financial-arithmetic.md": "b5ce6a7d74c0aea8f90daa8a808fbaeca49caa7a8b9f7faeb17c9bc5bb0c36a0",
+        ".agents/skills/binance-account-monitor/references/telegram-notifications.md": "b0b3f76ad24c173ab78c138aeda0eff782597853107416042386b44473559768",
+        ".agents/skills/binance-account-monitor/references/testing-guidelines.md": "b53b7ff08ab641e8d22bd2b967709e25de3c1e9326253cac7a9649be224e63af",
+        ".agents/skills/binance-account-monitor/references/deposit-withdrawal.md": "ae057b6a578d58ab70305d86704a228c47582815a8dbd4e56f7ea90cc5e33be8"
+      }
+    }
+  },
+  "network_calls_in_v2": 0,
+  "binance_account_calls": 0,
+  "telegram_calls": 0,
+  "bot_created": false,
+  "uses_real_financial_data": false,
+  "F01_F02": "resolved in documentation and independently checked model only",
+  "runtime_functions": "NOT TESTED",
+  "decision": "May start offline core implementation; Binance adapter/live blocked pending official API and permission verification"
+}

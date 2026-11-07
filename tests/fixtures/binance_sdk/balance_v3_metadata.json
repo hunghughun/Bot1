@@ -1,0 +1,21 @@
+{
+  "provenance": "verbatim response value extracted statically from an official SDK unit-test mock; JSON whitespace reserialized",
+  "repository": "https://github.com/binance/binance-connector-python",
+  "commit": "f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179",
+  "sdk_version": "18.3.0",
+  "source": {
+    "path": "clients/derivatives_trading_usds_futures/tests/unit/rest_api/test_account_api.py",
+    "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/tests/unit/rest_api/test_account_api.py#L617",
+    "full_source_sha256": "a77664c80f77e7add943de6c76314d243fdba7f41b3fe23c9947ffba9f5a1949",
+    "retained_file": "docs/api-evidence/f75b4a52c5ae/sdk-test-balance-v3.txt",
+    "retained_sha256": "60457b094d830ab0ea00be657d20413686850cc73bba9e0cb6f67a12db6f8762",
+    "start_line": 617,
+    "end_line": 668
+  },
+  "fixture_sha256": "8308340728d96036dd921af43a27acbaeef83df4b990109f762e29143bbe9b01",
+  "fixture_kind": "official_sdk_mock_copy",
+  "is_official_api_example": false,
+  "is_real_account_data": false,
+  "api_docs_crosschecked": false,
+  "retrieved_at_utc": "2026-11-06T18:31:09.879147+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-11-06T16:37:21.969829+00:00",
+  "existing_files_unchanged": true,
+  "existing_files_checked": 18,
+  "skill_and_v2_match_verified_v2_hashes": true,
+  "skill_sha256": {
+    ".agents/skills/binance-account-monitor/SKILL.md": "ef7087b1344cb3914979b88aac5206514d96816b80dbd7ad76bb22ea79c56157",
+    ".agents/skills/binance-account-monitor/references/account-events.md": "75e591d1d88728e8009f9d078bc740d9154e4d075d47544f9353c86ad5ad7eba",
+    ".agents/skills/binance-account-monitor/references/websocket-recovery.md": "3856988ac63459b7e9cb49a9cf62adfa09e382e1bb4df89c8c84a6e373cd871a",
+    ".agents/skills/binance-account-monitor/references/security-rules.md": "399c450684bce1282ba0aee6958edbd3ab9afb0034330bba97dfc51a564b8be3",
+    ".agents/skills/binance-account-monitor/references/binance-api.md": "28b798bea6b28219531dc832647e3c2596f6de189b8c60d61f79b91f3b64dc3c",
+    ".agents/skills/binance-account-monitor/references/financial-arithmetic.md": "b5ce6a7d74c0aea8f90daa8a808fbaeca49caa7a8b9f7faeb17c9bc5bb0c36a0",
+    ".agents/skills/binance-account-monitor/references/telegram-notifications.md": "b0b3f76ad24c173ab78c138aeda0eff782597853107416042386b44473559768",
+    ".agents/skills/binance-account-monitor/references/testing-guidelines.md": "b53b7ff08ab641e8d22bd2b967709e25de3c1e9326253cac7a9649be224e63af",
+    ".agents/skills/binance-account-monitor/references/deposit-withdrawal.md": "ae057b6a578d58ab70305d86704a228c47582815a8dbd4e56f7ea90cc5e33be8"
+  },
+  "new_files": [
+    {
+      "file": "docs/skill-audit/READINESS-V3.md",
+      "sha256": "f0962d1adcd13885930b4ad0d1c541d378b02399a19fff0df23f242ca6cf216a"
+    },
+    {
+      "file": "docs/skill-audit/v3-evidence/api-matrix.json",
+      "sha256": "5be27e7fae1e2a3b14b193869bec2b9b211b0c7ca736b8064fcad1a051550a5a"
+    },
+    {
+      "file": "docs/skill-audit/v3-evidence/execution.json",
+      "sha256": "83951cd6a540d679384e416cc428e4badbe2a8f8aae1ef9078eb87869ea08ed1"
+    }
+  ],
+  "self": "docs/skill-audit/v3-evidence/integrity.json; own SHA-256 excluded",
+  "removed_files": [],
+  "bot_created": false,
+  "binance_account_connected": false,
+  "vps_deployed": false
+}

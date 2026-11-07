@@ -1,0 +1,80 @@
+{
+  "checked_at_utc": "2026-11-07T03:05:24.356215+00:00",
+  "user_timezone": "Asia/Bangkok",
+  "user_date": "2026-11-07",
+  "scope": "Requested official Balance V3 comparison and Windows Python3.14 rerun",
+  "official_api_docs": {
+    "status": "NOT VERIFIED",
+    "vendor_documents": [],
+    "vendor_contains_only_project_intake": true,
+    "runtime_destination_allowed": false,
+    "proxy_denial_previously_recorded": "docs/test-reports/adapter-doc-access.json",
+    "retried_unchanged_blocked_host": false,
+    "official_comparison_executed": false
+  },
+  "fixtures_and_contract_tests": {
+    "sdk_fixture_sha256": "8308340728d96036dd921af43a27acbaeef83df4b990109f762e29143bbe9b01",
+    "sdk_fixture_metadata_hash_matches": true,
+    "fixture_changed": false,
+    "test_source_changed": false,
+    "reason": "No new official API evidence; do not relabel or invent official API fixture",
+    "official_api_fixtures": 0,
+    "official_api_contract_tests_executed": 0
+  },
+  "network_draft": {
+    "status": "saved",
+    "revision": 3,
+    "custom_allowed_hosts": [
+      "developers.binance.com"
+    ],
+    "preserved_presets": [
+      "package_managers"
+    ],
+    "existing_repository_and_other_fields_preserved": true,
+    "runtime_applied": false,
+    "requires_environment_settings_review_and_apply": true,
+    "requires_publish_reported_by_tool": true,
+    "note": "Only public docs destination proposed; no Binance account API host or credential requested"
+  },
+  "windows_python314": {
+    "status": "NOT TESTED",
+    "executed": 0,
+    "evidence": "docs/test-reports/balance-windows314-recheck.json",
+    "reasons": [
+      "Windows interpreter is required",
+      "CPython 3.14 interpreter is required"
+    ],
+    "python314_available": false,
+    "windows_python_available": false,
+    "powershell_available": false,
+    "wine_available": false
+  },
+  "live_gate_check": {
+    "command": "python scripts/balance-smoke-test.py --live --confirm-readonly --key-type HMAC",
+    "exit_code": 2,
+    "status": "BLOCKED",
+    "error": "BINANCE_CONTRACT_NOT_VERIFIED",
+    "no_credentials_used": true,
+    "no_binance_query_executed": true,
+    "live_readonly_enabled": false,
+    "active_allowlist": []
+  },
+  "prior_linux_tests": {
+    "status": "PASS",
+    "executed": 221,
+    "note": "Historical previous Linux/Python3.12.14 execution; not rerun or used as Windows evidence this stage",
+    "evidence": "docs/test-reports/adapter-offline-tests.json"
+  },
+  "next_actions": [
+    "Review/apply saved docs-domain draft in Environment settings, then recheck enforced runtime before fetching official document; alternatively provide official public HTML/PDF under docs/vendor/binance",
+    "Run scripts/check_compatibility.py with require-windows and require-python314 on an actual Windows CPython3.14 host, retaining JSON and log",
+    "After source evidence is available, review official contract and update provenance fixtures/tests, rerun real Windows suite; maintain live lock until all mandatory conditions pass"
+  ],
+  "remaining_live_blockers": [
+    "Official endpoint/base/auth/signing/parameter/quota/error documents and document-based fixture/tests",
+    "Actual key type and verified minimal read-only permissions",
+    "Reviewed live credential provider, transport, TLS/clock/timeout/rate control",
+    "Windows/Python3.14 execution evidence"
+  ],
+  "conclusion": "NOT READY FOR LIVE; official comparison and Windows rerun remain unexecuted prerequisites"
+}

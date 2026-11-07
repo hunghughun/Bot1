@@ -1,0 +1,50 @@
+def query_user_wallet_balance(
+    self,
+    quote_asset: Optional[str] = None,
+    need_balance_detail: Optional[bool] = None,
+    recv_window: Optional[int] = None,
+) -> ApiResponse[QueryUserWalletBalanceResponse]:
+    """
+            Query User Wallet Balance (USER_DATA)
+            GET /sapi/v1/asset/wallet/balance
+            https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/asset#query-user-wallet-balance
+
+            Query User Wallet Balance
+
+    Weight(IP): 60
+
+    Security Type: USER_DATA
+
+            Args:
+                quote_asset (Optional[str] = None):
+                need_balance_detail (Optional[bool] = None): Whether to return the per-asset balance detail for each wallet. When `false` or omitted, the response is
+    unchanged from current behavior.
+                recv_window (Optional[int] = None):
+
+            Returns:
+                ApiResponse[QueryUserWalletBalanceResponse]
+
+            Raises:
+                RequiredError: If a required parameter is missing.
+
+    """
+
+    request_body = {}
+    payload = {
+        "quote_asset": quote_asset,
+        "need_balance_detail": need_balance_detail,
+        "recv_window": recv_window,
+    }
+
+    return send_request(
+        self._session,
+        self._configuration,
+        method="GET",
+        path="/sapi/v1/asset/wallet/balance",
+        payload=payload,
+        body=request_body,
+        time_unit=self._configuration.time_unit,
+        response_model=QueryUserWalletBalanceResponse,
+        is_signed=True,
+        signer=self._signer,
+    )

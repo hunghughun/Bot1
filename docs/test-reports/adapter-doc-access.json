@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/account",
+    "attempted_at_utc": "2026-11-06T17:44:37.101866+00:00",
+    "content_verified_at": null,
+    "curl_exit": 56,
+    "target_http_code": "000",
+    "stderr": "curl: (56) CONNECT tunnel failed, response 403\n",
+    "proxy_headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Fri, 06 Nov 2026 17:44:36 GMT\nserver: envoy\nconnection: close\n\n"
+  },
+  {
+    "url": "https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/capital",
+    "attempted_at_utc": "2026-11-06T17:44:37.102558+00:00",
+    "content_verified_at": null,
+    "curl_exit": 56,
+    "target_http_code": "000",
+    "stderr": "curl: (56) CONNECT tunnel failed, response 403\n",
+    "proxy_headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Fri, 06 Nov 2026 17:44:36 GMT\nserver: envoy\nconnection: close\n\n"
+  },
+  {
+    "url": "https://developers.binance.com/en/docs/catalog/core-trading-wallet/api/rest-api/asset",
+    "attempted_at_utc": "2026-11-06T17:44:37.098701+00:00",
+    "content_verified_at": null,
+    "curl_exit": 56,
+    "target_http_code": "000",
+    "stderr": "curl: (56) CONNECT tunnel failed, response 403\n",
+    "proxy_headers": "HTTP/1.1 403 Forbidden\ncontent-length: 16\ncontent-type: text/plain\ndate: Fri, 06 Nov 2026 17:44:36 GMT\nserver: envoy\nconnection: close\n\n"
+  }
+]

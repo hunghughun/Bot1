@@ -1,0 +1,39 @@
+def keepalive_user_data_stream(
+    self,
+) -> ApiResponse[KeepaliveUserDataStreamResponse]:
+    """
+            Keepalive User Data Stream (USER_STREAM)
+            PUT /fapi/v1/listenKey
+            https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/user-data-streams#keepalive-user-data-stream
+
+            Keepalive a user data stream to prevent a time out. User data streams
+    will close after 60 minutes. It's recommended to send a ping about every
+    60 minutes.
+
+    Weight(IP): 1
+
+    Security Type: USER_STREAM
+
+            Args:
+
+            Returns:
+                ApiResponse[KeepaliveUserDataStreamResponse]
+
+            Raises:
+                RequiredError: If a required parameter is missing.
+
+    """
+
+    request_body = None
+    payload = None
+
+    return send_request(
+        self._session,
+        self._configuration,
+        method="PUT",
+        path="/fapi/v1/listenKey",
+        payload=payload,
+        body=request_body,
+        time_unit=self._configuration.time_unit,
+        response_model=KeepaliveUserDataStreamResponse,
+    )

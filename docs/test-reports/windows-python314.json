@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-11-06T17:58:21.625345+00:00",
+  "system": "Linux",
+  "python": "3.12.14",
+  "required_windows": true,
+  "required_python314": true,
+  "status": "NOT TESTED",
+  "reasons": [
+    "Windows interpreter is required",
+    "CPython 3.14 interpreter is required"
+  ]
+}

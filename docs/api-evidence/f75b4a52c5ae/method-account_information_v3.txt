@@ -1,0 +1,41 @@
+def account_information_v3(
+    self,
+    recv_window: Optional[int] = None,
+) -> ApiResponse[AccountInformationV3Response]:
+    """
+            Account Information V3 (USER_DATA)
+            GET /fapi/v3/account
+            https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/account#account-information-v3
+
+            Get current account information. User in single-asset/ multi-assets mode will see different value, see comments in response section for detail.
+
+    Weight(IP): 5
+
+    Security Type: USER_DATA
+
+            Args:
+                recv_window (Optional[int] = None):
+
+            Returns:
+                ApiResponse[AccountInformationV3Response]
+
+            Raises:
+                RequiredError: If a required parameter is missing.
+
+    """
+
+    request_body = {}
+    payload = {"recv_window": recv_window}
+
+    return send_request(
+        self._session,
+        self._configuration,
+        method="GET",
+        path="/fapi/v3/account",
+        payload=payload,
+        body=request_body,
+        time_unit=self._configuration.time_unit,
+        response_model=AccountInformationV3Response,
+        is_signed=True,
+        signer=self._signer,
+    )

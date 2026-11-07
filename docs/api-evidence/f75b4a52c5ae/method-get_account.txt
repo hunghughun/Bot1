@@ -1,0 +1,46 @@
+def get_account(
+    self,
+    omit_zero_balances: Optional[bool] = None,
+    recv_window: Optional[float] = None,
+) -> ApiResponse[GetAccountResponse]:
+    """
+            Account information (USER_DATA)
+            GET /api/v3/account
+            https://developers.binance.com/en/docs/catalog/core-trading-spot-trading/api/rest-api/account#get-account
+
+            Get current account information.
+
+    Weight(IP): 20
+
+    Security Type: USER_DATA
+
+    Notes:
+    **Data Source:** Memory => Database
+
+            Args:
+                omit_zero_balances (Optional[bool] = None): When set to `true`, emits only the non-zero balances of an account.
+                recv_window (Optional[float] = None): Supports up to three decimal places of precision (e.g., 6000.346) so that microseconds may be specified.
+
+            Returns:
+                ApiResponse[GetAccountResponse]
+
+            Raises:
+                RequiredError: If a required parameter is missing.
+
+    """
+
+    request_body = {}
+    payload = {"omit_zero_balances": omit_zero_balances, "recv_window": recv_window}
+
+    return send_request(
+        self._session,
+        self._configuration,
+        method="GET",
+        path="/api/v3/account",
+        payload=payload,
+        body=request_body,
+        time_unit=self._configuration.time_unit,
+        response_model=GetAccountResponse,
+        is_signed=True,
+        signer=self._signer,
+    )

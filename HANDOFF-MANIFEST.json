@@ -1,0 +1,999 @@
+{
+  "format_version": 1,
+  "created_at_utc": "2026-11-07T03:46:33.155363+00:00",
+  "project_root_in_zip": "Bot1",
+  "hash_algorithm": "SHA256",
+  "manifest_excludes_itself": true,
+  "exclusions": [
+    ".git",
+    ".codex",
+    ".aws",
+    ".env/key files",
+    "__pycache__/pyc",
+    "venv",
+    "data/runtime/* except .gitkeep",
+    "files outside selected project tree"
+  ],
+  "checks": {
+    "windows_case_collision": false,
+    "symlinks": false,
+    "private_key_markers_found": false
+  },
+  "files": [
+    {
+      "path": ".agents/skills/binance-account-monitor/SKILL.md",
+      "bytes": 5848,
+      "sha256": "ef7087b1344cb3914979b88aac5206514d96816b80dbd7ad76bb22ea79c56157"
+    },
+    {
+      "path": ".agents/skills/binance-account-monitor/references/account-events.md",
+      "bytes": 8697,
+      "sha256": "75e591d1d88728e8009f9d078bc740d9154e4d075d47544f9353c86ad5ad7eba"
+    },
+    {
+      "path": ".agents/skills/binance-account-monitor/references/binance-api.md",
+      "bytes": 6317,
+      "sha256": "28b798bea6b28219531dc832647e3c2596f6de189b8c60d61f79b91f3b64dc3c"
+    },
+    {
+      "path": ".agents/skills/binance-account-monitor/references/deposit-withdrawal.md",
+      "bytes": 4849,
+      "sha256": "ae057b6a578d58ab70305d86704a228c47582815a8dbd4e56f7ea90cc5e33be8"
+    },
+    {
+      "path": ".agents/skills/binance-account-monitor/references/financial-arithmetic.md",
+      "bytes": 11644,
+      "sha256": "b5ce6a7d74c0aea8f90daa8a808fbaeca49caa7a8b9f7faeb17c9bc5bb0c36a0"
+    },
+    {
+      "path": ".agents/skills/binance-account-monitor/references/security-rules.md",
+      "bytes": 4531,
+      "sha256": "399c450684bce1282ba0aee6958edbd3ab9afb0034330bba97dfc51a564b8be3"
+    },
+    {
+      "path": ".agents/skills/binance-account-monitor/references/telegram-notifications.md",
+      "bytes": 4622,
+      "sha256": "b0b3f76ad24c173ab78c138aeda0eff782597853107416042386b44473559768"
+    },
+    {
+      "path": ".agents/skills/binance-account-monitor/references/testing-guidelines.md",
+      "bytes": 7516,
+      "sha256": "b53b7ff08ab641e8d22bd2b967709e25de3c1e9326253cac7a9649be224e63af"
+    },
+    {
+      "path": ".agents/skills/binance-account-monitor/references/websocket-recovery.md",
+      "bytes": 5916,
+      "sha256": "3856988ac63459b7e9cb49a9cf62adfa09e382e1bb4df89c8c84a6e373cd871a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 93,
+      "sha256": "5c30b2db47cea6b1eb302f520514b436a92029aab93c921a2a13d9f79f17fe91"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 3302,
+      "sha256": "78348488dd52c1f4e76f7200df997d9c87799271f30600c14f5c5471e8c38d2e"
+    },
+    {
+      "path": "CODEX-PC-PROMPT.md",
+      "bytes": 2368,
+      "sha256": "31ccfc6e09aee16e0db0344343b2764498f85029794ccc6c32b0971add731b4a"
+    },
+    {
+      "path": "HANDOFF-STATE.json",
+      "bytes": 1671,
+      "sha256": "15a646959127359b8862a28539b299967a5e13e8c6304a59e9bdcbf293f9ce53"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6132,
+      "sha256": "6f5064fef74495764df02d387d9044aaea820bd10be96f28a7a2740d4b7a3bad"
+    },
+    {
+      "path": "START-HERE-PC.md",
+      "bytes": 2483,
+      "sha256": "21fb925dce9adf11fc55649c3e62ccc3ee577e1cceebda789e41a3f4b7991bd1"
+    },
+    {
+      "path": "data/mock/scenario.json",
+      "bytes": 8742,
+      "sha256": "1bf8c6910aba657eba29d3df7067316fd737e5be779bb5ddee5b269393659c68"
+    },
+    {
+      "path": "data/runtime/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/API-CONTRACT-MATRIX.md",
+      "bytes": 66724,
+      "sha256": "838c4829a4c2a57511c7e73c2b5b47f5907914fd3f0454f4f369504abd72238f"
+    },
+    {
+      "path": "docs/BALANCE-SMOKE-TEST.md",
+      "bytes": 6950,
+      "sha256": "30c2d4398ced55dd3812e9cd4a7677325296af96124522cf1b03ecc5fc307961"
+    },
+    {
+      "path": "docs/BINANCE-ADAPTER-READINESS.md",
+      "bytes": 11365,
+      "sha256": "ebee81fb4400da9dccf1d571b6a6a343a12b140146c30c639a605cb18b1f5e29"
+    },
+    {
+      "path": "docs/MISSING-API-SOURCES.md",
+      "bytes": 5068,
+      "sha256": "0cd14eb01c5a2c1107613be611aa42fd20b2d5171f5c06af36cbedd89d0cdfa9"
+    },
+    {
+      "path": "docs/OFFLINE-CORE-REPORT.md",
+      "bytes": 22371,
+      "sha256": "7fdc5e68311a2dafc550f5a2d22385d10de6d2df0a5e28b7471f51ba2905a10b"
+    },
+    {
+      "path": "docs/PC-HANDOFF.md",
+      "bytes": 5979,
+      "sha256": "c01ae8f363cb78929025d64440e4509485800cc5f18755d2a7b656d6da0e2eca"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/LICENSE-MIT.txt",
+      "bytes": 1064,
+      "sha256": "23a262df04920660c2c43ee95cb23a1feb0fcb385c2bd6a1752be6e9241f2832"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/common-configuration.txt",
+      "bytes": 10244,
+      "sha256": "bf913ff1a6175fb2ef6060e8d8688af50b16b0394005ee031bb91869f5ad95bf"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/common-constants.txt",
+      "bytes": 5491,
+      "sha256": "bf30be97c657a9b2366ea13a923eefa8b6b5f9f7b971f4513a62f75772135248"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/common-errors.txt",
+      "bytes": 5230,
+      "sha256": "b445f8eec8a1630180401c5753a63892ced13ee58bd207566ce5b61c7d716983"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/common-utils.txt",
+      "bytes": 42696,
+      "sha256": "75dfbaf3c6b7a407263ca39c80e0b08f64c4a0ee6fb31cb6863b94c1bc6c0667"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/derivatives_trading_usds_futures-pyproject.txt",
+      "bytes": 1150,
+      "sha256": "69e2159790609135539fc4165610b070eecb81a15fee6ca9d196f36ef13b2c19"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/enum-income-types.txt",
+      "bytes": 1018,
+      "sha256": "ad344582aa0fa8cf89faf7e16aa9e8fec5d60afcf281b732404f19145402f255"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-account_information_v3.txt",
+      "bytes": 1172,
+      "sha256": "d8d4c78e57c381dee6052ee872a8cb07496b4765a076fab96f3b3cf0965aacf7"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-close_user_data_stream.txt",
+      "bytes": 1172,
+      "sha256": "a3d039daac70d9f7f86f1237b7d451e9a53704f0b70297f8b34fd499b836cd3a"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-futures_account_balance_v3.txt",
+      "bytes": 1196,
+      "sha256": "5267a810f60bd2b034f78947dd9f1983f1dea1fae856ee9ef97dec8c14635b5a"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-get_income_history.txt",
+      "bytes": 1148,
+      "sha256": "b1cb29c750556198a30ec9366f9e87b72528076c94fc7516d29c4b7bdeacdb71"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-keepalive_user_data_stream.txt",
+      "bytes": 1196,
+      "sha256": "da2358070be928bffb516b59fbd47fc6966c6ecda847157a056d179c6801be31"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-position_information_v3.txt",
+      "bytes": 1178,
+      "sha256": "52c1532e7cb63f9b7bf316758a0116804cad5961c1c4425477ca6f8b36d038d7"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-derivatives_trading_usds_futures-start_user_data_stream.txt",
+      "bytes": 1172,
+      "sha256": "139631669e205fe4a31b023a21e3cddf50462aadc7f5bc59800b666ff72b09ba"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-spot-get_account.txt",
+      "bytes": 888,
+      "sha256": "1a6a7aa4b902f1b9419b5093c17286dd98d49c513f3123c2e0ba243a3bc1e61e"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-wallet-deposit_history.txt",
+      "bytes": 943,
+      "sha256": "7a8784b29ddfeb38c1de9f7ee25a19e6d3eaa7865eb521c41da30e6c46034d2f"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-wallet-funding_wallet.txt",
+      "bytes": 937,
+      "sha256": "ac939c0b9598fcf0712ab2b717607e2f8d35c868bd02e3ccfd27c9be76ca2842"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-wallet-query_user_universal_transfer_history.txt",
+      "bytes": 1139,
+      "sha256": "3a12768dca2a69ef16bfeb370f096ba623e49381661258daf9ee54eef1b9c11a"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-wallet-query_user_wallet_balance.txt",
+      "bytes": 1003,
+      "sha256": "d5d77ca653a8c62f7c517b2637c891e00c8a7d630909ed1d8dc19ee536df78e3"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/example-wallet-withdraw_history.txt",
+      "bytes": 949,
+      "sha256": "c553f322c463a8cf46bd8b3e37b848eb0070e177adbc22c6084fb4a5891acdbb"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/futures-README.txt",
+      "bytes": 20460,
+      "sha256": "03aace07d2cd433d8f840744c5997b28c671287b4257b66bf8f9f26291c36afa"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-account_information_v3.txt",
+      "bytes": 1231,
+      "sha256": "e0cdd3be7df16658208e7af53ee9b8b52993ffd55b33ceccaa77e596b4f5c990"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-close_user_data_stream.txt",
+      "bytes": 874,
+      "sha256": "0673a6bb68067d330f88d5a4178177c5417267550b772fc91de9cf806864080b"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-deposit_history.txt",
+      "bytes": 2514,
+      "sha256": "960caf94875b14a462294e0ac074c8f6597098a46e65d6193884b8fc91b92e0a"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-funding_wallet.txt",
+      "bytes": 1477,
+      "sha256": "46fbbaae99b0ed8af39d42c754aa44326f461ca20dad43d2b23003fab3e848d3"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-futures_account_balance_v3.txt",
+      "bytes": 1143,
+      "sha256": "bc229dd658c2b2de5b76f856b9f279dc646e676073f5093fed946b0759545b8e"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-get_account.txt",
+      "bytes": 1419,
+      "sha256": "c2530c0908fd8b01ee044779c55e186890c401cccc10e20f1c80c2581e088476"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-get_income_history.txt",
+      "bytes": 2183,
+      "sha256": "ec7272066472b0a5f28f6cf2627af97d710a64f75ebcf55c87e50200721d905e"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-keepalive_user_data_stream.txt",
+      "bytes": 1123,
+      "sha256": "4b8eb396165ee6ea312f1d5ec4757d0b080a8a6ad3478db5f3c9c34d703a97e3"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-position_information_v3.txt",
+      "bytes": 1413,
+      "sha256": "978b65aa5a7ed8727c57a88bacc4b6560a0fea3d1baf168a899b4ffcad13e66d"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-query_user_universal_transfer_history.txt",
+      "bytes": 2654,
+      "sha256": "b792ad74e124e491da3d315e27aeeff984b7bbac4088b6c612f18d859f45ad5d"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-query_user_wallet_balance.txt",
+      "bytes": 1569,
+      "sha256": "f9194b16ea8183ec070e173e0f57d55e4075d1a073d696639896e72c182bcb8d"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-start_user_data_stream.txt",
+      "bytes": 1173,
+      "sha256": "43c32878941ae6f9590a5a84e81002dc93152e9655b602a99470bc0c533eb3c0"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/method-withdraw_history.txt",
+      "bytes": 2994,
+      "sha256": "7a721d9d7ce2d4ffb2b79254364f4b4af0d2dd68bcdaa85c18d1851d5c191f88"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/methods.json",
+      "bytes": 27112,
+      "sha256": "6e73beb1f103935e7afd4ffe153d2f0fe61a1828df84a1bd45a43aeaf02c41d5"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_information_v3_response.txt",
+      "bytes": 9129,
+      "sha256": "6fd0db70ec6411c327b43f0e1b841484e0485f8bf0408cb7abfe2e8c7be75b49"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_information_v3_response_assets_inner.txt",
+      "bytes": 6308,
+      "sha256": "af03494e481ca64cb3f0014e0d853347862bd6d714dcea8705767d46ced7efac"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_information_v3_response_positions_inner.txt",
+      "bytes": 5338,
+      "sha256": "5152e6ccdbb1da9334518c610b2103239a30703c1d9ad48c064d2efd8a1dabb2"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_update.txt",
+      "bytes": 3766,
+      "sha256": "5a7c7cd87f1a582d2daef0767b56b369731cfbf26c049eb6838b9b74044cab9a"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_update_a.txt",
+      "bytes": 4775,
+      "sha256": "aa606e16bc4ccec54ea14486e0ff5fb3cf81f448d2df3e1dc07b0de0ce0421c7"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_update_ab_inner.txt",
+      "bytes": 3583,
+      "sha256": "5364197d714687cbac0c36afbc6ecadd92e75f0d81944f983f478b404caeb8e1"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-account_update_ap_inner.txt",
+      "bytes": 4299,
+      "sha256": "4a71b3392d7d5c51f38c6239fcf5aaf35e3f39ba75bcc6535af6c8b486636d6e"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-deposit_history_response.txt",
+      "bytes": 2430,
+      "sha256": "b051d7bb02808b4250072f515af61d1b74d15dd6b94eda87fcfd36734aa9158d"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-deposit_history_response_inner.txt",
+      "bytes": 5486,
+      "sha256": "5a24229215e96025774fb5f777f2a59ae2144a6447554377087a2bfd81e70ba9"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-fields.json",
+      "bytes": 83254,
+      "sha256": "b064f7ba12f7ae5d373b4e85111e7273ef91cf0aa26d6cb1a2ade13471aa79ed"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-funding_wallet_response.txt",
+      "bytes": 2424,
+      "sha256": "bb92c121174b622765217a72fb2ee8f01d4c7f409ffcf6664785893871effa8b"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-funding_wallet_response_inner.txt",
+      "bytes": 3960,
+      "sha256": "b844d6f3cc50bbcb3748d46a23bd3d67f909a74ba42632391d2384db7c909764"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v2_response_inner.txt",
+      "bytes": 5227,
+      "sha256": "dc0fe878edc86d767e7da8672de703778cbb25e41db6dbd5bbe7300e46feb60b"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v3_response.txt",
+      "bytes": 2510,
+      "sha256": "ab92152d96fbcc99cdb4e227d8375fcf48f102d8c4f701d64b4c9e8603b3efc8"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-get_account_response.txt",
+      "bytes": 6919,
+      "sha256": "f4e40ab8e5177a106cbc2cb294692a1d599d1de3db84e4000880474aabdab676"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-get_account_response_balances_inner.txt",
+      "bytes": 3394,
+      "sha256": "b0f9c4db2d29f44cbcbcbb35de3c7dc5f2b8741de4cd388733ac0ab847ef3f19"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-get_account_response_commission_rates.txt",
+      "bytes": 3496,
+      "sha256": "54847beff922d4334a324c0dbb2717ace0a9f470c315f5ca417b8bc9e59ca175"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-get_income_history_response.txt",
+      "bytes": 2467,
+      "sha256": "2550746d81cc6f07d0e99ac402402834deb98dda767d55f5c13b7e7c78d47708"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-get_income_history_response_inner.txt",
+      "bytes": 4460,
+      "sha256": "9ea5afea57119b0045ed951de538c431b427f12379d45f07c520db1e307c8431"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-keepalive_user_data_stream_response.txt",
+      "bytes": 3244,
+      "sha256": "890c328383a9acebf5557ac0d7a2afc55d8b620585e2af0065ed353036abe000"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-order_trade_update.txt",
+      "bytes": 3810,
+      "sha256": "bf881e86164a13672dc5148446c007e8fc2d98f21e408b95bba52dbf0ae4a8db"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-order_trade_update_o.txt",
+      "bytes": 8657,
+      "sha256": "d8894d5000d9ee6ac1cecbbc823fd25834c6b8ad02c52e2f6b0f36fc08f781d7"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-position_information_v3_response.txt",
+      "bytes": 2497,
+      "sha256": "d5327032dce3c1f26f77775ba57480282eaaf523c00e563c84a04cd7533e9a31"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-position_information_v3_response_inner.txt",
+      "bytes": 7594,
+      "sha256": "0e54bfa5c4dcaa61b7aa5c80dfc6b977bd2f4f82459d96cb0004202ebe9e3980"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-query_user_universal_transfer_history_response.txt",
+      "bytes": 4211,
+      "sha256": "9dfd460d937ef320ce246974c2bd8634d49ca2fa69c5667b354657d3738ce08d"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-query_user_universal_transfer_history_response_rows_inner.txt",
+      "bytes": 3977,
+      "sha256": "7072d03977edb5b93c59c5b5e3f21da318dfe8c5f695a09b75e9f7c0fc8a3dc3"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-query_user_wallet_balance_response.txt",
+      "bytes": 2480,
+      "sha256": "4207db75e9fa434ab8c7c621ec1afe8c5f0869923a5cd72de0addb9cca14c1ab"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-query_user_wallet_balance_response_inner.txt",
+      "bytes": 4852,
+      "sha256": "562acbccad680645b7512402e2b42755a86f5f5f4c9e21e5b33a2c65aa732037"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-query_user_wallet_balance_response_inner_asset_balances_inner.txt",
+      "bytes": 4084,
+      "sha256": "b9cbe07e22294dc0b87c617d77812df76e3774781479d2d274463b35ccd7a795"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-start_user_data_stream_response.txt",
+      "bytes": 3228,
+      "sha256": "8a055d7a2e9f3ddcdd8af995bcd4730cd8b9f0218d522b891e88c8df9d0521c5"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-user_data_stream_events_response.txt",
+      "bytes": 16230,
+      "sha256": "2eba510e32a32ff6169c48e631d07b23f20c05b0e403a44eeefbbbfaddae50ea"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-withdraw_history_response.txt",
+      "bytes": 2436,
+      "sha256": "288ebbca7653b103211eaf8f2ede4edec4418a3af7741a27d23707fa81b7a903"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/model-withdraw_history_response_inner.txt",
+      "bytes": 6037,
+      "sha256": "d98c3503ff255ecc70d948c77853b99da0eb14b51a81ec81da2f7d1c185dc893"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/sdk-test-balance-v3.txt",
+      "bytes": 1831,
+      "sha256": "60457b094d830ab0ea00be657d20413686850cc73bba9e0cb6f67a12db6f8762"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/source-manifest.json",
+      "bytes": 46885,
+      "sha256": "f9503bdf384924e8d80d6a48277dd750943269ad9149c4d9cf38ce24bff13b71"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/spot-pyproject.txt",
+      "bytes": 1012,
+      "sha256": "23cfeb40fdbae1adc37366cf310df280db833ac277bb2dd7623c7d66847ecd09"
+    },
+    {
+      "path": "docs/api-evidence/f75b4a52c5ae/wallet-pyproject.txt",
+      "bytes": 986,
+      "sha256": "44456153dfcd7f76b7f301f7cfd01e091dcc82bada811471f095d7718bb8b1d5"
+    },
+    {
+      "path": "docs/architecture/OFFLINE-CORE.md",
+      "bytes": 11696,
+      "sha256": "7f3764053f6f1321893be8f1b7046c764acad3c03147649fe31fd2f1ce525d0a"
+    },
+    {
+      "path": "docs/skill-audit/READINESS-V3.md",
+      "bytes": 18408,
+      "sha256": "f0962d1adcd13885930b4ad0d1c541d378b02399a19fff0df23f242ca6cf216a"
+    },
+    {
+      "path": "docs/skill-audit/REPORT.md",
+      "bytes": 14599,
+      "sha256": "3cc6a4ed6f32afeae0220aa76f855e8cea6aec6cad396328bc92264ae99ba29b"
+    },
+    {
+      "path": "docs/skill-audit/RETEST-V2.md",
+      "bytes": 9992,
+      "sha256": "79df0c086ac3a0b60b727cd3134e8ae3241e4179f5c6dac49296364f797777cd"
+    },
+    {
+      "path": "docs/skill-audit/SCENARIOS-V2.md",
+      "bytes": 4810,
+      "sha256": "0db928d05a3460118070a907693b75e393aa92af7700f0c3de08e930bce92b99"
+    },
+    {
+      "path": "docs/skill-audit/SCENARIOS.md",
+      "bytes": 12564,
+      "sha256": "72f49feb8dd06265c7015e6341bcdd7237aad4f6e13f06baa5fc5783d4b0fe74"
+    },
+    {
+      "path": "docs/skill-audit/TEST-PLAN.md",
+      "bytes": 20531,
+      "sha256": "a7cf2239da906d91fe4290d3a99f6a1e9820752af9f9b32de721065b397fabb9"
+    },
+    {
+      "path": "docs/skill-audit/checks/check_numeric_policy.py",
+      "bytes": 14789,
+      "sha256": "3a65ae9f7e578426f68e76bcdbe7b610af8223c78a0b2c840a4ebafe0b5d442f"
+    },
+    {
+      "path": "docs/skill-audit/evidence.json",
+      "bytes": 9871,
+      "sha256": "7ad02cdf9f272ef8bc00e1166e192902634af063f9b31be96aa1b1d008724e1f"
+    },
+    {
+      "path": "docs/skill-audit/numeric-results-v2.json",
+      "bytes": 6709,
+      "sha256": "21c861f3c01929f2348c5ac7fcc49fa5370415f5f63ee8cd9e6b531a019946e4"
+    },
+    {
+      "path": "docs/skill-audit/v3-evidence/api-matrix.json",
+      "bytes": 14236,
+      "sha256": "5be27e7fae1e2a3b14b193869bec2b9b211b0c7ca736b8064fcad1a051550a5a"
+    },
+    {
+      "path": "docs/skill-audit/v3-evidence/execution.json",
+      "bytes": 33677,
+      "sha256": "83951cd6a540d679384e416cc428e4badbe2a8f8aae1ef9078eb87869ea08ed1"
+    },
+    {
+      "path": "docs/skill-audit/v3-evidence/integrity.json",
+      "bytes": 2160,
+      "sha256": "c587ed87c7e68cfaf2a16dae731bcd54aac07603dc69e36314e2f226661f07ac"
+    },
+    {
+      "path": "docs/skill-audit/verification-v2.json",
+      "bytes": 12734,
+      "sha256": "c17f9e91881a56b489a34a7d132dafabaa6d8345a3e5a131b4076f1a0a5e2343"
+    },
+    {
+      "path": "docs/test-reports/adapter-build-integrity.json",
+      "bytes": 5946,
+      "sha256": "a3a408790406b87318fba0c771f9835c87df3d02340a322014cfdd5005f1ec2c"
+    },
+    {
+      "path": "docs/test-reports/adapter-change-manifest.json",
+      "bytes": 22268,
+      "sha256": "7c683b7cc1ad66e1e57f92ace157de43977cc1a33328ff1fbcbd7d86532fc40d"
+    },
+    {
+      "path": "docs/test-reports/adapter-coverage-matrix.json",
+      "bytes": 26793,
+      "sha256": "e4e9e7f5034da293561173fde553b3a55043a8fc6e746129e783df66ed17f3b7"
+    },
+    {
+      "path": "docs/test-reports/adapter-doc-access.json",
+      "bytes": 1497,
+      "sha256": "eebdf689c589db6e0d4bcc48920e2b235e86d6bd49319c1157346d0b5a3e7595"
+    },
+    {
+      "path": "docs/test-reports/adapter-offline-tests.json",
+      "bytes": 48561,
+      "sha256": "3fb5f96a5e5a469f8960c3a55da5710533c1a674843017290de192bf3f537250"
+    },
+    {
+      "path": "docs/test-reports/adapter-offline-tests.log",
+      "bytes": 30417,
+      "sha256": "c26732f7e575830ff7e2de0296943c37d926ea5f873854560130583e0884b536"
+    },
+    {
+      "path": "docs/test-reports/api-contract-matrix.json",
+      "bytes": 43832,
+      "sha256": "2baefc894a636d76d885d94d29bf73b81ee9fef633081595c1b564f24334dd01"
+    },
+    {
+      "path": "docs/test-reports/balance-official-doc-review.json",
+      "bytes": 8387,
+      "sha256": "cd2a5d01becfb58e7d633e0b98cb9d4ce986761f2c0a4959030b4a3bfc0836c6"
+    },
+    {
+      "path": "docs/test-reports/balance-readiness-recheck.json",
+      "bytes": 3477,
+      "sha256": "09318821ac6aea0a4ac45c4b1a885635026ee6c27a95a41c5bbaae47fdf453f2"
+    },
+    {
+      "path": "docs/test-reports/balance-smoke-change-manifest.json",
+      "bytes": 3857,
+      "sha256": "ee7e9d2d2ac1d1e4b1a87e7d2f6a0baa24e332ad8eb6799233ba6484fdf54c74"
+    },
+    {
+      "path": "docs/test-reports/balance-smoke-windows314.json",
+      "bytes": 288,
+      "sha256": "72d4110c1d4c5e6eb1231ee0a158c36d4911c1002832a6ec706ea1da3a382b62"
+    },
+    {
+      "path": "docs/test-reports/balance-test-development-notes.json",
+      "bytes": 1145,
+      "sha256": "afbae55aa24285eff3f8be22e582b465633e807c17d5b4fc868678b2df99c479"
+    },
+    {
+      "path": "docs/test-reports/balance-trial-plan.json",
+      "bytes": 754,
+      "sha256": "639c9c414bc2b36433075fc94f7fa4ff34a33c2c6098782c7cf8706a949a1add"
+    },
+    {
+      "path": "docs/test-reports/balance-windows314-recheck.json",
+      "bytes": 288,
+      "sha256": "a541eb83dae116ee5829f351a1004a9ecf1f1b7b242720cac86e3845425b63ae"
+    },
+    {
+      "path": "docs/test-reports/build-integrity.json",
+      "bytes": 9466,
+      "sha256": "63db10535d6547f8b273401ffee5707bd1209c44eb45a0e3f441e10ce28394a4"
+    },
+    {
+      "path": "docs/test-reports/compat-linux312.json",
+      "bytes": 21179,
+      "sha256": "f6ca2f0b04ba7ef3cc1be943fb9917607ccfbd1c9948800ec4505db315ce171e"
+    },
+    {
+      "path": "docs/test-reports/compat-linux312.log",
+      "bytes": 18186,
+      "sha256": "d525d16c5bd55fd0a594d05349c3fb97f427ad41280298e6ad46f4e9e3b7a8e1"
+    },
+    {
+      "path": "docs/test-reports/core-regression-before-adapter.json",
+      "bytes": 15440,
+      "sha256": "e8a2db58bfc62e5f6b7108ac2067acccea123cc016b6ffc85d3cbe0328dafaba"
+    },
+    {
+      "path": "docs/test-reports/coverage-matrix.json",
+      "bytes": 20135,
+      "sha256": "edeb73990409b109ff23945862eb19d95ed44eecebad7ba272bd8dc88031e88d"
+    },
+    {
+      "path": "docs/test-reports/fake-latency.json",
+      "bytes": 13467,
+      "sha256": "d46c694e974519bd7607fec5fb532c9a76ba6ca8889527c6c582623eb2526291"
+    },
+    {
+      "path": "docs/test-reports/offline-demo.json",
+      "bytes": 45741,
+      "sha256": "e94fa8493531cd7c5fea744504ae486e9bba474aefd9a5cff11ead1ed8d04af5"
+    },
+    {
+      "path": "docs/test-reports/runtime-tests.json",
+      "bytes": 15323,
+      "sha256": "ebbba6dc560237c35825085cec30be3b46bb14a4ad8cceb0cb467752d9ffb9f8"
+    },
+    {
+      "path": "docs/test-reports/runtime-tests.txt",
+      "bytes": 13808,
+      "sha256": "2893964e1cfd456882a7e9f6415f36d0ce8e75dd1dd9f61f3f373c3bdfca6468"
+    },
+    {
+      "path": "docs/test-reports/windows-python314.json",
+      "bytes": 288,
+      "sha256": "dd5f485c0728541996f5b4cd4770efbfe250e0418863ddb93be7258d43edc475"
+    },
+    {
+      "path": "docs/vendor/binance/README.md",
+      "bytes": 2928,
+      "sha256": "574e27303e9069540cc1dc759fa5eb8fbf15c998a739481cbfe87e781fb25bc7"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 362,
+      "sha256": "4681c553f31f523902463d41a83d86c34c1a65787da6080bbc1df14b38ea9bcc"
+    },
+    {
+      "path": "scripts/balance-smoke-test.py",
+      "bytes": 3902,
+      "sha256": "5f53c590dcdec79e464ba59a41ee4346d94787e13187e0e4d03457b6458e191e"
+    },
+    {
+      "path": "scripts/bot1.py",
+      "bytes": 245,
+      "sha256": "0c9debb889aa5b3a44f66a758d8fa3e2449b46a254db1f01496bc4a4a020f9f5"
+    },
+    {
+      "path": "scripts/check_compatibility.py",
+      "bytes": 2267,
+      "sha256": "51b2d3044c8fb95f75504b1f5209c647c564a5b3f354317a3ff895bf22ad578d"
+    },
+    {
+      "path": "scripts/measure_fake_latency.py",
+      "bytes": 2362,
+      "sha256": "72f2225f5fe71aa54bc41ae8f530338b884c4a4eebd8dab75222a9de003628e8"
+    },
+    {
+      "path": "scripts/run_adapter_tests.py",
+      "bytes": 4679,
+      "sha256": "2baffedd4d96cf6d7b6d973ba90108b1a9fb31318e509726d0125a9c4b2c8e73"
+    },
+    {
+      "path": "scripts/run_tests.py",
+      "bytes": 2952,
+      "sha256": "d775b08fa83897c485dda4ad71d724a56262410b16e63fc4c1d10b5ce018eb78"
+    },
+    {
+      "path": "scripts/test-windows-python314.ps1",
+      "bytes": 957,
+      "sha256": "603795d00c68cf76b1ec7d2552f8d466294c6295087b99d3cba9b0dc7ea34cae"
+    },
+    {
+      "path": "scripts/verify_handoff.py",
+      "bytes": 1614,
+      "sha256": "1df77e91f6bd4ff076cfc56b0b43ac6e351ef9f259e89e1fa61da335a8e78bd3"
+    },
+    {
+      "path": "src/bot1/__init__.py",
+      "bytes": 232,
+      "sha256": "10e320828ac7cd41d782a315dcf3e8948df6e18b2f647a0144d5305a77e656ab"
+    },
+    {
+      "path": "src/bot1/adapters/__init__.py",
+      "bytes": 50,
+      "sha256": "d0eb9b6ee67926b352ae9098c13dd0b0fe8951a4b233347b0ca354d7d6bb99f2"
+    },
+    {
+      "path": "src/bot1/adapters/binance/__init__.py",
+      "bytes": 83,
+      "sha256": "5a7e3fc5805f1b6b171793cda97d5747faf1f39dc56a81c08d858303df228995"
+    },
+    {
+      "path": "src/bot1/adapters/binance/balance.py",
+      "bytes": 5475,
+      "sha256": "0538dc193b7cc325c23c87a55e532b9147cdc71397f26c4d507f26b0ca8140aa"
+    },
+    {
+      "path": "src/bot1/adapters/binance/contracts.py",
+      "bytes": 1220,
+      "sha256": "a75151237bb32f43c7f95a81d6ff9a323934b1ef62293a8b299de48c47cc997f"
+    },
+    {
+      "path": "src/bot1/adapters/binance/correlation.py",
+      "bytes": 491,
+      "sha256": "620d7fd3a9a9974267f5cd4346faf165e168b952224f7685fa6d2fd0b133c316"
+    },
+    {
+      "path": "src/bot1/adapters/binance/mapper.py",
+      "bytes": 872,
+      "sha256": "703eaee256b250c667f92d80977749698655da3294b5ac0b0a64051b238e1615"
+    },
+    {
+      "path": "src/bot1/adapters/binance/pagination.py",
+      "bytes": 1561,
+      "sha256": "2eef4a1659631a891284a1f161d47b3f2632619082e6f6f81216efac4f8f4a46"
+    },
+    {
+      "path": "src/bot1/adapters/binance/parsing.py",
+      "bytes": 2256,
+      "sha256": "2d308fa803585b209ec59a1d35ee525836a030be4ce694bb8828deddfe866730"
+    },
+    {
+      "path": "src/bot1/adapters/binance/policies.py",
+      "bytes": 4446,
+      "sha256": "1b6269946991fc98d38c0571d030b3832b9fe8b7671df0e4a7a563f7d882356c"
+    },
+    {
+      "path": "src/bot1/adapters/binance/safety.py",
+      "bytes": 1458,
+      "sha256": "28dbf6cd915b4babf88dbdd4291325504b8cd33c9725288e16426a433f49e3e1"
+    },
+    {
+      "path": "src/bot1/adapters/binance/schema.py",
+      "bytes": 595,
+      "sha256": "2dfb0fd09a035703c7c5df265c529104a4fbabe3c2a7dabcf70b3933761f5c6f"
+    },
+    {
+      "path": "src/bot1/adapters/binance/smoke.py",
+      "bytes": 7709,
+      "sha256": "adb679fa72f406c332bb467bb7853d6051aa19a2ab813c39d1b4e7f6afa1dcae"
+    },
+    {
+      "path": "src/bot1/adapters/binance/snapshot_store.py",
+      "bytes": 5518,
+      "sha256": "c62a0bec494fc10fa404978d16c87cdfc1a72c72737b60e89820b05fa4d12752"
+    },
+    {
+      "path": "src/bot1/adapters/binance/source.py",
+      "bytes": 4418,
+      "sha256": "75b65249028542aa9782409ea82870ec2118be695e2dd721c09e08013ec4ecd4"
+    },
+    {
+      "path": "src/bot1/adapters/binance/trial.py",
+      "bytes": 1108,
+      "sha256": "bf0201ee088f5b846cbbd38716f626bee9f1bc5a97f8cdd3dfd0ec133977eef9"
+    },
+    {
+      "path": "src/bot1/adapters/binance/websocket.py",
+      "bytes": 451,
+      "sha256": "c55d35aef5396923202e25aed472408736c77eaf509736d88ef14e368c5bb82b"
+    },
+    {
+      "path": "src/bot1/cli.py",
+      "bytes": 4409,
+      "sha256": "b94f1963fc53445bc01da953eb882fbd0d2c6505ec94d358c63d6482f9eb23db"
+    },
+    {
+      "path": "src/bot1/core/__init__.py",
+      "bytes": 31,
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "path": "src/bot1/core/numeric.py",
+      "bytes": 6109,
+      "sha256": "09784ad7434b9a22e96fcc70b9352af727ba9ecfeced6c288a113b5554bd98e0"
+    },
+    {
+      "path": "src/bot1/database/__init__.py",
+      "bytes": 31,
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "path": "src/bot1/database/store.py",
+      "bytes": 5816,
+      "sha256": "1c2f20020951528c78a1bcc792c4821d275cf31798f50029cf88c8468ca878ec"
+    },
+    {
+      "path": "src/bot1/domain/__init__.py",
+      "bytes": 31,
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "path": "src/bot1/domain/events.py",
+      "bytes": 7044,
+      "sha256": "1aaa2c5b82f2adc458276901ebb08b2522dfb6f0c437a5c6c6fa0966ed418fc3"
+    },
+    {
+      "path": "src/bot1/health/__init__.py",
+      "bytes": 31,
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "path": "src/bot1/health/monitor.py",
+      "bytes": 3205,
+      "sha256": "301d18a05795681ce565b02526d6ec307152340ebd973524234f7b3e713432ae"
+    },
+    {
+      "path": "src/bot1/ledger/__init__.py",
+      "bytes": 31,
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "path": "src/bot1/ledger/engine.py",
+      "bytes": 19660,
+      "sha256": "38e1a488d77d45b2bd35b95f0d6be92a27b3174469f37001d4e1eb8db5d93d30"
+    },
+    {
+      "path": "src/bot1/notifications/__init__.py",
+      "bytes": 31,
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "path": "src/bot1/notifications/fake.py",
+      "bytes": 1411,
+      "sha256": "718279415f84ed836b3d5b58db5dd4a6e296e27b0e46bff469029a8b2870c552"
+    },
+    {
+      "path": "src/bot1/notifications/outbox.py",
+      "bytes": 2514,
+      "sha256": "b7146263a11ff9b8a8679b6cb634e01895aa40c7fbab5f023a18b5a7def21cbc"
+    },
+    {
+      "path": "src/bot1/recovery/__init__.py",
+      "bytes": 31,
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "path": "src/bot1/recovery/runner.py",
+      "bytes": 6372,
+      "sha256": "e9cf4a2929cf070b572108e147903082b9a15aec1069580499477b8db754a150"
+    },
+    {
+      "path": "src/bot1/sources/__init__.py",
+      "bytes": 31,
+      "sha256": "4a16869dafb3d33d17cda9d31fc90b8883c761ab6a371fe6fa73ae7e72855c68"
+    },
+    {
+      "path": "src/bot1/sources/fake.py",
+      "bytes": 4360,
+      "sha256": "f94c72cff54164effd854e9a23411300b5fab5323614883fd0971f9cb4990b60"
+    },
+    {
+      "path": "src/sitecustomize.py",
+      "bytes": 852,
+      "sha256": "dea0b78c2835ca660cd3ff2d75ac63c49a5bd0c5457b37f3cea2f21735a627f4"
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 393,
+      "sha256": "b783300dcf51f593f396d8fd8ec7c69166e7cd32be18191d23183aef68efb84f"
+    },
+    {
+      "path": "tests/adapter_offline/__init__.py",
+      "bytes": 73,
+      "sha256": "ca1e4373dd3f4b230e5cdebe377b9b5bc7871ea062ac76f9ce9e7f73a3e13e43"
+    },
+    {
+      "path": "tests/adapter_offline/test_balance_contract.py",
+      "bytes": 20521,
+      "sha256": "6565a6ee1ccba5daa6c69d25d443564621849edde663d145087fcc4a1a477fee"
+    },
+    {
+      "path": "tests/adapter_offline/test_balance_smoke.py",
+      "bytes": 17240,
+      "sha256": "771135af8dc7d9ea180350cc2345d91c4b88c08d3c363037556da43d8cab4454"
+    },
+    {
+      "path": "tests/adapter_offline/test_foundations.py",
+      "bytes": 14113,
+      "sha256": "2f9ec81f05997ddb93cfb25c8dbf3a47c46fa588a2e0a260c1cd98a55505505d"
+    },
+    {
+      "path": "tests/fixtures/__init__.py",
+      "bytes": 36,
+      "sha256": "91c9bc4e72330f34a060a750c1055bbdbbc91e466df1b0f6f017f9a292b64b38"
+    },
+    {
+      "path": "tests/fixtures/adapter-foundations.json",
+      "bytes": 371,
+      "sha256": "770c7902098a5932abdda59011746f3f1fc5506a2b1d1075b9e7fb0ca7b6227e"
+    },
+    {
+      "path": "tests/fixtures/binance_sdk/balance_v3_metadata.json",
+      "bytes": 1200,
+      "sha256": "0353e1913b0591f2a874e1a3dec5713e728833ea8b7dedaeff90e16b6cebba3e"
+    },
+    {
+      "path": "tests/fixtures/binance_sdk/balance_v3_response.json",
+      "bytes": 308,
+      "sha256": "8308340728d96036dd921af43a27acbaeef83df4b990109f762e29143bbe9b01"
+    },
+    {
+      "path": "tests/fixtures/helpers.py",
+      "bytes": 414,
+      "sha256": "c89e1be2ba9e07c6462c0f21d70fcaf3ee9396b529cdbeb90548ae769f374ef6"
+    },
+    {
+      "path": "tests/integration/__init__.py",
+      "bytes": 36,
+      "sha256": "91c9bc4e72330f34a060a750c1055bbdbbc91e466df1b0f6f017f9a292b64b38"
+    },
+    {
+      "path": "tests/integration/test_core.py",
+      "bytes": 26901,
+      "sha256": "6a950fc2c0caa9fa70d16001a777c9ed7b4203cf3134a89551dca0f459e24a82"
+    },
+    {
+      "path": "tests/integration/test_recovery_edges.py",
+      "bytes": 4034,
+      "sha256": "d008a6c2419a492f15c47fcf4c377d2ab41f62fd0001531a16c1accc1069e63f"
+    },
+    {
+      "path": "tests/integration/test_safety_cli.py",
+      "bytes": 6431,
+      "sha256": "40db1c5d37f3ab45803bcd492c56f37ed57f6aa2bb193240042ceba28a002eb1"
+    },
+    {
+      "path": "tests/unit/__init__.py",
+      "bytes": 36,
+      "sha256": "91c9bc4e72330f34a060a750c1055bbdbbc91e466df1b0f6f017f9a292b64b38"
+    },
+    {
+      "path": "tests/unit/test_numeric.py",
+      "bytes": 6844,
+      "sha256": "fd04854fc732294c2bee41ae940080654439e7dfa858a4baa654871dd7054331"
+    }
+  ]
+}

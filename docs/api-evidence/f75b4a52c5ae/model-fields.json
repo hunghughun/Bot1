@@ -1,0 +1,2267 @@
+[
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/futures_account_balance_v3_response.py",
+    "fields": [],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/futures_account_balance_v3_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/futures_account_balance_v3_response.py#L1",
+      "full_source_sha256": "ab92152d96fbcc99cdb4e227d8375fcf48f102d8c4f701d64b4c9e8603b3efc8",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v3_response.txt",
+      "retained_sha256": "ab92152d96fbcc99cdb4e227d8375fcf48f102d8c4f701d64b4c9e8603b3efc8",
+      "start_line": 1,
+      "end_line": 80
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/futures_account_balance_v2_response_inner.py",
+    "fields": [
+      {
+        "class": "FuturesAccountBalanceV2ResponseInner",
+        "name": "account_alias",
+        "type": "Optional[StrictStr]",
+        "alias": "accountAlias",
+        "description": "Unique account alias.",
+        "default": null
+      },
+      {
+        "class": "FuturesAccountBalanceV2ResponseInner",
+        "name": "asset",
+        "type": "Optional[StrictStr]",
+        "alias": "asset",
+        "description": "Asset name.",
+        "default": null
+      },
+      {
+        "class": "FuturesAccountBalanceV2ResponseInner",
+        "name": "balance",
+        "type": "Optional[StrictStr]",
+        "alias": "balance",
+        "description": "Wallet balance.",
+        "default": null
+      },
+      {
+        "class": "FuturesAccountBalanceV2ResponseInner",
+        "name": "cross_wallet_balance",
+        "type": "Optional[StrictStr]",
+        "alias": "crossWalletBalance",
+        "description": "Cross wallet balance.",
+        "default": null
+      },
+      {
+        "class": "FuturesAccountBalanceV2ResponseInner",
+        "name": "cross_un_pnl",
+        "type": "Optional[StrictStr]",
+        "alias": "crossUnPnl",
+        "description": "Unrealized PnL of cross positions.",
+        "default": null
+      },
+      {
+        "class": "FuturesAccountBalanceV2ResponseInner",
+        "name": "available_balance",
+        "type": "Optional[StrictStr]",
+        "alias": "availableBalance",
+        "description": "Available balance.",
+        "default": null
+      },
+      {
+        "class": "FuturesAccountBalanceV2ResponseInner",
+        "name": "max_withdraw_amount",
+        "type": "Optional[StrictStr]",
+        "alias": "maxWithdrawAmount",
+        "description": "Maximum transferable/withdrawable amount.",
+        "default": null
+      },
+      {
+        "class": "FuturesAccountBalanceV2ResponseInner",
+        "name": "margin_available",
+        "type": "Optional[StrictBool]",
+        "alias": "marginAvailable",
+        "description": "Whether the asset can be used as margin in multi-assets mode.",
+        "default": null
+      },
+      {
+        "class": "FuturesAccountBalanceV2ResponseInner",
+        "name": "update_time",
+        "type": "Optional[StrictInt]",
+        "alias": "updateTime",
+        "description": "Last update time in milliseconds.",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/futures_account_balance_v2_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/futures_account_balance_v2_response_inner.py#L1",
+      "full_source_sha256": "dc0fe878edc86d767e7da8672de703778cbb25e41db6dbd5bbe7300e46feb60b",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-futures_account_balance_v2_response_inner.txt",
+      "retained_sha256": "dc0fe878edc86d767e7da8672de703778cbb25e41db6dbd5bbe7300e46feb60b",
+      "start_line": 1,
+      "end_line": 153
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response.py",
+    "fields": [
+      {
+        "class": "AccountInformationV3Response",
+        "name": "total_initial_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "totalInitialMargin",
+        "description": "Total initial margin requirement. USDT only in single-asset mode; the sum of USD value of all cross positions/open order initial margin in multi-assets mode.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3Response",
+        "name": "total_maint_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "totalMaintMargin",
+        "description": "Total maintenance margin requirement. USDT only in single-asset mode; the sum of USD value of all cross positions maintenance margin in multi-assets mode.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3Response",
+        "name": "total_wallet_balance",
+        "type": "Optional[StrictStr]",
+        "alias": "totalWalletBalance",
+        "description": "Total wallet balance. USDT only in single-asset mode; USD-denominated in multi-assets mode.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3Response",
+        "name": "total_unrealized_profit",
+        "type": "Optional[StrictStr]",
+        "alias": "totalUnrealizedProfit",
+        "description": "Total unrealized profit. USDT only in single-asset mode; USD-denominated in multi-assets mode.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3Response",
+        "name": "total_margin_balance",
+        "type": "Optional[StrictStr]",
+        "alias": "totalMarginBalance",
+        "description": "Total margin balance. USDT only in single-asset mode; USD-denominated in multi-assets mode.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3Response",
+        "name": "total_position_initial_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "totalPositionInitialMargin",
+        "description": "Initial margin required for positions. USDT only in single-asset mode; the sum of USD value of all cross positions initial margin in multi-assets mode.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3Response",
+        "name": "total_open_order_initial_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "totalOpenOrderInitialMargin",
+        "description": "Initial margin required for open orders. USDT only in single-asset mode; USD-denominated in multi-assets mode.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3Response",
+        "name": "total_cross_wallet_balance",
+        "type": "Optional[StrictStr]",
+        "alias": "totalCrossWalletBalance",
+        "description": "Cross wallet balance. USDT only in single-asset mode; USD-denominated in multi-assets mode.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3Response",
+        "name": "total_cross_un_pnl",
+        "type": "Optional[StrictStr]",
+        "alias": "totalCrossUnPnl",
+        "description": "Unrealized PnL for cross positions. USDT only in single-asset mode; USD-denominated in multi-assets mode.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3Response",
+        "name": "available_balance",
+        "type": "Optional[StrictStr]",
+        "alias": "availableBalance",
+        "description": "Available balance. USDT only in single-asset mode; USD-denominated in multi-assets mode.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3Response",
+        "name": "max_withdraw_amount",
+        "type": "Optional[StrictStr]",
+        "alias": "maxWithdrawAmount",
+        "description": "Maximum transferable/withdrawable amount. USDT only in single-asset mode; a maximum virtual USD amount in multi-assets mode.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3Response",
+        "name": "assets",
+        "type": "Optional[List[AccountInformationV3ResponseAssetsInner]]",
+        "alias": "assets",
+        "description": "Asset-level account details.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3Response",
+        "name": "positions",
+        "type": "Optional[List[AccountInformationV3ResponsePositionsInner]]",
+        "alias": "positions",
+        "description": "Position details for symbols.",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response.py#L1",
+      "full_source_sha256": "6fd0db70ec6411c327b43f0e1b841484e0485f8bf0408cb7abfe2e8c7be75b49",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_information_v3_response.txt",
+      "retained_sha256": "6fd0db70ec6411c327b43f0e1b841484e0485f8bf0408cb7abfe2e8c7be75b49",
+      "start_line": 1,
+      "end_line": 225
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response_assets_inner.py",
+    "fields": [
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "asset",
+        "type": "Optional[StrictStr]",
+        "alias": "asset",
+        "description": "Asset name.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "wallet_balance",
+        "type": "Optional[StrictStr]",
+        "alias": "walletBalance",
+        "description": "Wallet balance.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "unrealized_profit",
+        "type": "Optional[StrictStr]",
+        "alias": "unrealizedProfit",
+        "description": "Unrealized profit.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "margin_balance",
+        "type": "Optional[StrictStr]",
+        "alias": "marginBalance",
+        "description": "Margin balance.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "maint_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "maintMargin",
+        "description": "Maintenance margin requirement.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "initial_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "initialMargin",
+        "description": "Total initial margin requirement.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "position_initial_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "positionInitialMargin",
+        "description": "Initial margin required for positions.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "open_order_initial_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "openOrderInitialMargin",
+        "description": "Initial margin required for open orders.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "cross_wallet_balance",
+        "type": "Optional[StrictStr]",
+        "alias": "crossWalletBalance",
+        "description": "Cross wallet balance.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "cross_un_pnl",
+        "type": "Optional[StrictStr]",
+        "alias": "crossUnPnl",
+        "description": "Unrealized PnL for cross positions.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "available_balance",
+        "type": "Optional[StrictStr]",
+        "alias": "availableBalance",
+        "description": "Available balance.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "max_withdraw_amount",
+        "type": "Optional[StrictStr]",
+        "alias": "maxWithdrawAmount",
+        "description": "Maximum transferable/withdrawable amount.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponseAssetsInner",
+        "name": "update_time",
+        "type": "Optional[StrictInt]",
+        "alias": "updateTime",
+        "description": "Last update time in milliseconds.",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response_assets_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response_assets_inner.py#L1",
+      "full_source_sha256": "af03494e481ca64cb3f0014e0d853347862bd6d714dcea8705767d46ced7efac",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_information_v3_response_assets_inner.txt",
+      "retained_sha256": "af03494e481ca64cb3f0014e0d853347862bd6d714dcea8705767d46ced7efac",
+      "start_line": 1,
+      "end_line": 179
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response_positions_inner.py",
+    "fields": [
+      {
+        "class": "AccountInformationV3ResponsePositionsInner",
+        "name": "symbol",
+        "type": "Optional[StrictStr]",
+        "alias": "symbol",
+        "description": "Symbol.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponsePositionsInner",
+        "name": "position_side",
+        "type": "Optional[StrictStr]",
+        "alias": "positionSide",
+        "description": "Position side.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponsePositionsInner",
+        "name": "position_amt",
+        "type": "Optional[StrictStr]",
+        "alias": "positionAmt",
+        "description": "Position quantity.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponsePositionsInner",
+        "name": "unrealized_profit",
+        "type": "Optional[StrictStr]",
+        "alias": "unrealizedProfit",
+        "description": "Unrealized profit.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponsePositionsInner",
+        "name": "isolated_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "isolatedMargin",
+        "description": "Isolated margin.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponsePositionsInner",
+        "name": "notional",
+        "type": "Optional[StrictStr]",
+        "alias": "notional",
+        "description": "Position notional value.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponsePositionsInner",
+        "name": "isolated_wallet",
+        "type": "Optional[StrictStr]",
+        "alias": "isolatedWallet",
+        "description": "Isolated wallet balance.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponsePositionsInner",
+        "name": "initial_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "initialMargin",
+        "description": "Initial margin requirement.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponsePositionsInner",
+        "name": "maint_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "maintMargin",
+        "description": "Maintenance margin requirement.",
+        "default": null
+      },
+      {
+        "class": "AccountInformationV3ResponsePositionsInner",
+        "name": "update_time",
+        "type": "Optional[StrictInt]",
+        "alias": "updateTime",
+        "description": "Last update time in milliseconds.",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response_positions_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/account_information_v3_response_positions_inner.py#L1",
+      "full_source_sha256": "5152e6ccdbb1da9334518c610b2103239a30703c1d9ad48c064d2efd8a1dabb2",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_information_v3_response_positions_inner.txt",
+      "retained_sha256": "5152e6ccdbb1da9334518c610b2103239a30703c1d9ad48c064d2efd8a1dabb2",
+      "start_line": 1,
+      "end_line": 154
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/get_income_history_response.py",
+    "fields": [],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/get_income_history_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/get_income_history_response.py#L1",
+      "full_source_sha256": "2550746d81cc6f07d0e99ac402402834deb98dda767d55f5c13b7e7c78d47708",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-get_income_history_response.txt",
+      "retained_sha256": "2550746d81cc6f07d0e99ac402402834deb98dda767d55f5c13b7e7c78d47708",
+      "start_line": 1,
+      "end_line": 80
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/get_income_history_response_inner.py",
+    "fields": [
+      {
+        "class": "GetIncomeHistoryResponseInner",
+        "name": "symbol",
+        "type": "Optional[StrictStr]",
+        "alias": "symbol",
+        "description": "trade symbol, if existing",
+        "default": null
+      },
+      {
+        "class": "GetIncomeHistoryResponseInner",
+        "name": "income_type",
+        "type": "Optional[StrictStr]",
+        "alias": "incomeType",
+        "description": "income type",
+        "default": null
+      },
+      {
+        "class": "GetIncomeHistoryResponseInner",
+        "name": "income",
+        "type": "Optional[StrictStr]",
+        "alias": "income",
+        "description": "income amount",
+        "default": null
+      },
+      {
+        "class": "GetIncomeHistoryResponseInner",
+        "name": "asset",
+        "type": "Optional[StrictStr]",
+        "alias": "asset",
+        "description": "income asset",
+        "default": null
+      },
+      {
+        "class": "GetIncomeHistoryResponseInner",
+        "name": "info",
+        "type": "Optional[StrictStr]",
+        "alias": "info",
+        "description": "extra information",
+        "default": null
+      },
+      {
+        "class": "GetIncomeHistoryResponseInner",
+        "name": "time",
+        "type": "Optional[StrictInt]",
+        "alias": "time",
+        "description": "Time.",
+        "default": null
+      },
+      {
+        "class": "GetIncomeHistoryResponseInner",
+        "name": "tran_id",
+        "type": "Optional[StrictInt]",
+        "alias": "tranId",
+        "description": "transaction id",
+        "default": null
+      },
+      {
+        "class": "GetIncomeHistoryResponseInner",
+        "name": "trade_id",
+        "type": "Optional[StrictStr]",
+        "alias": "tradeId",
+        "description": "trade id, if existing",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/get_income_history_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/get_income_history_response_inner.py#L1",
+      "full_source_sha256": "9ea5afea57119b0045ed951de538c431b427f12379d45f07c520db1e307c8431",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-get_income_history_response_inner.txt",
+      "retained_sha256": "9ea5afea57119b0045ed951de538c431b427f12379d45f07c520db1e307c8431",
+      "start_line": 1,
+      "end_line": 136
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/position_information_v3_response_inner.py",
+    "fields": [
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "symbol",
+        "type": "Optional[StrictStr]",
+        "alias": "symbol",
+        "description": "symbol",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "position_side",
+        "type": "Optional[StrictStr]",
+        "alias": "positionSide",
+        "description": "position side",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "position_amt",
+        "type": "Optional[StrictStr]",
+        "alias": "positionAmt",
+        "description": "position amount, positive for long, negative for short",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "entry_price",
+        "type": "Optional[StrictStr]",
+        "alias": "entryPrice",
+        "description": "entry price",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "break_even_price",
+        "type": "Optional[StrictStr]",
+        "alias": "breakEvenPrice",
+        "description": "break-even price",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "mark_price",
+        "type": "Optional[StrictStr]",
+        "alias": "markPrice",
+        "description": "current mark price",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "un_realized_profit",
+        "type": "Optional[StrictStr]",
+        "alias": "unRealizedProfit",
+        "description": "unrealized profit",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "liquidation_price",
+        "type": "Optional[StrictStr]",
+        "alias": "liquidationPrice",
+        "description": "liquidation price",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "isolated_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "isolatedMargin",
+        "description": "isolated margin",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "notional",
+        "type": "Optional[StrictStr]",
+        "alias": "notional",
+        "description": "notional value of position",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "margin_asset",
+        "type": "Optional[StrictStr]",
+        "alias": "marginAsset",
+        "description": "margin asset",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "isolated_wallet",
+        "type": "Optional[StrictStr]",
+        "alias": "isolatedWallet",
+        "description": "isolated wallet (if isolated position)",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "initial_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "initialMargin",
+        "description": "initial margin required with current mark price",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "maint_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "maintMargin",
+        "description": "maintenance margin required",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "position_initial_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "positionInitialMargin",
+        "description": "initial margin required for positions with current mark price",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "open_order_initial_margin",
+        "type": "Optional[StrictStr]",
+        "alias": "openOrderInitialMargin",
+        "description": "initial margin required for open orders with current mark price",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "adl",
+        "type": "Optional[StrictInt]",
+        "alias": "adl",
+        "description": "auto-deleverage ranking",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "bid_notional",
+        "type": "Optional[StrictStr]",
+        "alias": "bidNotional",
+        "description": "ignore",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "ask_notional",
+        "type": "Optional[StrictStr]",
+        "alias": "askNotional",
+        "description": "ignore",
+        "default": null
+      },
+      {
+        "class": "PositionInformationV3ResponseInner",
+        "name": "update_time",
+        "type": "Optional[StrictInt]",
+        "alias": "updateTime",
+        "description": "update time",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/position_information_v3_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/position_information_v3_response_inner.py#L1",
+      "full_source_sha256": "0e54bfa5c4dcaa61b7aa5c80dfc6b977bd2f4f82459d96cb0004202ebe9e3980",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-position_information_v3_response_inner.txt",
+      "retained_sha256": "0e54bfa5c4dcaa61b7aa5c80dfc6b977bd2f4f82459d96cb0004202ebe9e3980",
+      "start_line": 1,
+      "end_line": 212
+    }
+  },
+  {
+    "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/deposit_history_response_inner.py",
+    "fields": [
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "id",
+        "type": "Optional[StrictStr]",
+        "alias": "id",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "amount",
+        "type": "Optional[StrictStr]",
+        "alias": "amount",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "coin",
+        "type": "Optional[StrictStr]",
+        "alias": "coin",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "network",
+        "type": "Optional[StrictStr]",
+        "alias": "network",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "status",
+        "type": "Optional[StrictInt]",
+        "alias": "status",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "address",
+        "type": "Optional[StrictStr]",
+        "alias": "address",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "address_tag",
+        "type": "Optional[StrictStr]",
+        "alias": "addressTag",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "tx_id",
+        "type": "Optional[StrictStr]",
+        "alias": "txId",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "insert_time",
+        "type": "Optional[StrictInt]",
+        "alias": "insertTime",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "complete_time",
+        "type": "Optional[StrictInt]",
+        "alias": "completeTime",
+        "description": "represents deposit completion datetime, available for deposits after 6-Mar-2025.",
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "transfer_type",
+        "type": "Optional[StrictInt]",
+        "alias": "transferType",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "confirm_times",
+        "type": "Optional[StrictStr]",
+        "alias": "confirmTimes",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "unlock_confirm",
+        "type": "Optional[StrictInt]",
+        "alias": "unlockConfirm",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "wallet_type",
+        "type": "Optional[StrictInt]",
+        "alias": "walletType",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "DepositHistoryResponseInner",
+        "name": "travel_rule_status",
+        "type": "Optional[StrictInt]",
+        "alias": "travelRuleStatus",
+        "description": "0: travel rule not required OR info already provided and funds ready to use, 1: travel rule required to provide deposit info",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/deposit_history_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/deposit_history_response_inner.py#L1",
+      "full_source_sha256": "5a24229215e96025774fb5f777f2a59ae2144a6447554377087a2bfd81e70ba9",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-deposit_history_response_inner.txt",
+      "retained_sha256": "5a24229215e96025774fb5f777f2a59ae2144a6447554377087a2bfd81e70ba9",
+      "start_line": 1,
+      "end_line": 157
+    }
+  },
+  {
+    "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/withdraw_history_response_inner.py",
+    "fields": [
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "id",
+        "type": "Optional[StrictStr]",
+        "alias": "id",
+        "description": "Withdrawal id in Binance",
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "amount",
+        "type": "Optional[StrictStr]",
+        "alias": "amount",
+        "description": "withdrawal amount",
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "transaction_fee",
+        "type": "Optional[StrictStr]",
+        "alias": "transactionFee",
+        "description": "transaction fee",
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "coin",
+        "type": "Optional[StrictStr]",
+        "alias": "coin",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "status",
+        "type": "Optional[StrictInt]",
+        "alias": "status",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "address",
+        "type": "Optional[StrictStr]",
+        "alias": "address",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "tx_id",
+        "type": "Optional[StrictStr]",
+        "alias": "txId",
+        "description": "withdrawal transaction id",
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "apply_time",
+        "type": "Optional[StrictStr]",
+        "alias": "applyTime",
+        "description": "UTC time",
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "network",
+        "type": "Optional[StrictStr]",
+        "alias": "network",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "transfer_type",
+        "type": "Optional[StrictInt]",
+        "alias": "transferType",
+        "description": "1 for internal transfer, 0 for external transfer",
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "withdraw_order_id",
+        "type": "Optional[StrictStr]",
+        "alias": "withdrawOrderId",
+        "description": "will not be returned if there's no withdrawOrderId for this withdraw.",
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "info",
+        "type": "Optional[StrictStr]",
+        "alias": "info",
+        "description": "reason for withdrawal failure",
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "confirm_no",
+        "type": "Optional[StrictInt]",
+        "alias": "confirmNo",
+        "description": "confirm times for withdraw",
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "wallet_type",
+        "type": "Optional[StrictInt]",
+        "alias": "walletType",
+        "description": "1: Funding Wallet 0:Spot Wallet",
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "tx_key",
+        "type": "Optional[StrictStr]",
+        "alias": "txKey",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "WithdrawHistoryResponseInner",
+        "name": "complete_time",
+        "type": "Optional[StrictStr]",
+        "alias": "completeTime",
+        "description": "complete UTC time when user's asset is deduct from withdrawing, only if status =  6(success)",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/withdraw_history_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/withdraw_history_response_inner.py#L1",
+      "full_source_sha256": "d98c3503ff255ecc70d948c77853b99da0eb14b51a81ec81da2f7d1c185dc893",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-withdraw_history_response_inner.txt",
+      "retained_sha256": "d98c3503ff255ecc70d948c77853b99da0eb14b51a81ec81da2f7d1c185dc893",
+      "start_line": 1,
+      "end_line": 178
+    }
+  },
+  {
+    "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_universal_transfer_history_response.py",
+    "fields": [
+      {
+        "class": "QueryUserUniversalTransferHistoryResponse",
+        "name": "total",
+        "type": "Optional[StrictInt]",
+        "alias": "total",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserUniversalTransferHistoryResponse",
+        "name": "rows",
+        "type": "Optional[List[QueryUserUniversalTransferHistoryResponseRowsInner]]",
+        "alias": "rows",
+        "description": null,
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_universal_transfer_history_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_universal_transfer_history_response.py#L1",
+      "full_source_sha256": "9dfd460d937ef320ce246974c2bd8634d49ca2fa69c5667b354657d3738ce08d",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-query_user_universal_transfer_history_response.txt",
+      "retained_sha256": "9dfd460d937ef320ce246974c2bd8634d49ca2fa69c5667b354657d3738ce08d",
+      "start_line": 1,
+      "end_line": 126
+    }
+  },
+  {
+    "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_universal_transfer_history_response_rows_inner.py",
+    "fields": [
+      {
+        "class": "QueryUserUniversalTransferHistoryResponseRowsInner",
+        "name": "asset",
+        "type": "Optional[StrictStr]",
+        "alias": "asset",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserUniversalTransferHistoryResponseRowsInner",
+        "name": "amount",
+        "type": "Optional[StrictStr]",
+        "alias": "amount",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserUniversalTransferHistoryResponseRowsInner",
+        "name": "type",
+        "type": "Optional[StrictStr]",
+        "alias": "type",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserUniversalTransferHistoryResponseRowsInner",
+        "name": "status",
+        "type": "Optional[StrictStr]",
+        "alias": "status",
+        "description": "status: CONFIRMED / FAILED / PENDING",
+        "default": null
+      },
+      {
+        "class": "QueryUserUniversalTransferHistoryResponseRowsInner",
+        "name": "tran_id",
+        "type": "Optional[StrictInt]",
+        "alias": "tranId",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserUniversalTransferHistoryResponseRowsInner",
+        "name": "timestamp",
+        "type": "Optional[StrictInt]",
+        "alias": "timestamp",
+        "description": null,
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_universal_transfer_history_response_rows_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_universal_transfer_history_response_rows_inner.py#L1",
+      "full_source_sha256": "7072d03977edb5b93c59c5b5e3f21da318dfe8c5f695a09b75e9f7c0fc8a3dc3",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-query_user_universal_transfer_history_response_rows_inner.txt",
+      "retained_sha256": "7072d03977edb5b93c59c5b5e3f21da318dfe8c5f695a09b75e9f7c0fc8a3dc3",
+      "start_line": 1,
+      "end_line": 124
+    }
+  },
+  {
+    "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/funding_wallet_response_inner.py",
+    "fields": [
+      {
+        "class": "FundingWalletResponseInner",
+        "name": "asset",
+        "type": "Optional[StrictStr]",
+        "alias": "asset",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "FundingWalletResponseInner",
+        "name": "free",
+        "type": "Optional[StrictStr]",
+        "alias": "free",
+        "description": "avalible balance",
+        "default": null
+      },
+      {
+        "class": "FundingWalletResponseInner",
+        "name": "locked",
+        "type": "Optional[StrictStr]",
+        "alias": "locked",
+        "description": "locked asset",
+        "default": null
+      },
+      {
+        "class": "FundingWalletResponseInner",
+        "name": "freeze",
+        "type": "Optional[StrictStr]",
+        "alias": "freeze",
+        "description": "freeze asset",
+        "default": null
+      },
+      {
+        "class": "FundingWalletResponseInner",
+        "name": "withdrawing",
+        "type": "Optional[StrictStr]",
+        "alias": "withdrawing",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "FundingWalletResponseInner",
+        "name": "btc_valuation",
+        "type": "Optional[StrictStr]",
+        "alias": "btcValuation",
+        "description": null,
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/funding_wallet_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/funding_wallet_response_inner.py#L1",
+      "full_source_sha256": "b844d6f3cc50bbcb3748d46a23bd3d67f909a74ba42632391d2384db7c909764",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-funding_wallet_response_inner.txt",
+      "retained_sha256": "b844d6f3cc50bbcb3748d46a23bd3d67f909a74ba42632391d2384db7c909764",
+      "start_line": 1,
+      "end_line": 122
+    }
+  },
+  {
+    "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response_inner.py",
+    "fields": [
+      {
+        "class": "QueryUserWalletBalanceResponseInner",
+        "name": "activate",
+        "type": "Optional[StrictBool]",
+        "alias": "activate",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserWalletBalanceResponseInner",
+        "name": "balance",
+        "type": "Optional[StrictStr]",
+        "alias": "balance",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserWalletBalanceResponseInner",
+        "name": "wallet_name",
+        "type": "Optional[StrictStr]",
+        "alias": "walletName",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserWalletBalanceResponseInner",
+        "name": "asset_balances",
+        "type": "Optional[List[QueryUserWalletBalanceResponseInnerAssetBalancesInner]]",
+        "alias": "assetBalances",
+        "description": "Per-asset balance detail for this wallet. Only present when `needBalanceDetail=true` is passed; omitted entirely otherwise.",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response_inner.py#L1",
+      "full_source_sha256": "562acbccad680645b7512402e2b42755a86f5f5f4c9e21e5b33a2c65aa732037",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-query_user_wallet_balance_response_inner.txt",
+      "retained_sha256": "562acbccad680645b7512402e2b42755a86f5f5f4c9e21e5b33a2c65aa732037",
+      "start_line": 1,
+      "end_line": 141
+    }
+  },
+  {
+    "path": "clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response.py",
+    "fields": [
+      {
+        "class": "GetAccountResponse",
+        "name": "maker_commission",
+        "type": "Optional[StrictInt]",
+        "alias": "makerCommission",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "taker_commission",
+        "type": "Optional[StrictInt]",
+        "alias": "takerCommission",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "buyer_commission",
+        "type": "Optional[StrictInt]",
+        "alias": "buyerCommission",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "seller_commission",
+        "type": "Optional[StrictInt]",
+        "alias": "sellerCommission",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "commission_rates",
+        "type": "Optional[GetAccountResponseCommissionRates]",
+        "alias": "commissionRates",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "can_trade",
+        "type": "Optional[StrictBool]",
+        "alias": "canTrade",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "can_withdraw",
+        "type": "Optional[StrictBool]",
+        "alias": "canWithdraw",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "can_deposit",
+        "type": "Optional[StrictBool]",
+        "alias": "canDeposit",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "brokered",
+        "type": "Optional[StrictBool]",
+        "alias": "brokered",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "require_self_trade_prevention",
+        "type": "Optional[StrictBool]",
+        "alias": "requireSelfTradePrevention",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "prevent_sor",
+        "type": "Optional[StrictBool]",
+        "alias": "preventSor",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "update_time",
+        "type": "Optional[StrictInt]",
+        "alias": "updateTime",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "account_type",
+        "type": "Optional[StrictStr]",
+        "alias": "accountType",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "balances",
+        "type": "Optional[List[GetAccountResponseBalancesInner]]",
+        "alias": "balances",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "permissions",
+        "type": "Optional[List[StrictStr]]",
+        "alias": "permissions",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponse",
+        "name": "uid",
+        "type": "Optional[StrictInt]",
+        "alias": "uid",
+        "description": null,
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response.py#L1",
+      "full_source_sha256": "f4e40ab8e5177a106cbc2cb294692a1d599d1de3db84e4000880474aabdab676",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-get_account_response.txt",
+      "retained_sha256": "f4e40ab8e5177a106cbc2cb294692a1d599d1de3db84e4000880474aabdab676",
+      "start_line": 1,
+      "end_line": 185
+    }
+  },
+  {
+    "path": "clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response_balances_inner.py",
+    "fields": [
+      {
+        "class": "GetAccountResponseBalancesInner",
+        "name": "asset",
+        "type": "Optional[StrictStr]",
+        "alias": "asset",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponseBalancesInner",
+        "name": "free",
+        "type": "Optional[StrictStr]",
+        "alias": "free",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponseBalancesInner",
+        "name": "locked",
+        "type": "Optional[StrictStr]",
+        "alias": "locked",
+        "description": null,
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response_balances_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response_balances_inner.py#L1",
+      "full_source_sha256": "b0f9c4db2d29f44cbcbcbb35de3c7dc5f2b8741de4cd388733ac0ab847ef3f19",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-get_account_response_balances_inner.txt",
+      "retained_sha256": "b0f9c4db2d29f44cbcbcbb35de3c7dc5f2b8741de4cd388733ac0ab847ef3f19",
+      "start_line": 1,
+      "end_line": 109
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/user_data_stream_events_response.py",
+    "fields": [
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "oneof_schema_1_validator",
+        "type": "Optional[AccountConfigUpdate]",
+        "alias": "oneof_schema_1_validator",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "oneof_schema_2_validator",
+        "type": "Optional[AccountUpdate]",
+        "alias": "oneof_schema_2_validator",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "oneof_schema_3_validator",
+        "type": "Optional[AlgoUpdate]",
+        "alias": "oneof_schema_3_validator",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "oneof_schema_4_validator",
+        "type": "Optional[ConditionalOrderTriggerReject]",
+        "alias": "oneof_schema_4_validator",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "oneof_schema_5_validator",
+        "type": "Optional[GridUpdate]",
+        "alias": "oneof_schema_5_validator",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "oneof_schema_6_validator",
+        "type": "Optional[ListenKeyExpired]",
+        "alias": "oneof_schema_6_validator",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "oneof_schema_7_validator",
+        "type": "Optional[MarginCall]",
+        "alias": "oneof_schema_7_validator",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "oneof_schema_8_validator",
+        "type": "Optional[OrderTradeUpdate]",
+        "alias": "oneof_schema_8_validator",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "oneof_schema_9_validator",
+        "type": "Optional[StrategyUpdate]",
+        "alias": "oneof_schema_9_validator",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "oneof_schema_10_validator",
+        "type": "Optional[TradeLite]",
+        "alias": "oneof_schema_10_validator",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "actual_instance",
+        "type": "Optional[Union[AccountConfigUpdate, AccountUpdate, AlgoUpdate, ConditionalOrderTriggerReject, GridUpdate, ListenKeyExpired, MarginCall, OrderTradeUpdate, StrategyUpdate, TradeLite]]",
+        "alias": "actual_instance",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "one_of_schemas",
+        "type": "Set[str]",
+        "alias": "one_of_schemas",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "UserDataStreamEventsResponse",
+        "name": "discriminator_value_class_map",
+        "type": "Dict[str, str]",
+        "alias": "discriminator_value_class_map",
+        "description": null,
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/user_data_stream_events_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/user_data_stream_events_response.py#L1",
+      "full_source_sha256": "2eba510e32a32ff6169c48e631d07b23f20c05b0e403a44eeefbbbfaddae50ea",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-user_data_stream_events_response.txt",
+      "retained_sha256": "2eba510e32a32ff6169c48e631d07b23f20c05b0e403a44eeefbbbfaddae50ea",
+      "start_line": 1,
+      "end_line": 431
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update.py",
+    "fields": [
+      {
+        "class": "AccountUpdate",
+        "name": "E",
+        "type": "Optional[StrictInt]",
+        "alias": "E",
+        "description": "Event Time",
+        "default": null
+      },
+      {
+        "class": "AccountUpdate",
+        "name": "T",
+        "type": "Optional[StrictInt]",
+        "alias": "T",
+        "description": "Transaction",
+        "default": null
+      },
+      {
+        "class": "AccountUpdate",
+        "name": "a",
+        "type": "Optional[AccountUpdateA]",
+        "alias": "a",
+        "description": null,
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update.py#L1",
+      "full_source_sha256": "5a7c7cd87f1a582d2daef0767b56b369731cfbf26c049eb6838b9b74044cab9a",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_update.txt",
+      "retained_sha256": "5a7c7cd87f1a582d2daef0767b56b369731cfbf26c049eb6838b9b74044cab9a",
+      "start_line": 1,
+      "end_line": 115
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_a.py",
+    "fields": [
+      {
+        "class": "AccountUpdateA",
+        "name": "m",
+        "type": "Optional[StrictStr]",
+        "alias": "m",
+        "description": "Event reason type",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateA",
+        "name": "B",
+        "type": "Optional[List[AccountUpdateABInner]]",
+        "alias": "B",
+        "description": "Balances",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateA",
+        "name": "P",
+        "type": "Optional[List[AccountUpdateAPInner]]",
+        "alias": "P",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "AccountUpdateA",
+        "name": "S",
+        "type": "Optional[StrictStr]",
+        "alias": "S",
+        "description": "Symbol associated with FUNDING_FEE event",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_a.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_a.py#L1",
+      "full_source_sha256": "aa606e16bc4ccec54ea14486e0ff5fb3cf81f448d2df3e1dc07b0de0ce0421c7",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_update_a.txt",
+      "retained_sha256": "aa606e16bc4ccec54ea14486e0ff5fb3cf81f448d2df3e1dc07b0de0ce0421c7",
+      "start_line": 1,
+      "end_line": 139
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_ab_inner.py",
+    "fields": [
+      {
+        "class": "AccountUpdateABInner",
+        "name": "a",
+        "type": "Optional[StrictStr]",
+        "alias": "a",
+        "description": "Asset",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateABInner",
+        "name": "wb",
+        "type": "Optional[StrictStr]",
+        "alias": "wb",
+        "description": "Wallet Balance",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateABInner",
+        "name": "cw",
+        "type": "Optional[StrictStr]",
+        "alias": "cw",
+        "description": "Cross Wallet Balance",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateABInner",
+        "name": "bc",
+        "type": "Optional[StrictStr]",
+        "alias": "bc",
+        "description": "Balance Change except PnL and Commission",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_ab_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_ab_inner.py#L1",
+      "full_source_sha256": "5364197d714687cbac0c36afbc6ecadd92e75f0d81944f983f478b404caeb8e1",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_update_ab_inner.txt",
+      "retained_sha256": "5364197d714687cbac0c36afbc6ecadd92e75f0d81944f983f478b404caeb8e1",
+      "start_line": 1,
+      "end_line": 109
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_ap_inner.py",
+    "fields": [
+      {
+        "class": "AccountUpdateAPInner",
+        "name": "s",
+        "type": "Optional[StrictStr]",
+        "alias": "s",
+        "description": "Symbol",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateAPInner",
+        "name": "pa",
+        "type": "Optional[StrictStr]",
+        "alias": "pa",
+        "description": "Position Amount",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateAPInner",
+        "name": "ep",
+        "type": "Optional[StrictStr]",
+        "alias": "ep",
+        "description": "Entry Price",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateAPInner",
+        "name": "bep",
+        "type": "Optional[StrictStr]",
+        "alias": "bep",
+        "description": "Breakeven Price",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateAPInner",
+        "name": "cr",
+        "type": "Optional[StrictStr]",
+        "alias": "cr",
+        "description": "(Pre-fee) Accumulated Realized",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateAPInner",
+        "name": "up",
+        "type": "Optional[StrictStr]",
+        "alias": "up",
+        "description": "Unrealized PnL",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateAPInner",
+        "name": "mt",
+        "type": "Optional[StrictStr]",
+        "alias": "mt",
+        "description": "Margin Type",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateAPInner",
+        "name": "iw",
+        "type": "Optional[StrictStr]",
+        "alias": "iw",
+        "description": "Isolated Wallet (if isolated position)",
+        "default": null
+      },
+      {
+        "class": "AccountUpdateAPInner",
+        "name": "ps",
+        "type": "Optional[StrictStr]",
+        "alias": "ps",
+        "description": "Position Side",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_ap_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/account_update_ap_inner.py#L1",
+      "full_source_sha256": "4a71b3392d7d5c51f38c6239fcf5aaf35e3f39ba75bcc6535af6c8b486636d6e",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-account_update_ap_inner.txt",
+      "retained_sha256": "4a71b3392d7d5c51f38c6239fcf5aaf35e3f39ba75bcc6535af6c8b486636d6e",
+      "start_line": 1,
+      "end_line": 131
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/order_trade_update.py",
+    "fields": [
+      {
+        "class": "OrderTradeUpdate",
+        "name": "E",
+        "type": "Optional[StrictInt]",
+        "alias": "E",
+        "description": "Event Time",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdate",
+        "name": "T",
+        "type": "Optional[StrictInt]",
+        "alias": "T",
+        "description": "Transaction Time",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdate",
+        "name": "o",
+        "type": "Optional[OrderTradeUpdateO]",
+        "alias": "o",
+        "description": null,
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/order_trade_update.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/order_trade_update.py#L1",
+      "full_source_sha256": "bf881e86164a13672dc5148446c007e8fc2d98f21e408b95bba52dbf0ae4a8db",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-order_trade_update.txt",
+      "retained_sha256": "bf881e86164a13672dc5148446c007e8fc2d98f21e408b95bba52dbf0ae4a8db",
+      "start_line": 1,
+      "end_line": 117
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/order_trade_update_o.py",
+    "fields": [
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "s",
+        "type": "Optional[StrictStr]",
+        "alias": "s",
+        "description": "Symbol",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "c",
+        "type": "Optional[StrictStr]",
+        "alias": "c",
+        "description": "Client Order Id",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "S",
+        "type": "Optional[StrictStr]",
+        "alias": "S",
+        "description": "Side",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "o",
+        "type": "Optional[StrictStr]",
+        "alias": "o",
+        "description": "Order Type",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "f",
+        "type": "Optional[StrictStr]",
+        "alias": "f",
+        "description": "Time in Force",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "q",
+        "type": "Optional[StrictStr]",
+        "alias": "q",
+        "description": "Original Quantity",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "p",
+        "type": "Optional[StrictStr]",
+        "alias": "p",
+        "description": "Original Price",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "ap",
+        "type": "Optional[StrictStr]",
+        "alias": "ap",
+        "description": "Average Price",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "sp",
+        "type": "Optional[StrictStr]",
+        "alias": "sp",
+        "description": "Stop Price. Please ignore with TRAILING_STOP_MARKET order",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "x",
+        "type": "Optional[StrictStr]",
+        "alias": "x",
+        "description": "Execution Type",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "X",
+        "type": "Optional[StrictStr]",
+        "alias": "X",
+        "description": "Order Status",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "i",
+        "type": "Optional[StrictInt]",
+        "alias": "i",
+        "description": "Order Id",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "M",
+        "type": "Optional[StrictStr]",
+        "alias": "M",
+        "description": "modifyId, only pushed for AMENDMENT (order modification) events when a modifyId was provided in the request",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "l",
+        "type": "Optional[StrictStr]",
+        "alias": "l",
+        "description": "Order Last Filled Quantity",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "z",
+        "type": "Optional[StrictStr]",
+        "alias": "z",
+        "description": "Order Filled Accumulated Quantity",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "L",
+        "type": "Optional[StrictStr]",
+        "alias": "L",
+        "description": "Last Filled Price",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "N",
+        "type": "Optional[StrictStr]",
+        "alias": "N",
+        "description": "Commission Asset",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "n",
+        "type": "Optional[StrictStr]",
+        "alias": "n",
+        "description": "Commission",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "T",
+        "type": "Optional[StrictInt]",
+        "alias": "T",
+        "description": "Order Trade Time",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "t",
+        "type": "Optional[StrictInt]",
+        "alias": "t",
+        "description": "Trade Id",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "b",
+        "type": "Optional[StrictStr]",
+        "alias": "b",
+        "description": "Bids Notional",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "a",
+        "type": "Optional[StrictStr]",
+        "alias": "a",
+        "description": "Ask Notional",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "m",
+        "type": "Optional[StrictBool]",
+        "alias": "m",
+        "description": "Is this trade the maker side?",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "R",
+        "type": "Optional[StrictBool]",
+        "alias": "R",
+        "description": "Is this reduce only",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "wt",
+        "type": "Optional[StrictStr]",
+        "alias": "wt",
+        "description": "Stop Price Working Type",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "ot",
+        "type": "Optional[StrictStr]",
+        "alias": "ot",
+        "description": "Original Order Type",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "ps",
+        "type": "Optional[StrictStr]",
+        "alias": "ps",
+        "description": "Position Side",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "cp",
+        "type": "Optional[StrictBool]",
+        "alias": "cp",
+        "description": "If Close-All, pushed with conditional order",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "AP",
+        "type": "Optional[StrictStr]",
+        "alias": "AP",
+        "description": "Activation Price, only pushed with TRAILING_STOP_MARKET order",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "cr",
+        "type": "Optional[StrictStr]",
+        "alias": "cr",
+        "description": "Callback Rate, only pushed with TRAILING_STOP_MARKET order",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "pP",
+        "type": "Optional[StrictBool]",
+        "alias": "pP",
+        "description": "If price protection is turned on",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "si",
+        "type": "Optional[StrictInt]",
+        "alias": "si",
+        "description": "ignore",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "ss",
+        "type": "Optional[StrictInt]",
+        "alias": "ss",
+        "description": "ignore",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "rp",
+        "type": "Optional[StrictStr]",
+        "alias": "rp",
+        "description": "Realized Profit of the trade",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "V",
+        "type": "Optional[StrictStr]",
+        "alias": "V",
+        "description": "STP mode",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "pm",
+        "type": "Optional[StrictStr]",
+        "alias": "pm",
+        "description": "Price match mode",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "gtd",
+        "type": "Optional[StrictInt]",
+        "alias": "gtd",
+        "description": "TIF GTD order auto cancel time",
+        "default": null
+      },
+      {
+        "class": "OrderTradeUpdateO",
+        "name": "er",
+        "type": "Optional[StrictStr]",
+        "alias": "er",
+        "description": "Expiry Reason",
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/order_trade_update_o.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/websocket_streams/models/order_trade_update_o.py#L1",
+      "full_source_sha256": "d8894d5000d9ee6ac1cecbbc823fd25834c6b8ad02c52e2f6b0f36fc08f781d7",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-order_trade_update_o.txt",
+      "retained_sha256": "d8894d5000d9ee6ac1cecbbc823fd25834c6b8ad02c52e2f6b0f36fc08f781d7",
+      "start_line": 1,
+      "end_line": 250
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/position_information_v3_response.py",
+    "fields": [],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/position_information_v3_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/position_information_v3_response.py#L1",
+      "full_source_sha256": "d5327032dce3c1f26f77775ba57480282eaaf523c00e563c84a04cd7533e9a31",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-position_information_v3_response.txt",
+      "retained_sha256": "d5327032dce3c1f26f77775ba57480282eaaf523c00e563c84a04cd7533e9a31",
+      "start_line": 1,
+      "end_line": 80
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/start_user_data_stream_response.py",
+    "fields": [
+      {
+        "class": "StartUserDataStreamResponse",
+        "name": "listen_key",
+        "type": "Optional[StrictStr]",
+        "alias": "listenKey",
+        "description": null,
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/start_user_data_stream_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/start_user_data_stream_response.py#L1",
+      "full_source_sha256": "8a055d7a2e9f3ddcdd8af995bcd4730cd8b9f0218d522b891e88c8df9d0521c5",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-start_user_data_stream_response.txt",
+      "retained_sha256": "8a055d7a2e9f3ddcdd8af995bcd4730cd8b9f0218d522b891e88c8df9d0521c5",
+      "start_line": 1,
+      "end_line": 101
+    }
+  },
+  {
+    "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/keepalive_user_data_stream_response.py",
+    "fields": [
+      {
+        "class": "KeepaliveUserDataStreamResponse",
+        "name": "listen_key",
+        "type": "Optional[StrictStr]",
+        "alias": "listenKey",
+        "description": null,
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/keepalive_user_data_stream_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/derivatives_trading_usds_futures/src/binance_sdk_derivatives_trading_usds_futures/rest_api/models/keepalive_user_data_stream_response.py#L1",
+      "full_source_sha256": "890c328383a9acebf5557ac0d7a2afc55d8b620585e2af0065ed353036abe000",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-keepalive_user_data_stream_response.txt",
+      "retained_sha256": "890c328383a9acebf5557ac0d7a2afc55d8b620585e2af0065ed353036abe000",
+      "start_line": 1,
+      "end_line": 101
+    }
+  },
+  {
+    "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/deposit_history_response.py",
+    "fields": [],
+    "evidence": {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/deposit_history_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/deposit_history_response.py#L1",
+      "full_source_sha256": "b051d7bb02808b4250072f515af61d1b74d15dd6b94eda87fcfd36734aa9158d",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-deposit_history_response.txt",
+      "retained_sha256": "b051d7bb02808b4250072f515af61d1b74d15dd6b94eda87fcfd36734aa9158d",
+      "start_line": 1,
+      "end_line": 80
+    }
+  },
+  {
+    "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/withdraw_history_response.py",
+    "fields": [],
+    "evidence": {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/withdraw_history_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/withdraw_history_response.py#L1",
+      "full_source_sha256": "288ebbca7653b103211eaf8f2ede4edec4418a3af7741a27d23707fa81b7a903",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-withdraw_history_response.txt",
+      "retained_sha256": "288ebbca7653b103211eaf8f2ede4edec4418a3af7741a27d23707fa81b7a903",
+      "start_line": 1,
+      "end_line": 80
+    }
+  },
+  {
+    "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/funding_wallet_response.py",
+    "fields": [],
+    "evidence": {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/funding_wallet_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/funding_wallet_response.py#L1",
+      "full_source_sha256": "bb92c121174b622765217a72fb2ee8f01d4c7f409ffcf6664785893871effa8b",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-funding_wallet_response.txt",
+      "retained_sha256": "bb92c121174b622765217a72fb2ee8f01d4c7f409ffcf6664785893871effa8b",
+      "start_line": 1,
+      "end_line": 80
+    }
+  },
+  {
+    "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response.py",
+    "fields": [],
+    "evidence": {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response.py#L1",
+      "full_source_sha256": "4207db75e9fa434ab8c7c621ec1afe8c5f0869923a5cd72de0addb9cca14c1ab",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-query_user_wallet_balance_response.txt",
+      "retained_sha256": "4207db75e9fa434ab8c7c621ec1afe8c5f0869923a5cd72de0addb9cca14c1ab",
+      "start_line": 1,
+      "end_line": 80
+    }
+  },
+  {
+    "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response_inner_asset_balances_inner.py",
+    "fields": [
+      {
+        "class": "QueryUserWalletBalanceResponseInnerAssetBalancesInner",
+        "name": "asset",
+        "type": "Optional[StrictStr]",
+        "alias": "asset",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserWalletBalanceResponseInnerAssetBalancesInner",
+        "name": "asset_name",
+        "type": "Optional[StrictStr]",
+        "alias": "assetName",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserWalletBalanceResponseInnerAssetBalancesInner",
+        "name": "free",
+        "type": "Optional[StrictStr]",
+        "alias": "free",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserWalletBalanceResponseInnerAssetBalancesInner",
+        "name": "locked",
+        "type": "Optional[StrictStr]",
+        "alias": "locked",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserWalletBalanceResponseInnerAssetBalancesInner",
+        "name": "freeze",
+        "type": "Optional[StrictStr]",
+        "alias": "freeze",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserWalletBalanceResponseInnerAssetBalancesInner",
+        "name": "withdrawing",
+        "type": "Optional[StrictStr]",
+        "alias": "withdrawing",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "QueryUserWalletBalanceResponseInnerAssetBalancesInner",
+        "name": "btc_valuation",
+        "type": "Optional[StrictStr]",
+        "alias": "btcValuation",
+        "description": null,
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response_inner_asset_balances_inner.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/wallet/src/binance_sdk_wallet/rest_api/models/query_user_wallet_balance_response_inner_asset_balances_inner.py#L1",
+      "full_source_sha256": "b9cbe07e22294dc0b87c617d77812df76e3774781479d2d274463b35ccd7a795",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-query_user_wallet_balance_response_inner_asset_balances_inner.txt",
+      "retained_sha256": "b9cbe07e22294dc0b87c617d77812df76e3774781479d2d274463b35ccd7a795",
+      "start_line": 1,
+      "end_line": 125
+    }
+  },
+  {
+    "path": "clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response_commission_rates.py",
+    "fields": [
+      {
+        "class": "GetAccountResponseCommissionRates",
+        "name": "maker",
+        "type": "Optional[StrictStr]",
+        "alias": "maker",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponseCommissionRates",
+        "name": "taker",
+        "type": "Optional[StrictStr]",
+        "alias": "taker",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponseCommissionRates",
+        "name": "buyer",
+        "type": "Optional[StrictStr]",
+        "alias": "buyer",
+        "description": null,
+        "default": null
+      },
+      {
+        "class": "GetAccountResponseCommissionRates",
+        "name": "seller",
+        "type": "Optional[StrictStr]",
+        "alias": "seller",
+        "description": null,
+        "default": null
+      }
+    ],
+    "evidence": {
+      "path": "clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response_commission_rates.py",
+      "url": "https://github.com/binance/binance-connector-python/blob/f75b4a52c5aebf52b1c6ad671b0ce53b96f8e179/clients/spot/src/binance_sdk_spot/rest_api/models/get_account_response_commission_rates.py#L1",
+      "full_source_sha256": "54847beff922d4334a324c0dbb2717ace0a9f470c315f5ca417b8bc9e59ca175",
+      "retained_file": "docs/api-evidence/f75b4a52c5ae/model-get_account_response_commission_rates.txt",
+      "retained_sha256": "54847beff922d4334a324c0dbb2717ace0a9f470c315f5ca417b8bc9e59ca175",
+      "start_line": 1,
+      "end_line": 111
+    }
+  }
+]

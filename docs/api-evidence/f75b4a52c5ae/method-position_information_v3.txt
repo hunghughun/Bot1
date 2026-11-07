@@ -1,0 +1,47 @@
+def position_information_v3(
+    self,
+    symbol: Optional[str] = None,
+    recv_window: Optional[int] = None,
+) -> ApiResponse[PositionInformationV3Response]:
+    """
+            Position Information V3 (USER_DATA)
+            GET /fapi/v3/positionRisk
+            https://developers.binance.com/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/trade#position-information-v3
+
+            Get current position information(only symbol that has position or open
+    orders will be returned).
+
+    Weight(IP): 5
+
+    Security Type: USER_DATA
+
+    Notes:
+    - Please use with user data stream `ACCOUNT_UPDATE` to meet your timeliness and accuracy needs.
+
+            Args:
+                symbol (Optional[str] = None):
+                recv_window (Optional[int] = None):
+
+            Returns:
+                ApiResponse[PositionInformationV3Response]
+
+            Raises:
+                RequiredError: If a required parameter is missing.
+
+    """
+
+    request_body = {}
+    payload = {"symbol": symbol, "recv_window": recv_window}
+
+    return send_request(
+        self._session,
+        self._configuration,
+        method="GET",
+        path="/fapi/v3/positionRisk",
+        payload=payload,
+        body=request_body,
+        time_unit=self._configuration.time_unit,
+        response_model=PositionInformationV3Response,
+        is_signed=True,
+        signer=self._signer,
+    )

@@ -1,0 +1,28 @@
+{
+  "initial_targeted_run": {
+    "executed": 39,
+    "pass": 37,
+    "fail": 2
+  },
+  "issues": [
+    {
+      "test": "test_sdk_golden_values_and_internal_schema",
+      "cause": "New test contained an incorrectly hand-transcribed timestamp oracle 04:51:50.373; SDK updateTime remains 1617939110373.",
+      "independent_check": "GNU date -u -d @1617939110.373 produced 2021-04-09T03:31:50.373Z; corrected only the timestamp assertion to this independent conversion.",
+      "financial_expected_values_changed": false,
+      "fixture_changed": false
+    },
+    {
+      "test": "test_internal_schema_core_integration_adds_zero_cashflow",
+      "cause": "New integration harness enqueued into inbox with ingest but did not call process; corrected harness to call existing Engine.process.",
+      "expected_results_changed": false,
+      "core_changed": false
+    }
+  ],
+  "subsequent_targeted_run": {
+    "executed": 39,
+    "pass": 39,
+    "fail": 0
+  },
+  "disclosure": "Test-authoring fixes with independent evidence, not changes to force financial expected values to match implementation. No previous 153 test bodies/expectations changed."
+}

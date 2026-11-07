@@ -1,0 +1,995 @@
+{
+  "scope": "actual final offline CLI, synthetic data only",
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/bot1.py",
+        "--db",
+        "data/runtime/offline-final.sqlite",
+        "init"
+      ],
+      "exit_code": 0,
+      "output": {
+        "database": "data/runtime/offline-final.sqlite",
+        "schema_version": 1,
+        "mode": "OFFLINE_ONLY"
+      }
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/bot1.py",
+        "--db",
+        "data/runtime/offline-final.sqlite",
+        "simulate",
+        "--disconnect-after",
+        "5"
+      ],
+      "exit_code": 0,
+      "output": {
+        "status": "incomplete",
+        "reason": "SOURCE_DISCONNECTED"
+      }
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/bot1.py",
+        "--db",
+        "data/runtime/offline-final.sqlite",
+        "gaps"
+      ],
+      "exit_code": 0,
+      "output": {
+        "quarantine": [],
+        "reconciliation": [],
+        "windows": [
+          {
+            "stream": "demo-history",
+            "expected_end": 13,
+            "status": "incomplete",
+            "reason": "SOURCE_DISCONNECTED"
+          }
+        ]
+      }
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/bot1.py",
+        "--db",
+        "data/runtime/offline-final.sqlite",
+        "recover"
+      ],
+      "exit_code": 0,
+      "output": {
+        "status": "complete",
+        "reason": "VERIFIED_FAKE_MANIFEST",
+        "expected_end": 13,
+        "processed": 13
+      }
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/bot1.py",
+        "--db",
+        "data/runtime/offline-final.sqlite",
+        "balances"
+      ],
+      "exit_code": 0,
+      "output": {
+        "balances": [
+          {
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "ledger_balance": "76.5",
+            "leaf_terms": 6,
+            "latest_observed": {
+              "amount": "76.5",
+              "event_time": "2026-01-01T00:00:13.000000+00:00",
+              "metric": "wallet"
+            },
+            "metrics": {
+              "wallet": {
+                "amount": "76.5",
+                "event_time": "2026-01-01T00:00:13.000000+00:00"
+              },
+              "unrealized": {
+                "amount": "4",
+                "event_time": "2026-01-01T00:00:08.000000+00:00"
+              }
+            },
+            "data_status": "PROJECTED"
+          },
+          {
+            "account": "demo",
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "ledger_balance": "9",
+            "leaf_terms": 6,
+            "latest_observed": {
+              "amount": "9",
+              "event_time": "2026-01-01T00:00:12.000000+00:00",
+              "metric": "wallet"
+            },
+            "metrics": {
+              "wallet": {
+                "amount": "9",
+                "event_time": "2026-01-01T00:00:12.000000+00:00"
+              }
+            },
+            "data_status": "PROJECTED"
+          }
+        ],
+        "totals_by_wallet_asset_kind": [
+          {
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "kind": "FUNDING_FEE",
+            "net_amount": "-0.5",
+            "credits": "0",
+            "debits": "-0.5"
+          },
+          {
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "kind": "INTERNAL_TRANSFER",
+            "net_amount": "70",
+            "credits": "100",
+            "debits": "-30"
+          },
+          {
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "kind": "REALIZED_PNL",
+            "net_amount": "8",
+            "credits": "8",
+            "debits": "0"
+          },
+          {
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "kind": "TRADING_FEE",
+            "net_amount": "-1",
+            "credits": "0",
+            "debits": "-1"
+          },
+          {
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "kind": "DEPOSIT",
+            "net_amount": "100",
+            "credits": "100",
+            "debits": "0"
+          },
+          {
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "kind": "INTERNAL_TRANSFER",
+            "net_amount": "-70",
+            "credits": "30",
+            "debits": "-100"
+          },
+          {
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "kind": "WITHDRAWAL",
+            "net_amount": "-20",
+            "credits": "0",
+            "debits": "-20"
+          },
+          {
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "kind": "WITHDRAWAL_FEE",
+            "net_amount": "-1",
+            "credits": "0",
+            "debits": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/bot1.py",
+        "--db",
+        "data/runtime/offline-final.sqlite",
+        "history"
+      ],
+      "exit_code": 0,
+      "output": {
+        "events": [
+          {
+            "id": "431b980c-4a8e-4d30-b508-e23155f70f41",
+            "inbox_id": 1,
+            "identity": "578098965c1084c41c88d9d257c4a8c5e84b89397f2457205e221d8f688aa486",
+            "economic_key": "578098965c1084c41c88d9d257c4a8c5e84b89397f2457205e221d8f688aa486",
+            "financial_hash": "fe00ae6fc557db0f11c9bd63dcb1332ebcc247f1d17931ef56875f1cecd77fa5",
+            "source": "fake",
+            "source_id": "synthetic-1",
+            "account": "demo",
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "amount": "0",
+            "kind": "BALANCE_SNAPSHOT",
+            "event_time": "2026-01-01T00:00:01.000000+00:00",
+            "received_time": "2026-01-01T00:00:01.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{\"opening\": true}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          },
+          {
+            "id": "c962305c-c0f6-4390-b0a8-bca9df01d38d",
+            "inbox_id": 2,
+            "identity": "06a5f85a73194221fa94c9c02e2ac45168389ee2a98cc9d4579609543aa326c3",
+            "economic_key": "06a5f85a73194221fa94c9c02e2ac45168389ee2a98cc9d4579609543aa326c3",
+            "financial_hash": "2d65c21e2dd80ed07466a4734074a2352feb635e55c731d7c4a8ef808ca33624",
+            "source": "fake",
+            "source_id": "synthetic-2",
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "amount": "0",
+            "kind": "BALANCE_SNAPSHOT",
+            "event_time": "2026-01-01T00:00:02.000000+00:00",
+            "received_time": "2026-01-01T00:00:02.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{\"opening\": true}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          },
+          {
+            "id": "01cdafd1-2dce-49e6-b129-bfe781aed290",
+            "inbox_id": 3,
+            "identity": "d5876603e7847aff72e80d762af0132925a49671e385dc4183a8ce6b3a694ba1",
+            "economic_key": "d5876603e7847aff72e80d762af0132925a49671e385dc4183a8ce6b3a694ba1",
+            "financial_hash": "cbf510fdcebce8fcfde4b1c9a996aa4cd0af0e3d92a560098b147b9a247d5335",
+            "source": "fake",
+            "source_id": "synthetic-3",
+            "account": "demo",
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "amount": "100",
+            "kind": "DEPOSIT",
+            "event_time": "2026-01-01T00:00:03.000000+00:00",
+            "received_time": "2026-01-01T00:00:03.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          },
+          {
+            "id": "70d89c86-6f5a-4824-b800-f8735ce04e0b",
+            "inbox_id": 4,
+            "identity": "28e47466b9308c5b719b830ac546a09117c82ea18fe70c12069667fe43a369d1",
+            "economic_key": "28e47466b9308c5b719b830ac546a09117c82ea18fe70c12069667fe43a369d1",
+            "financial_hash": "ec0d3ebe29e91162a43c100c59773a6a4ae437c9e88589574b92762864e8ff2c",
+            "source": "fake",
+            "source_id": "synthetic-4",
+            "account": "demo",
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "amount": "100",
+            "kind": "INTERNAL_TRANSFER",
+            "event_time": "2026-01-01T00:00:04.000000+00:00",
+            "received_time": "2026-01-01T00:00:04.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{\"to_wallet\": \"FUTURES\"}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          },
+          {
+            "id": "3d8776e6-32af-463b-9dea-edc96ec1606c",
+            "inbox_id": 5,
+            "identity": "1452225a27407d5f0fe27f3cc13d76b4177098a9490f25b307a57848438bd21e",
+            "economic_key": "1452225a27407d5f0fe27f3cc13d76b4177098a9490f25b307a57848438bd21e",
+            "financial_hash": "96f3634f899554386c1550ac8dca3f8aecfd7177662223bb62752a4fd5de1802",
+            "source": "fake",
+            "source_id": "synthetic-5",
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "amount": "8",
+            "kind": "REALIZED_PNL",
+            "event_time": "2026-01-01T00:00:05.000000+00:00",
+            "received_time": "2026-01-01T00:00:05.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          },
+          {
+            "id": "cc383c32-26ec-418d-bb67-81873d56e4d8",
+            "inbox_id": 6,
+            "identity": "534f93e8d24b583ab1c79f2062e1058981be4667af921b81e63827b3c7d71ce4",
+            "economic_key": "534f93e8d24b583ab1c79f2062e1058981be4667af921b81e63827b3c7d71ce4",
+            "financial_hash": "77aa56a4932956753f7557d7aac1fc7373f022857c1e9a3b67e7b4947da5db63",
+            "source": "fake",
+            "source_id": "synthetic-6",
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "amount": "-1",
+            "kind": "TRADING_FEE",
+            "event_time": "2026-01-01T00:00:06.000000+00:00",
+            "received_time": "2026-01-01T00:00:06.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          },
+          {
+            "id": "c3e00480-e935-4893-8d98-1698fe51bdea",
+            "inbox_id": 7,
+            "identity": "756dee65e41795522d5f305aa06e6df9b07f8e4a5cecbcb4cf519f68a15750ee",
+            "economic_key": "756dee65e41795522d5f305aa06e6df9b07f8e4a5cecbcb4cf519f68a15750ee",
+            "financial_hash": "9f3140b691999f8a1919ad8e13d868dfc374a848e0e26055b2feb1e9ddd97237",
+            "source": "fake",
+            "source_id": "synthetic-7",
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "amount": "-0.5",
+            "kind": "FUNDING_FEE",
+            "event_time": "2026-01-01T00:00:07.000000+00:00",
+            "received_time": "2026-01-01T00:00:07.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          },
+          {
+            "id": "d5653a9c-8bef-4f17-9d61-1f3aa0b66dc5",
+            "inbox_id": 8,
+            "identity": "e9c7f8a4a9d816a40b9bedf19367f1c0b5028a7ef2ca8b468e6f59163e2b85a4",
+            "economic_key": "e9c7f8a4a9d816a40b9bedf19367f1c0b5028a7ef2ca8b468e6f59163e2b85a4",
+            "financial_hash": "fcae37017fddaf9dd54f99d9aa5778f590a02f14a7fcc0989099d6e5fd0e299a",
+            "source": "fake",
+            "source_id": "synthetic-8",
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "amount": "4",
+            "kind": "UNREALIZED_PNL_SNAPSHOT",
+            "event_time": "2026-01-01T00:00:08.000000+00:00",
+            "received_time": "2026-01-01T00:00:08.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          },
+          {
+            "id": "ca889482-bbb6-4b43-9f98-eecedada9f2b",
+            "inbox_id": 9,
+            "identity": "18e3026dbfda16e09bfdcbda27d7d82b70666d396446958e1ba03faaabd7c1c0",
+            "economic_key": "18e3026dbfda16e09bfdcbda27d7d82b70666d396446958e1ba03faaabd7c1c0",
+            "financial_hash": "2102c7556c06f6fae24fa588716b2dc709c8802014d785ef53c3464b3174aa88",
+            "source": "fake",
+            "source_id": "synthetic-9",
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "amount": "30",
+            "kind": "INTERNAL_TRANSFER",
+            "event_time": "2026-01-01T00:00:09.000000+00:00",
+            "received_time": "2026-01-01T00:00:09.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{\"to_wallet\": \"SPOT\"}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          },
+          {
+            "id": "145f8d7f-2c6d-4e82-85c0-18b2a29baa53",
+            "inbox_id": 10,
+            "identity": "50fe81fe6e4caca3cad0469d912f5c5b8a457ef8866bad2d4ce7e52f66d9c949",
+            "economic_key": "50fe81fe6e4caca3cad0469d912f5c5b8a457ef8866bad2d4ce7e52f66d9c949",
+            "financial_hash": "b536fe0010c48b3d12b324ca30cf4822df5397f940775d9ea67cbe90714b64fa",
+            "source": "fake",
+            "source_id": "synthetic-10",
+            "account": "demo",
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "amount": "20",
+            "kind": "WITHDRAWAL",
+            "event_time": "2026-01-01T00:00:10.000000+00:00",
+            "received_time": "2026-01-01T00:00:10.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          },
+          {
+            "id": "bba2c125-0ee1-4d50-8adf-48bcb84aa5ce",
+            "inbox_id": 11,
+            "identity": "caad1eecec0fc7186e08825609cbb21a6a98be18dc570188a8afc47ab8a33ce3",
+            "economic_key": "caad1eecec0fc7186e08825609cbb21a6a98be18dc570188a8afc47ab8a33ce3",
+            "financial_hash": "a7c23293fc1664afedcc53717a22dc145eddc8bf67c4a53fdea833a9485912de",
+            "source": "fake",
+            "source_id": "synthetic-11",
+            "account": "demo",
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "amount": "-1",
+            "kind": "WITHDRAWAL_FEE",
+            "event_time": "2026-01-01T00:00:11.000000+00:00",
+            "received_time": "2026-01-01T00:00:11.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          },
+          {
+            "id": "0a2fe0f9-ae96-4fa6-8653-3863881e68b4",
+            "inbox_id": 12,
+            "identity": "e663eae080345ad70d960b0bcbe48dd29f1fb15d1dddc6df17fd41aeb9d69eed",
+            "economic_key": "e663eae080345ad70d960b0bcbe48dd29f1fb15d1dddc6df17fd41aeb9d69eed",
+            "financial_hash": "b2e39e5ef519037fd10835f83ecb6c0715d8d8c1eea28fe7e87e764b25cf45ed",
+            "source": "fake",
+            "source_id": "synthetic-12",
+            "account": "demo",
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "amount": "9",
+            "kind": "BALANCE_SNAPSHOT",
+            "event_time": "2026-01-01T00:00:12.000000+00:00",
+            "received_time": "2026-01-01T00:00:12.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          },
+          {
+            "id": "4e3c55c3-5fd3-4704-b2a7-ad4657944c05",
+            "inbox_id": 13,
+            "identity": "63fc20ae4e212049af73b65d357ee9b21a19a8bcbb4d130cb0b2e684296ec5fa",
+            "economic_key": "63fc20ae4e212049af73b65d357ee9b21a19a8bcbb4d130cb0b2e684296ec5fa",
+            "financial_hash": "69ecef6f6caefb90e334217d372b9d7a64574ba36922c30753a81c891d407bbb",
+            "source": "fake",
+            "source_id": "synthetic-13",
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "amount": "76.5",
+            "kind": "BALANCE_SNAPSHOT",
+            "event_time": "2026-01-01T00:00:13.000000+00:00",
+            "received_time": "2026-01-01T00:00:13.000000+00:00",
+            "status": "completed",
+            "version": 1,
+            "schema_version": 1,
+            "metadata": "{}",
+            "evidence": "synthetic-fixture-not-binance",
+            "disposition": "observed"
+          }
+        ],
+        "ledger": [
+          {
+            "id": 1,
+            "event_id": "01cdafd1-2dce-49e6-b129-bfe781aed290",
+            "economic_key": "d5876603e7847aff72e80d762af0132925a49671e385dc4183a8ce6b3a694ba1",
+            "leg": 0,
+            "account": "demo",
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "amount": "100",
+            "kind": "DEPOSIT",
+            "event_time": "2026-01-01T00:00:03.000000+00:00",
+            "policy": "NUMERIC-1"
+          },
+          {
+            "id": 2,
+            "event_id": "70d89c86-6f5a-4824-b800-f8735ce04e0b",
+            "economic_key": "28e47466b9308c5b719b830ac546a09117c82ea18fe70c12069667fe43a369d1",
+            "leg": 0,
+            "account": "demo",
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "amount": "-100",
+            "kind": "INTERNAL_TRANSFER",
+            "event_time": "2026-01-01T00:00:04.000000+00:00",
+            "policy": "NUMERIC-1"
+          },
+          {
+            "id": 3,
+            "event_id": "70d89c86-6f5a-4824-b800-f8735ce04e0b",
+            "economic_key": "28e47466b9308c5b719b830ac546a09117c82ea18fe70c12069667fe43a369d1",
+            "leg": 1,
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "amount": "100",
+            "kind": "INTERNAL_TRANSFER",
+            "event_time": "2026-01-01T00:00:04.000000+00:00",
+            "policy": "NUMERIC-1"
+          },
+          {
+            "id": 4,
+            "event_id": "3d8776e6-32af-463b-9dea-edc96ec1606c",
+            "economic_key": "1452225a27407d5f0fe27f3cc13d76b4177098a9490f25b307a57848438bd21e",
+            "leg": 0,
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "amount": "8",
+            "kind": "REALIZED_PNL",
+            "event_time": "2026-01-01T00:00:05.000000+00:00",
+            "policy": "NUMERIC-1"
+          },
+          {
+            "id": 5,
+            "event_id": "cc383c32-26ec-418d-bb67-81873d56e4d8",
+            "economic_key": "534f93e8d24b583ab1c79f2062e1058981be4667af921b81e63827b3c7d71ce4",
+            "leg": 0,
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "amount": "-1",
+            "kind": "TRADING_FEE",
+            "event_time": "2026-01-01T00:00:06.000000+00:00",
+            "policy": "NUMERIC-1"
+          },
+          {
+            "id": 6,
+            "event_id": "c3e00480-e935-4893-8d98-1698fe51bdea",
+            "economic_key": "756dee65e41795522d5f305aa06e6df9b07f8e4a5cecbcb4cf519f68a15750ee",
+            "leg": 0,
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "amount": "-0.5",
+            "kind": "FUNDING_FEE",
+            "event_time": "2026-01-01T00:00:07.000000+00:00",
+            "policy": "NUMERIC-1"
+          },
+          {
+            "id": 7,
+            "event_id": "ca889482-bbb6-4b43-9f98-eecedada9f2b",
+            "economic_key": "18e3026dbfda16e09bfdcbda27d7d82b70666d396446958e1ba03faaabd7c1c0",
+            "leg": 0,
+            "account": "demo",
+            "wallet": "FUTURES",
+            "asset": "USDT",
+            "amount": "-30",
+            "kind": "INTERNAL_TRANSFER",
+            "event_time": "2026-01-01T00:00:09.000000+00:00",
+            "policy": "NUMERIC-1"
+          },
+          {
+            "id": 8,
+            "event_id": "ca889482-bbb6-4b43-9f98-eecedada9f2b",
+            "economic_key": "18e3026dbfda16e09bfdcbda27d7d82b70666d396446958e1ba03faaabd7c1c0",
+            "leg": 1,
+            "account": "demo",
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "amount": "30",
+            "kind": "INTERNAL_TRANSFER",
+            "event_time": "2026-01-01T00:00:09.000000+00:00",
+            "policy": "NUMERIC-1"
+          },
+          {
+            "id": 9,
+            "event_id": "145f8d7f-2c6d-4e82-85c0-18b2a29baa53",
+            "economic_key": "50fe81fe6e4caca3cad0469d912f5c5b8a457ef8866bad2d4ce7e52f66d9c949",
+            "leg": 0,
+            "account": "demo",
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "amount": "-20",
+            "kind": "WITHDRAWAL",
+            "event_time": "2026-01-01T00:00:10.000000+00:00",
+            "policy": "NUMERIC-1"
+          },
+          {
+            "id": 10,
+            "event_id": "bba2c125-0ee1-4d50-8adf-48bcb84aa5ce",
+            "economic_key": "caad1eecec0fc7186e08825609cbb21a6a98be18dc570188a8afc47ab8a33ce3",
+            "leg": 0,
+            "account": "demo",
+            "wallet": "SPOT",
+            "asset": "USDT",
+            "amount": "-1",
+            "kind": "WITHDRAWAL_FEE",
+            "event_time": "2026-01-01T00:00:11.000000+00:00",
+            "policy": "NUMERIC-1"
+          }
+        ]
+      }
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/bot1.py",
+        "--db",
+        "data/runtime/offline-final.sqlite",
+        "notifications",
+        "--drain",
+        "--sink",
+        "data/runtime/final-fake-telegram.jsonl"
+      ],
+      "exit_code": 0,
+      "output": {
+        "fake_attempts_this_run": 10,
+        "outbox": [
+          {
+            "id": "cd8bb703-2928-4873-85d1-1554ce0dfa08",
+            "logical_key": "economic:d5876603e7847aff72e80d762af0132925a49671e385dc4183a8ce6b3a694ba1",
+            "payload": "{\"account\": \"demo\", \"amount\": \"100\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"100\", \"wallet\": \"SPOT\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"01cdafd1-2dce-49e6-b129-bfe781aed290\", \"event_time\": \"2026-01-01T00:00:03.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:03+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"DEPOSIT\", \"wallet\": \"SPOT\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412893,
+            "lease_owner": "31859ea4-f75b-46fd-b5aa-132b3009f108",
+            "lease_until": 1793985472891,
+            "receipt": "fake:economic:d5876603e7847aff72e80d762af0132925a49671e385dc4183a8ce6b3a694ba1",
+            "error": null,
+            "enqueued_at": 1793985412558,
+            "ack_at": 1793985412893
+          },
+          {
+            "id": "582c1d9d-41dc-48f4-a88b-dae23a874fcb",
+            "logical_key": "economic:28e47466b9308c5b719b830ac546a09117c82ea18fe70c12069667fe43a369d1",
+            "payload": "{\"account\": \"demo\", \"amount\": \"100\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"-100\", \"wallet\": \"SPOT\"}, {\"asset\": \"USDT\", \"ledger_delta\": \"100\", \"wallet\": \"FUTURES\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"70d89c86-6f5a-4824-b800-f8735ce04e0b\", \"event_time\": \"2026-01-01T00:00:04.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:04+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"INTERNAL_TRANSFER\", \"wallet\": \"SPOT\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412895,
+            "lease_owner": "11330918-2c2c-4966-9b1f-aff2303debd3",
+            "lease_until": 1793985472894,
+            "receipt": "fake:economic:28e47466b9308c5b719b830ac546a09117c82ea18fe70c12069667fe43a369d1",
+            "error": null,
+            "enqueued_at": 1793985412559,
+            "ack_at": 1793985412895
+          },
+          {
+            "id": "f052cfe2-4faf-4328-9a6a-e8667a4f99ef",
+            "logical_key": "economic:1452225a27407d5f0fe27f3cc13d76b4177098a9490f25b307a57848438bd21e",
+            "payload": "{\"account\": \"demo\", \"amount\": \"8\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"8\", \"wallet\": \"FUTURES\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"3d8776e6-32af-463b-9dea-edc96ec1606c\", \"event_time\": \"2026-01-01T00:00:05.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:05+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"REALIZED_PNL\", \"wallet\": \"FUTURES\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412896,
+            "lease_owner": "a7164657-7ad5-4d7a-82f8-16314f8fe5a4",
+            "lease_until": 1793985472895,
+            "receipt": "fake:economic:1452225a27407d5f0fe27f3cc13d76b4177098a9490f25b307a57848438bd21e",
+            "error": null,
+            "enqueued_at": 1793985412560,
+            "ack_at": 1793985412896
+          },
+          {
+            "id": "5c9aa92a-5d64-484d-833a-de97810e4c10",
+            "logical_key": "disconnect:demo-history:13",
+            "payload": "{\"stream\": \"demo-history\", \"type\": \"SOURCE_DISCONNECTED\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412897,
+            "lease_owner": "e139ddc1-2a25-4c2d-a4f2-25301461cebd",
+            "lease_until": 1793985472896,
+            "receipt": "fake:disconnect:demo-history:13",
+            "error": null,
+            "enqueued_at": 1793985412561,
+            "ack_at": 1793985412897
+          },
+          {
+            "id": "c3204d36-ad0b-4ea2-b213-c9a0c9bb7c35",
+            "logical_key": "economic:534f93e8d24b583ab1c79f2062e1058981be4667af921b81e63827b3c7d71ce4",
+            "payload": "{\"account\": \"demo\", \"amount\": \"-1\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"-1\", \"wallet\": \"FUTURES\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"cc383c32-26ec-418d-bb67-81873d56e4d8\", \"event_time\": \"2026-01-01T00:00:06.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:06+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"TRADING_FEE\", \"wallet\": \"FUTURES\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412898,
+            "lease_owner": "0b7348a7-8517-48a7-8061-3605f7a815b2",
+            "lease_until": 1793985472898,
+            "receipt": "fake:economic:534f93e8d24b583ab1c79f2062e1058981be4667af921b81e63827b3c7d71ce4",
+            "error": null,
+            "enqueued_at": 1793985412693,
+            "ack_at": 1793985412898
+          },
+          {
+            "id": "79d0a350-480e-4532-a865-20970f68692d",
+            "logical_key": "economic:756dee65e41795522d5f305aa06e6df9b07f8e4a5cecbcb4cf519f68a15750ee",
+            "payload": "{\"account\": \"demo\", \"amount\": \"-0.5\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"-0.5\", \"wallet\": \"FUTURES\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"c3e00480-e935-4893-8d98-1698fe51bdea\", \"event_time\": \"2026-01-01T00:00:07.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:07+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"FUNDING_FEE\", \"wallet\": \"FUTURES\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412900,
+            "lease_owner": "c1764034-0a2b-491e-a9ab-e1ef85a7bcb3",
+            "lease_until": 1793985472899,
+            "receipt": "fake:economic:756dee65e41795522d5f305aa06e6df9b07f8e4a5cecbcb4cf519f68a15750ee",
+            "error": null,
+            "enqueued_at": 1793985412696,
+            "ack_at": 1793985412900
+          },
+          {
+            "id": "ca2e2811-76a8-4592-86c3-8881f05e1c3a",
+            "logical_key": "economic:18e3026dbfda16e09bfdcbda27d7d82b70666d396446958e1ba03faaabd7c1c0",
+            "payload": "{\"account\": \"demo\", \"amount\": \"30\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"-30\", \"wallet\": \"FUTURES\"}, {\"asset\": \"USDT\", \"ledger_delta\": \"30\", \"wallet\": \"SPOT\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"ca889482-bbb6-4b43-9f98-eecedada9f2b\", \"event_time\": \"2026-01-01T00:00:09.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:09+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"INTERNAL_TRANSFER\", \"wallet\": \"FUTURES\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412901,
+            "lease_owner": "9b8009e7-30f7-4fcc-b937-2fe77b9e53ba",
+            "lease_until": 1793985472900,
+            "receipt": "fake:economic:18e3026dbfda16e09bfdcbda27d7d82b70666d396446958e1ba03faaabd7c1c0",
+            "error": null,
+            "enqueued_at": 1793985412698,
+            "ack_at": 1793985412901
+          },
+          {
+            "id": "dd60534c-014e-4dd3-998c-287602234358",
+            "logical_key": "economic:50fe81fe6e4caca3cad0469d912f5c5b8a457ef8866bad2d4ce7e52f66d9c949",
+            "payload": "{\"account\": \"demo\", \"amount\": \"20\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"-20\", \"wallet\": \"SPOT\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"145f8d7f-2c6d-4e82-85c0-18b2a29baa53\", \"event_time\": \"2026-01-01T00:00:10.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:10+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"WITHDRAWAL\", \"wallet\": \"SPOT\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412902,
+            "lease_owner": "34b0fa77-73b0-4053-89dc-8fab1f8002b3",
+            "lease_until": 1793985472901,
+            "receipt": "fake:economic:50fe81fe6e4caca3cad0469d912f5c5b8a457ef8866bad2d4ce7e52f66d9c949",
+            "error": null,
+            "enqueued_at": 1793985412699,
+            "ack_at": 1793985412902
+          },
+          {
+            "id": "e7c45920-17e8-49d5-9fd1-085bc9f1a57e",
+            "logical_key": "economic:caad1eecec0fc7186e08825609cbb21a6a98be18dc570188a8afc47ab8a33ce3",
+            "payload": "{\"account\": \"demo\", \"amount\": \"-1\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"-1\", \"wallet\": \"SPOT\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"bba2c125-0ee1-4d50-8adf-48bcb84aa5ce\", \"event_time\": \"2026-01-01T00:00:11.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:11+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"WITHDRAWAL_FEE\", \"wallet\": \"SPOT\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412904,
+            "lease_owner": "d0e6c2e9-d5df-46c0-9e1e-ab8db61e61e2",
+            "lease_until": 1793985472903,
+            "receipt": "fake:economic:caad1eecec0fc7186e08825609cbb21a6a98be18dc570188a8afc47ab8a33ce3",
+            "error": null,
+            "enqueued_at": 1793985412701,
+            "ack_at": 1793985412904
+          },
+          {
+            "id": "864c0901-72cc-4882-98e4-598d4d49d1f9",
+            "logical_key": "restored:demo-history:13",
+            "payload": "{\"stream\": \"demo-history\", \"type\": \"HISTORY_RECONCILED\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412905,
+            "lease_owner": "bf3aae80-0ed4-4c6d-b3b1-dd70e4d90962",
+            "lease_until": 1793985472904,
+            "receipt": "fake:restored:demo-history:13",
+            "error": null,
+            "enqueued_at": 1793985412704,
+            "ack_at": 1793985412905
+          }
+        ]
+      }
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/bot1.py",
+        "--db",
+        "data/runtime/offline-final.sqlite",
+        "recover"
+      ],
+      "exit_code": 0,
+      "output": {
+        "status": "complete",
+        "reason": "VERIFIED_FAKE_MANIFEST",
+        "expected_end": 13,
+        "processed": 13
+      }
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/bot1.py",
+        "--db",
+        "data/runtime/offline-final.sqlite",
+        "notifications",
+        "--drain",
+        "--sink",
+        "data/runtime/final-fake-telegram.jsonl"
+      ],
+      "exit_code": 0,
+      "output": {
+        "fake_attempts_this_run": 0,
+        "outbox": [
+          {
+            "id": "cd8bb703-2928-4873-85d1-1554ce0dfa08",
+            "logical_key": "economic:d5876603e7847aff72e80d762af0132925a49671e385dc4183a8ce6b3a694ba1",
+            "payload": "{\"account\": \"demo\", \"amount\": \"100\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"100\", \"wallet\": \"SPOT\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"01cdafd1-2dce-49e6-b129-bfe781aed290\", \"event_time\": \"2026-01-01T00:00:03.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:03+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"DEPOSIT\", \"wallet\": \"SPOT\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412893,
+            "lease_owner": "31859ea4-f75b-46fd-b5aa-132b3009f108",
+            "lease_until": 1793985472891,
+            "receipt": "fake:economic:d5876603e7847aff72e80d762af0132925a49671e385dc4183a8ce6b3a694ba1",
+            "error": null,
+            "enqueued_at": 1793985412558,
+            "ack_at": 1793985412893
+          },
+          {
+            "id": "582c1d9d-41dc-48f4-a88b-dae23a874fcb",
+            "logical_key": "economic:28e47466b9308c5b719b830ac546a09117c82ea18fe70c12069667fe43a369d1",
+            "payload": "{\"account\": \"demo\", \"amount\": \"100\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"-100\", \"wallet\": \"SPOT\"}, {\"asset\": \"USDT\", \"ledger_delta\": \"100\", \"wallet\": \"FUTURES\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"70d89c86-6f5a-4824-b800-f8735ce04e0b\", \"event_time\": \"2026-01-01T00:00:04.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:04+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"INTERNAL_TRANSFER\", \"wallet\": \"SPOT\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412895,
+            "lease_owner": "11330918-2c2c-4966-9b1f-aff2303debd3",
+            "lease_until": 1793985472894,
+            "receipt": "fake:economic:28e47466b9308c5b719b830ac546a09117c82ea18fe70c12069667fe43a369d1",
+            "error": null,
+            "enqueued_at": 1793985412559,
+            "ack_at": 1793985412895
+          },
+          {
+            "id": "f052cfe2-4faf-4328-9a6a-e8667a4f99ef",
+            "logical_key": "economic:1452225a27407d5f0fe27f3cc13d76b4177098a9490f25b307a57848438bd21e",
+            "payload": "{\"account\": \"demo\", \"amount\": \"8\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"8\", \"wallet\": \"FUTURES\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"3d8776e6-32af-463b-9dea-edc96ec1606c\", \"event_time\": \"2026-01-01T00:00:05.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:05+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"REALIZED_PNL\", \"wallet\": \"FUTURES\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412896,
+            "lease_owner": "a7164657-7ad5-4d7a-82f8-16314f8fe5a4",
+            "lease_until": 1793985472895,
+            "receipt": "fake:economic:1452225a27407d5f0fe27f3cc13d76b4177098a9490f25b307a57848438bd21e",
+            "error": null,
+            "enqueued_at": 1793985412560,
+            "ack_at": 1793985412896
+          },
+          {
+            "id": "5c9aa92a-5d64-484d-833a-de97810e4c10",
+            "logical_key": "disconnect:demo-history:13",
+            "payload": "{\"stream\": \"demo-history\", \"type\": \"SOURCE_DISCONNECTED\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412897,
+            "lease_owner": "e139ddc1-2a25-4c2d-a4f2-25301461cebd",
+            "lease_until": 1793985472896,
+            "receipt": "fake:disconnect:demo-history:13",
+            "error": null,
+            "enqueued_at": 1793985412561,
+            "ack_at": 1793985412897
+          },
+          {
+            "id": "c3204d36-ad0b-4ea2-b213-c9a0c9bb7c35",
+            "logical_key": "economic:534f93e8d24b583ab1c79f2062e1058981be4667af921b81e63827b3c7d71ce4",
+            "payload": "{\"account\": \"demo\", \"amount\": \"-1\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"-1\", \"wallet\": \"FUTURES\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"cc383c32-26ec-418d-bb67-81873d56e4d8\", \"event_time\": \"2026-01-01T00:00:06.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:06+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"TRADING_FEE\", \"wallet\": \"FUTURES\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412898,
+            "lease_owner": "0b7348a7-8517-48a7-8061-3605f7a815b2",
+            "lease_until": 1793985472898,
+            "receipt": "fake:economic:534f93e8d24b583ab1c79f2062e1058981be4667af921b81e63827b3c7d71ce4",
+            "error": null,
+            "enqueued_at": 1793985412693,
+            "ack_at": 1793985412898
+          },
+          {
+            "id": "79d0a350-480e-4532-a865-20970f68692d",
+            "logical_key": "economic:756dee65e41795522d5f305aa06e6df9b07f8e4a5cecbcb4cf519f68a15750ee",
+            "payload": "{\"account\": \"demo\", \"amount\": \"-0.5\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"-0.5\", \"wallet\": \"FUTURES\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"c3e00480-e935-4893-8d98-1698fe51bdea\", \"event_time\": \"2026-01-01T00:00:07.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:07+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"FUNDING_FEE\", \"wallet\": \"FUTURES\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412900,
+            "lease_owner": "c1764034-0a2b-491e-a9ab-e1ef85a7bcb3",
+            "lease_until": 1793985472899,
+            "receipt": "fake:economic:756dee65e41795522d5f305aa06e6df9b07f8e4a5cecbcb4cf519f68a15750ee",
+            "error": null,
+            "enqueued_at": 1793985412696,
+            "ack_at": 1793985412900
+          },
+          {
+            "id": "ca2e2811-76a8-4592-86c3-8881f05e1c3a",
+            "logical_key": "economic:18e3026dbfda16e09bfdcbda27d7d82b70666d396446958e1ba03faaabd7c1c0",
+            "payload": "{\"account\": \"demo\", \"amount\": \"30\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"-30\", \"wallet\": \"FUTURES\"}, {\"asset\": \"USDT\", \"ledger_delta\": \"30\", \"wallet\": \"SPOT\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"ca889482-bbb6-4b43-9f98-eecedada9f2b\", \"event_time\": \"2026-01-01T00:00:09.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:09+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"INTERNAL_TRANSFER\", \"wallet\": \"FUTURES\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412901,
+            "lease_owner": "9b8009e7-30f7-4fcc-b937-2fe77b9e53ba",
+            "lease_until": 1793985472900,
+            "receipt": "fake:economic:18e3026dbfda16e09bfdcbda27d7d82b70666d396446958e1ba03faaabd7c1c0",
+            "error": null,
+            "enqueued_at": 1793985412698,
+            "ack_at": 1793985412901
+          },
+          {
+            "id": "dd60534c-014e-4dd3-998c-287602234358",
+            "logical_key": "economic:50fe81fe6e4caca3cad0469d912f5c5b8a457ef8866bad2d4ce7e52f66d9c949",
+            "payload": "{\"account\": \"demo\", \"amount\": \"20\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"-20\", \"wallet\": \"SPOT\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"145f8d7f-2c6d-4e82-85c0-18b2a29baa53\", \"event_time\": \"2026-01-01T00:00:10.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:10+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"WITHDRAWAL\", \"wallet\": \"SPOT\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412902,
+            "lease_owner": "34b0fa77-73b0-4053-89dc-8fab1f8002b3",
+            "lease_until": 1793985472901,
+            "receipt": "fake:economic:50fe81fe6e4caca3cad0469d912f5c5b8a457ef8866bad2d4ce7e52f66d9c949",
+            "error": null,
+            "enqueued_at": 1793985412699,
+            "ack_at": 1793985412902
+          },
+          {
+            "id": "e7c45920-17e8-49d5-9fd1-085bc9f1a57e",
+            "logical_key": "economic:caad1eecec0fc7186e08825609cbb21a6a98be18dc570188a8afc47ab8a33ce3",
+            "payload": "{\"account\": \"demo\", \"amount\": \"-1\", \"asset\": \"USDT\", \"balance_changes\": [{\"asset\": \"USDT\", \"ledger_delta\": \"-1\", \"wallet\": \"SPOT\"}], \"balance_kind\": \"PROJECTED_LEDGER_CASHFLOW\", \"event_id\": \"bba2c125-0ee1-4d50-8adf-48bcb84aa5ce\", \"event_time\": \"2026-01-01T00:00:11.000000+00:00\", \"event_time_gmt7\": \"2026-01-01T07:00:11+07:00\", \"historical_only\": false, \"status\": \"completed\", \"type\": \"WITHDRAWAL_FEE\", \"wallet\": \"SPOT\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412904,
+            "lease_owner": "d0e6c2e9-d5df-46c0-9e1e-ab8db61e61e2",
+            "lease_until": 1793985472903,
+            "receipt": "fake:economic:caad1eecec0fc7186e08825609cbb21a6a98be18dc570188a8afc47ab8a33ce3",
+            "error": null,
+            "enqueued_at": 1793985412701,
+            "ack_at": 1793985412904
+          },
+          {
+            "id": "864c0901-72cc-4882-98e4-598d4d49d1f9",
+            "logical_key": "restored:demo-history:13",
+            "payload": "{\"stream\": \"demo-history\", \"type\": \"HISTORY_RECONCILED\"}",
+            "status": "sent",
+            "attempts": 1,
+            "next_attempt": 1793985412905,
+            "lease_owner": "bf3aae80-0ed4-4c6d-b3b1-dd70e4d90962",
+            "lease_until": 1793985472904,
+            "receipt": "fake:restored:demo-history:13",
+            "error": null,
+            "enqueued_at": 1793985412704,
+            "ack_at": 1793985412905
+          }
+        ]
+      }
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/bot1.py",
+        "--db",
+        "data/runtime/offline-final.sqlite",
+        "health"
+      ],
+      "exit_code": 0,
+      "output": {
+        "last_commit_ms": 1793985412703,
+        "state": "SYNCED_OFFLINE",
+        "database": "ok",
+        "processed": 13,
+        "pending": 0,
+        "quarantine": 0,
+        "reconciliation_gap": 0,
+        "history_gap": 0,
+        "notification_backlog": 0,
+        "notification_retries": 0,
+        "event_failures": 0,
+        "missing_openings": 0,
+        "notifier_statuses": [
+          {
+            "status": "sent",
+            "count": 10
+          }
+        ],
+        "heartbeat_age_ms": 387,
+        "latest_received_time": "2026-01-01T00:00:13.000000+00:00",
+        "processing_lag_ms": 26759800090,
+        "network": "OFFLINE_ONLY"
+      }
+    }
+  ],
+  "status": "PASS"
+}

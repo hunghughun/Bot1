@@ -1,0 +1,632 @@
+{
+  "timestamp_utc": "2026-11-06T17:58:21.911310+00:00",
+  "system": "Linux",
+  "python": "3.12.14",
+  "required_windows": false,
+  "required_python314": false,
+  "status": "PASS",
+  "reasons": [],
+  "test_exit_code": 0,
+  "runtime": {
+    "timestamp_utc": "2026-11-06T17:58:24.293170+00:00",
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "scope": "Bot 1 implementation, synthetic inputs only; no document checker tests",
+    "offline_network_guard": true,
+    "subprocess_guard": "BOT1_TEST_OFFLINE plus src/sitecustomize.py via PYTHONPATH",
+    "executed": 152,
+    "cases": [
+      {
+        "id": "tests.adapter_offline.test_foundations.PaginationTests.test_duplicate_conflicting_pages_and_replay",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.PaginationTests.test_missing_page_cannot_complete_then_recover",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.PaginationTests.test_retention_gap_stays_incomplete",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.ParserTests.test_bool_float_python_int_not_promoted_to_money",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.ParserTests.test_complexity_limits",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.ParserTests.test_financial_bounds_after_decode",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.ParserTests.test_json_number_lexeme_exact_from_initial_decode",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.ParserTests.test_malformed_missing_container_and_utf8",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.ParserTests.test_nonfinite_and_duplicate_key_rejected",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.ParserTests.test_number_zero_and_scientific_representation",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.ParserTests.test_rest_and_ws_syntax_decoders_keep_same_number",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.ParserTests.test_string_money_and_json_numbers_are_distinct",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.ParserTests.test_synthetic_fixture_provenance_and_independent_values",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.PolicyTests.test_clock_offset_and_uncertainty",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.PolicyTests.test_http_rate_retry_auth_and_unknown",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.PolicyTests.test_retry_backoff_jitter_and_server_wait",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.PolicyTests.test_stale_snapshot_is_not_dead_transport",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.PolicyTests.test_weight_budget_and_clock_regression",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_all_reviewed_inventory_entries_remain_unsupported",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_core_recovery_rejects_unverified_source_without_mutation",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_fake_verified_flag_cannot_enable_mapping",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_modes_allowlist_transport_and_signer_default_deny",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_network_guard_parent_and_children",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_quarantine_never_stores_secret_payload_or_unknown_contract",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_quarantine_persists_on_replay_without_financial_events",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_quarantine_refuses_core_database",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_rest_ws_link_requires_verified_rules",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.adapter_offline.test_foundations.VerificationGateTests.test_unknown_missing_pending_failed_payloads_do_not_create_events",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_ambiguous_delivery_not_automatically_resent",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_backup_restore_replay",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_baseline_already_contains_old_history",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_correction_reversal_audit",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_cross_source_verified_correlation",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_db_lock_is_retryable_not_quarantine",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_disconnect_resume_and_gap_completion",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_economic_conflict_is_not_ignored",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_equal_opposite_missing_events_still_detected",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_failed_cancelled_are_not_cashflow",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_fake_notifier_success_and_logic_dedup",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_fault_after_commit",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_fault_after_event_insert",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_fault_after_inbox_commit",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_fault_after_ledger",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_fault_after_outbox",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_fault_before_commit",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_full_scenario_and_no_network",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_health_and_processing_lag",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_invalid_between_valid_checkpoint_and_replacement",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_invalid_types_quarantine_without_zero",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_manifest_detects_substituted_id",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_margin_unrealized_snapshot_do_not_post",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_missing_offset_even_net_zero_is_gap",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_new_reconciliation_gap_invalidates_completion",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_no_trustworthy_id_is_not_timestamp_deduped",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_normalized_symbol_qualified_source_ids",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_notification_crash_after_send_is_ambiguous",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_notification_retry_cap",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_notifier_retry_and_rate_limit",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_notifier_transient_retry_then_success",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_opening_cannot_hide_existing_ledger",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_out_of_order_history",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_pending_completed_duplicate_stale",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_permanent_notification_error_dead_letter",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_real_process_exit_before_commit_and_recovery",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_realized_pnl_commission_funding_exact_balance",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_replay_and_restart_persistence",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_same_identity_changed_economic_id_conflicts",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_same_identity_financial_conflict",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_same_time_amount_different_ids_are_distinct",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_schema_version_and_money_text",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_second_ingest_worker_has_idempotent_financial_effect",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_secondary_source_unverified_is_gap",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_sensitive_unknown_fields_redacted",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_signed_funding_and_non_usdt_fee",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_snapshot_asof_late_event_reconciles_without_adjustment",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_snapshot_duplicate_time_conflict",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_source_offset_conflict_preserves_committed_event",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_terminal_change_requires_correction",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_transfer_reversal_both_legs",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_transfer_two_legs_rollback_and_funding",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_two_workers_cannot_claim_same_lease",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_unknown_schema_version_rejected",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_wallet_asset_account_namespaces",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_core.CoreTests.test_withdrawal_and_separate_fee",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_recovery_edges.RecoveryEdgeTests.test_explicit_manifest_revision_after_quarantine_fix",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_recovery_edges.RecoveryEdgeTests.test_late_snapshot_does_not_replace_latest_metric",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_recovery_edges.RecoveryEdgeTests.test_no_financial_reconciliation_without_opening",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_recovery_edges.RecoveryEdgeTests.test_pending_before_watermark_completed_after_restart",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_safety_cli.SafetyTests.test_cli_end_to_end_and_recovery",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_safety_cli.SafetyTests.test_fake_source_pacing_and_disconnect",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_safety_cli.SafetyTests.test_financial_action_cli_commands_are_rejected",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_safety_cli.SafetyTests.test_json_logger_redacts_unknown_message_and_exception",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_safety_cli.SafetyTests.test_no_network_or_credentials_dependencies_in_source",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_safety_cli.SafetyTests.test_sqlite_error_rolls_back_and_can_replay",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_safety_cli.SafetyTests.test_two_actual_writers",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.integration.test_safety_cli.SafetyTests.test_utc_gmt7_day_boundary",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.DomainNumberTests.test_bad_aggregate_storage",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.DomainNumberTests.test_negative_zero_and_domains",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_aggregate_limit_and_round_trip",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_ambient_context_isolation",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_context_config",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_difference_retains_leaf_count_and_budget",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_display_does_not_mutate_ledger",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_exact_division_and_zero",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_overflow_underflow_rounded_float_traps",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_precision_regression",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_product_96_digits",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_ratio_independent_rational_oracle",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_ratio_ties_and_metadata",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_01",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_02",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_03",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_04",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_05",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_06",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_07",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_08",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_09",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_10",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_11",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_12",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_13",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_14",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_15",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_16",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_17",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_18",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_19",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_20",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_21",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_22",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_23",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_24",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_25",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_26",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_27",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_28",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_29",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_30",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_31",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_32",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_33",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_reject_34",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_tiny_sum",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_01",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_02",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_03",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_04",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_05",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_06",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_07",
+        "status": "PASS"
+      },
+      {
+        "id": "tests.unit.test_numeric.NumericTests.test_valid_roundtrip_08",
+        "status": "PASS"
+      }
+    ],
+    "pass": 152,
+    "fail": 0,
+    "not_tested": 0
+  }
+}
